@@ -166,7 +166,39 @@ Run with defaults for non-interactive environments:
 bash scripts/docker-install.sh --non-interactive
 ```
 
+Non-interactive mode binds to `localhost` in development mode. To install unattended on a server, set its address (and optionally the environment and app name) instead:
+
+```sh
+FLEETBASE_HOST=203.0.113.10 FLEETBASE_ENVIRONMENT=development FLEETBASE_APP_NAME=Fleetbase \
+  bash scripts/docker-install.sh --non-interactive
+```
+
 The script expects Docker, Docker Compose v2, git, and OpenSSL to be available. It warns when common Fleetbase ports are already in use but does not treat that as a hard failure.
+
+## `azure-create-vm.sh`
+
+`azure-create-vm.sh` creates an Azure VM that runs Fleetbase with Docker Compose. It needs the [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli), logged in with `az login`:
+
+```sh
+bash scripts/azure-create-vm.sh --location westeurope
+```
+
+Everything goes into one resource group (`fleetbase-rg` by default):
+
+- a network security group that allows SSH from your current IP only and ports 4200 (console), 8000 (API) and 38000 (websockets) from anywhere; MySQL stays closed
+- a static public IP, so the address the install is configured with survives stopping and starting the VM
+- an Ubuntu 24.04 VM (`Standard_B2s`, 4 GB RAM, 64 GB Standard SSD by default) that on first boot adds swap, installs Docker, clones the repository and runs `docker-install.sh --non-interactive` on its public address
+
+The first install takes 15-30 minutes; the script waits for the console to answer and prints its URL. Fleetbase runs over plain HTTP in development mode.
+
+Useful options (see `--help` for all of them):
+
+- `--size Standard_B2ms` for 8 GB RAM
+- `--dns-label <label>` to serve Fleetbase at `<label>.<region>.cloudapp.azure.com` instead of the bare IP
+- `--branch <name>` to deploy a branch other than `main`
+- `--auto-shutdown 2200` to stop the VM every day at that UTC time and save credit
+
+Stop the VM with `az vm deallocate -g fleetbase-rg -n fleetbase-vm` when you aren't using it, and remove everything with `az group delete -n fleetbase-rg`.
 
 ## Validation
 
@@ -181,4 +213,10 @@ Check shell syntax for the Docker installer:
 
 ```sh
 bash -n scripts/docker-install.sh
+```
+
+Check shell syntax for the Azure VM script:
+
+```sh
+bash -n scripts/azure-create-vm.sh
 ```

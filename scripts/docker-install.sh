@@ -5,6 +5,9 @@
 # Usage:
 #   bash scripts/docker-install.sh              # interactive (default)
 #   bash scripts/docker-install.sh --non-interactive  # CI/CD, all defaults
+#   FLEETBASE_HOST=203.0.113.10 bash scripts/docker-install.sh --non-interactive
+#                                                     # unattended, on a server's own address
+#   (non-interactive also reads FLEETBASE_ENVIRONMENT and FLEETBASE_APP_NAME)
 # -------------------------------------------------------
 set -euo pipefail
 
@@ -80,9 +83,14 @@ success "Pre-flight checks complete"
 section "Core Configuration"
 
 if $NON_INTERACTIVE; then
-  HOST="localhost"
-  ENVIRONMENT="development"
-  APP_NAME="Fleetbase"
+  # Unattended installs (e.g. a cloud VM's first boot) can set these instead of answering prompts.
+  HOST="${FLEETBASE_HOST:-localhost}"
+  ENVIRONMENT="${FLEETBASE_ENVIRONMENT:-development}"
+  APP_NAME="${FLEETBASE_APP_NAME:-Fleetbase}"
+  if [[ "$ENVIRONMENT" != "development" && "$ENVIRONMENT" != "production" ]]; then
+    error "FLEETBASE_ENVIRONMENT must be 'development' or 'production', got '$ENVIRONMENT'."
+    exit 1
+  fi
 else
   read -rp "Host or IP address to bind to [localhost]: " HOST_INPUT
   HOST="${HOST_INPUT:-localhost}"
