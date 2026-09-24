@@ -11,8 +11,8 @@ function langOf(tag = 'en') {
     return String(tag).toLowerCase().split('-')[0];
 }
 
-// The polyfills always replace native Intl: browsers lack data for some of the console's
-// languages (Mongolian, for one), and ember-intl refuses to start without it.
+// The polyfills always replace native Intl: a browser can lack data for one of the console's
+// languages, and ember-intl refuses to start without it.
 async function loadBasePolyfills() {
     await import('@formatjs/intl-numberformat/polyfill-force');
     await import('@formatjs/intl-pluralrules/polyfill-force');
@@ -31,10 +31,11 @@ export function preferredLanguage(langs, browserLanguages = []) {
 
 /**
  * A formatjs polyfill takes its default locale from whichever locale data registers first.
- * Locale data loads for every translation at once, so without this the default becomes an
- * arbitrary language (Arabic, being first alphabetically) and every Intl call made without
- * an explicit locale formats numbers and dates in it. Pins the polyfills to the user's
- * language instead. A native constructor has no __defaultLocale and is left alone.
+ * Locale data loads for every translation at once, so without this the default becomes
+ * whichever language registers first (English, alphabetically) whatever the user's language,
+ * and every Intl call made without an explicit locale formats numbers and dates in it. Pins
+ * the polyfills to the user's language instead. A native constructor has no __defaultLocale
+ * and is left alone.
  */
 export function pinDefaultLocale(lang, intl = Intl) {
     for (const name of ['NumberFormat', 'PluralRules', 'DateTimeFormat', 'RelativeTimeFormat']) {

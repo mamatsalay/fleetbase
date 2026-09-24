@@ -9,6 +9,7 @@ common:
   update: Yangilash
   save: Saqlash
   save-changes: O'zgarishlarni saqlash
+  close-and-save: Yopish va saqlash
   delete: O'chirish
   delete-selected: Tanlanganlarni o'chirish
   delete-selected-count: "{count} ta tanlanganni o'chirish"
@@ -69,8 +70,8 @@ common:
   panel: Panel
   card: Karta
   tab: Varaqa
-  modal: Modal
-  dialog: Dialog
+  modal: Modal oyna
+  dialog: Dialog oynasi
   menu: Menyu
   dropdown: Ochiladigan menyu
   tooltip: Maslahat
@@ -146,6 +147,7 @@ common:
   password: Parol
   confirm-password: Parolni tasdiqlang
   email: Elektron pochta
+  phone: Telefon
   username: Foydalanuvchi nomi
   remember-me: Meni eslab qol
   welcome: Xush kelibsiz
@@ -319,6 +321,8 @@ common:
   delete-resource: "{resource} ni o'chirish"
   delete-resource-name: >-
     O'chirish: {resourceName}
+  resource-actions: '{resource} amallari'
+  resource-location: '{resource} joylashuvi'
   delete-resource-named: "{resource} ({resourceName}) ni o'chirish"
   delete-resource-prompt: Bu amalni bekor qilib bo'lmaydi. O'chirilgandan so'ng, yozuv butunlay o'chiriladi.
   delete-cannot-be-undone: Bu amalni bekor qilib bo'lmaydi. O'chirilgandan so'ng, yozuv butunlay o'chiriladi.
@@ -347,6 +351,7 @@ common:
   continue-without-saving: Saqlamasdan davom etish kerakmi?
   continue-without-saving-prompt: Sizda bu {resource} ga saqlanmagan o'zgarishlar mavjud. Davom etish ularni bekor qiladi. Davom etish uchun Davom etish tugmasini bosing.
   changelog: O'zgarishlar jurnali
+  reload: Qayta yuklash
 
 resource:
   alert: Ogohlantirish
@@ -403,6 +408,7 @@ resource:
   user-devices: Foydalanuvchi qurilmalari
   user: Foydalanuvchi
   users: Foydalanuvchilar
+  country: Mamlakat
 
 dropzone:
   file: fayl
@@ -455,6 +461,13 @@ dashboard-widget-panel:
   select-widgets: Vidjetlarni tanlang
   close-and-save: Yopish va saqlash
   filter-widgets: Vidjetlarni kalit so'z bo'yicha filtrlash
+  no-widgets-match: Filtrlaringizga mos vidjetlar topilmadi.
+  tab-all: Barchasi
+  tab-default: Tavsiya etilgan
+  tab-added: Boshqaruv panelida
+  badge-default: Standart
+  add: Qo'shish
+  add-another: Yana qo'shish
 
 filters-picker:
   filters: Filtrlar
@@ -519,6 +532,7 @@ component:
     save-dashboard: Boshqaruv panelini saqlash
     you-cannot-delete-this-dashboard: Siz bu boshqaruv panelini o'chira olmaysiz.
     are-you-sure-you-want-delete-dashboard: Haqiqatan ham bu {dashboardName} ni o'chirmoqchimisiz?
+    create-to-customize-hint: Vidjetlarni sozlash uchun boshqaruv paneli yarating.
   dashboard-widget-panel:
     widget-name: >-
       {widgetName} vidjeti
@@ -643,16 +657,32 @@ auth:
       back-button: Orqaga
 
   confirm-email-change:
-    success-message: Your email address has been updated.
-    invalid-verification-code: This email change link is invalid or expired.
-    title: Confirm email change
-    message-text: Confirm this change to update the login email for your Fleetbase account.
+    success-message: Elektron pochta manzilingiz yangilandi.
+    invalid-verification-code: Elektron pochtani o'zgartirish havolasi yaroqsiz yoki muddati o'tgan.
+    title: Elektron pochta o'zgarishini tasdiqlash
+    message-text: Fleetbase hisobingizga kirish uchun ishlatiladigan elektron pochtani yangilash uchun ushbu o'zgarishni tasdiqlang.
     form:
       code:
-        label: Confirmation code
-        help-text: The confirmation code from your email.
-      submit-button: Confirm Email Change
-      back-button: Back
+        label: Tasdiqlash kodi
+        help-text: Elektron pochtangizga yuborilgan tasdiqlash kodi.
+      submit-button: Elektron pochta o'zgarishini tasdiqlash
+      back-button: Orqaga
+
+  verify-contact:
+    invalid-link: Ushbu tasdiqlash havolasi yaroqsiz yoki muddati o'tgan.
+    email-title: Elektron pochta manzilingizni tasdiqlang
+    phone-title: Telefon raqamingizni tasdiqlang
+    email-message: Ushbu elektron pochta manzili sizga tegishli ekanligini tasdiqlang.
+    phone-message: Ushbu telefon raqami sizga tegishli ekanligini tasdiqlang.
+    email-verified: Elektron pochta manzilingiz tasdiqlandi.
+    phone-verified: Telefon raqamingiz tasdiqlandi.
+    continue-button: Davom etish
+    form:
+      code:
+        label: Tasdiqlash kodi
+        help-text: Elektron pochta yoki SMS xabar orqali yuborilgan tasdiqlash kodi.
+      submit-button: Tasdiqlash
+      back-button: Orqaga
 
 console:
   create-or-join-organization:
@@ -676,6 +706,7 @@ console:
       organizations: Tashkilotlar
       branding: Brending
       "2fa-config": 2FA konfiguratsiyasi
+      platform-api-token: Platforma API tokeni
       schedule-monitor: Jadval monitori
       services: Xizmatlar
       mail: Pochta
@@ -717,6 +748,28 @@ console:
         title: Xizmatlar konfiguratsiyasi
       socket:
         title: Soket konfiguratsiyasi
+    platform-api-token:
+      title: Platforma API tokeni
+      description: Tashkilotlar katalogi kabi himoyalangan platforma endpointlariga kirish uchun ishonchli integratsiyalar foydalanadigan platforma API tokenini boshqarish.
+      loading: Platforma API tokeni holati yuklanmoqda...
+      status: Holat
+      configured: Sozlangan
+      not-configured: Sozlanmagan
+      last-rotated: Oxirgi almashtirilgan
+      last-used: Oxirgi foydalanilgan
+      never: Hech qachon
+      generate-token: Token yaratish
+      rotate-token: Tokenni almashtirish
+      revoke-token: Tokenni bekor qilish
+      one-time-warning: Ushbu tokenni hozir nusxalab oling. U qayta ko'rsatilmaydi.
+      rotate-confirm-title: Platforma API tokeni almashtirilsinmi?
+      rotate-warning: Tokenni almashtirish oldingi tokendan foydalanayotgan integratsiyalarni darhol yaroqsiz qiladi.
+      revoke-confirm-title: Platforma API tokeni bekor qilinsinmi?
+      revoke-warning: Bekor qilish himoyalangan platforma endpointlariga platforma tokeni orqali kirishni o'chiradi.
+      generated: Platforma API tokeni yaratildi.
+      rotated: Platforma API tokeni almashtirildi.
+      revoked: Platforma API tokeni bekor qilindi.
+      copied: Platforma API tokeni vaqtinchalik xotiraga nusxalandi.
     branding:
       title: Brending
       icon-text: Belgi
@@ -768,6 +821,12 @@ console:
     received: >-
       Qabul qilindi:
     message: Ko'rsatish uchun bildirishnomalar yo'q.
+modals:
+  set-password:
+    message: Hisobingiz taklif orqali yaratilgan va hali parolga ega emas. Hisobingiz xavfsizligini ta'minlashni yakunlash uchun hozir parol o'rnating.
+    new-password: Yangi parol
+    confirm-password: Parolni tasdiqlang
+    help-text: Davom etish uchun kamida 6 ta belgidan iborat parol kiriting.
 
 invite:
   for-users:
@@ -811,11 +870,11 @@ onboard:
       send-by-sms: SMS orqali yuborish
 
 install:
-  not-configured-title: Fleetbase is not installed or configured
-  not-configured-message: Complete setup from the Fleetbase CLI or application container, then reload this page once the database, migrations, and seed data are ready.
-  running-locally-docs: See running locally docs
-  cloud-docs: See cloud deployment docs
-  refreshing: Installation complete, refreshing...
+  not-configured-title: Fleetbase o'rnatilmagan yoki sozlanmagan
+  not-configured-message: Sozlashni Fleetbase CLI yoki ilova konteyneri orqali yakunlang, so'ng ma'lumotlar bazasi, migratsiyalar va boshlang'ich ma'lumotlar tayyor bo'lgach, ushbu sahifani qayta yuklang.
+  running-locally-docs: Mahalliy ishga tushirish bo'yicha hujjatlar
+  cloud-docs: Bulutga joylashtirish bo'yicha hujjatlar
+  refreshing: O'rnatish yakunlandi, sahifa yangilanmoqda...
 
 layout:
   header:

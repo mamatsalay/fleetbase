@@ -17,6 +17,17 @@ module.exports = function (/* environment */) {
         fallbackLocale: 'en-US',
 
         /**
+         * The only locales included in the build. Extensions ship their own translation
+         * files, often for many more languages; anything not listed here is dropped so
+         * the console only offers English, Russian and Uzbek.
+         *
+         * @property includeLocales
+         * @type {Array?}
+         * @default "null"
+         */
+        includeLocales: ['en-us', 'ru-ru', 'uz-uz'],
+
+        /**
          * Path where translations are stored.  This is relative to the project root.
          * For example, if your translations are an npm dependency, set this to:
          *`'./node_modules/path/to/translations'`

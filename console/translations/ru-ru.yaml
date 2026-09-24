@@ -8,9 +8,14 @@ common:
   update: Обновить
   save: Сохранить
   save-changes: Сохранить изменения
+  close-and-save: Закрыть и сохранить
   delete: Удалить
   delete-selected: Удалить выбранное
   delete-selected-count: Удалить {count} выбранных
+  your-profile: Ваш профиль
+  date-of-birth: Дата рождения
+  organization: Организация
+  two-factor: Двухфакторная аутентификация
   remove: Удалить
   cancel: Отмена
   confirm: Подтвердить
@@ -103,6 +108,7 @@ common:
   warning: Предупреждение
   info: Информация
   ready: Готово
+  activity: Активность
   active: Активный
   inactive: Неактивный
   enabled: Включено
@@ -139,6 +145,7 @@ common:
   password: Пароль
   confirm-password: Подтвердите пароль
   email: Электронная почта
+  phone: Телефон
   username: Имя пользователя
   remember-me: Запомнить меня
   welcome: Добро пожаловать
@@ -178,6 +185,7 @@ common:
   notes: Заметки
   reference: Ссылка
   filter-by: Фильтр по
+  filter-by-field: Фильтр по {field}
   sort-by: Сортировать по
   ascending: По возрастанию
   descending: По убыванию
@@ -218,6 +226,7 @@ common:
   contact: Контакт
   documentation: Документация
   language: Язык
+  timezone: Часовой пояс
   version: Версия
   theme: Тема
   light-mode: Светлый режим
@@ -286,8 +295,8 @@ common:
   zoom-out: Уменьшить
   fullscreen: Полноэкранный режим
   exit-fullscreen: Выйти из полноэкранного режима
-  true: 'true'
-  false: 'false'
+  yes: Да
+  no: Нет
   ok: ОК
   none-available: Нет доступных
   default: По умолчанию
@@ -308,6 +317,8 @@ common:
   cancel-resource: Отменить {resource}
   delete-resource: Удалить {resource}
   delete-resource-name: 'Удалить: {resourceName}'
+  resource-actions: 'Действия: {resource}'
+  resource-location: 'Местоположение: {resource}'
   delete-resource-named: Удалить {resource} ({resourceName})
   delete-resource-prompt: Это действие нельзя отменить. После удаления запись будет
     удалена навсегда.
@@ -332,6 +343,8 @@ common:
   continue-without-saving: Продолжить без сохранения?
   continue-without-saving-prompt: У вас есть несохранённые изменения в этом {resource}.
     Продолжение приведёт к их потере. Нажмите Продолжить, чтобы продолжить.
+  changelog: Журнал изменений
+  reload: Перезагрузить
 resource:
   alert: Оповещение
   alerts: Оповещения
@@ -387,6 +400,7 @@ resource:
   user-devices: Устройства пользователя
   user: Пользователь
   users: Пользователи
+  country: Страна
 dropzone:
   file: файл
   drop-to-upload: Перетащите для загрузки
@@ -433,6 +447,14 @@ dashboard-widget-panel:
   widget-name: Виджет {widgetName}
   select-widgets: Выбрать виджеты
   close-and-save: Закрыть и сохранить
+  filter-widgets: Поиск виджетов…
+  no-widgets-match: Нет виджетов, соответствующих фильтрам.
+  tab-all: Все
+  tab-default: Рекомендуемые
+  tab-added: На панели
+  badge-default: По умолчанию
+  add: Добавить
+  add-another: Добавить ещё
 filters-picker:
   filters: Фильтры
   filter-data: Фильтровать данные
@@ -494,6 +516,7 @@ component:
     save-dashboard: Сохранить панель
     you-cannot-delete-this-dashboard: Вы не можете удалить эту панель.
     are-you-sure-you-want-delete-dashboard: Вы уверены, что хотите удалить {dashboardName}?
+    create-to-customize-hint: Создайте панель, чтобы настроить виджеты.
   dashboard-widget-panel:
     widget-name: Виджет {widgetName}
     select-widgets: Выбрать виджеты
@@ -628,16 +651,31 @@ auth:
       submit-button: Сбросить пароль
       back-button: Назад
   confirm-email-change:
-    success-message: Your email address has been updated.
-    invalid-verification-code: This email change link is invalid or expired.
-    title: Confirm email change
-    message-text: Confirm this change to update the login email for your Fleetbase account.
+    success-message: Ваш адрес электронной почты обновлён.
+    invalid-verification-code: Эта ссылка для смены электронной почты недействительна или устарела.
+    title: Подтверждение смены электронной почты
+    message-text: Подтвердите это изменение, чтобы обновить электронную почту для входа в ваш аккаунт Fleetbase.
     form:
       code:
-        label: Confirmation code
-        help-text: The confirmation code from your email.
-      submit-button: Confirm Email Change
-      back-button: Back
+        label: Код подтверждения
+        help-text: Код подтверждения из вашего письма.
+      submit-button: Подтвердить смену электронной почты
+      back-button: Назад
+  verify-contact:
+    invalid-link: Эта ссылка для подтверждения недействительна или устарела.
+    email-title: Подтвердите ваш адрес электронной почты
+    phone-title: Подтвердите ваш номер телефона
+    email-message: Подтвердите, что этот адрес электронной почты принадлежит вам.
+    phone-message: Подтвердите, что этот номер телефона принадлежит вам.
+    email-verified: Ваш адрес электронной почты подтверждён.
+    phone-verified: Ваш номер телефона подтверждён.
+    continue-button: Продолжить
+    form:
+      code:
+        label: Код подтверждения
+        help-text: Код подтверждения из письма или SMS-сообщения.
+      submit-button: Подтвердить
+      back-button: Назад
 
 console:
   create-or-join-organization:
@@ -662,6 +700,7 @@ console:
       organizations: Организации
       branding: Брендинг
       2fa-config: Настройка 2FA
+      platform-api-token: API-токен платформы
       schedule-monitor: Мониторинг расписания
       services: Сервисы
       mail: Почта
@@ -702,6 +741,28 @@ console:
         title: Настройка сервисов
       socket:
         title: Настройка сокета
+    platform-api-token:
+      title: API-токен платформы
+      description: Управление API-токеном платформы, который доверенные интеграции используют для доступа к защищённым эндпоинтам платформы, например к каталогу организаций.
+      loading: Загрузка статуса API-токена платформы...
+      status: Статус
+      configured: Настроен
+      not-configured: Не настроен
+      last-rotated: Последняя смена
+      last-used: Последнее использование
+      never: Никогда
+      generate-token: Сгенерировать токен
+      rotate-token: Сменить токен
+      revoke-token: Отозвать токен
+      one-time-warning: Скопируйте этот токен сейчас. Он больше не будет показан.
+      rotate-confirm-title: Сменить API-токен платформы?
+      rotate-warning: Смена токена немедленно отключает интеграции, использующие предыдущий токен.
+      revoke-confirm-title: Отозвать API-токен платформы?
+      revoke-warning: Отзыв отключает доступ по токену платформы к защищённым эндпоинтам платформы.
+      generated: API-токен платформы сгенерирован.
+      rotated: API-токен платформы сменён.
+      revoked: API-токен платформы отозван.
+      copied: API-токен платформы скопирован в буфер обмена.
     branding:
       title: Брендинг
       icon-text: Иконка
@@ -754,6 +815,12 @@ console:
     mark-as-read: Отметить как прочитанное
     received: 'Получено:'
     message: Нет уведомлений для отображения.
+modals:
+  set-password:
+    message: Ваш аккаунт был создан по приглашению, и у него ещё нет пароля. Задайте пароль сейчас, чтобы завершить защиту аккаунта.
+    new-password: Новый пароль
+    confirm-password: Подтвердите пароль
+    help-text: Введите пароль длиной не менее 6 символов, чтобы продолжить.
 invite:
   for-users:
     invitation-message: Вас пригласили присоединиться к {companyName}
@@ -800,11 +867,11 @@ onboard:
       resend-email: Отправить письмо повторно
       send-by-sms: Отправить по SMS
 install:
-  not-configured-title: Fleetbase is not installed or configured
-  not-configured-message: Complete setup from the Fleetbase CLI or application container, then reload this page once the database, migrations, and seed data are ready.
-  running-locally-docs: See running locally docs
-  cloud-docs: See cloud deployment docs
-  refreshing: Installation complete, refreshing...
+  not-configured-title: Fleetbase не установлен или не настроен
+  not-configured-message: Завершите настройку через Fleetbase CLI или контейнер приложения, затем перезагрузите эту страницу, когда база данных, миграции и начальные данные будут готовы.
+  running-locally-docs: Документация по локальному запуску
+  cloud-docs: Документация по развёртыванию в облаке
+  refreshing: Установка завершена, обновление...
 layout:
   header:
     menus:

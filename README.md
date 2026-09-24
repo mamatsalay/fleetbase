@@ -99,7 +99,7 @@ Fleetbase is made up of modules that install into the console as extensions. Eac
 | **Identity & access** | Organizations, users, roles, policies, and two-factor authentication. |
 | **Dashboards** | Build custom dashboards and widgets for visibility into operations. |
 | **Collaboration** | Built-in chat, comments, and notifications across your organization. |
-| **Internationalized** | Translate the console into any language. |
+| **Internationalized** | The console ships in English, Russian and Uzbek. |
 | **Self-hosted or cloud** | Run it on your own infrastructure with full control of your data, or let us host it. |
 
 ## Screenshots
