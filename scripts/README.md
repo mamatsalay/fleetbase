@@ -175,6 +175,27 @@ FLEETBASE_HOST=203.0.113.10 FLEETBASE_ENVIRONMENT=development FLEETBASE_APP_NAME
 
 The script expects Docker, Docker Compose v2, git, and OpenSSL to be available. It warns when common Fleetbase ports are already in use but does not treat that as a hard failure.
 
+## `local-start.sh`
+
+`local-start.sh` runs Fleetbase on your own computer (macOS or Linux) with Docker, in one command:
+
+```sh
+bash scripts/local-start.sh
+```
+
+On the first run it checks that Docker is running (on macOS it starts Docker Desktop or OrbStack if needed) and has at least 4 GB of memory, that there's disk space and ports 4200, 8000, 3306 and 38000 are free, then installs with `docker-install.sh --non-interactive`. The first install takes 15-30 minutes. It then waits for the console and opens http://localhost:4200.
+
+Later runs don't install again (new credentials would no longer match the existing database); they start the containers:
+
+```sh
+bash scripts/local-start.sh            # start
+bash scripts/local-start.sh --stop     # stop, keeping the data
+git pull && bash scripts/local-start.sh --rebuild   # update: pull the API image, rebuild the console, migrate
+bash scripts/local-start.sh --reset    # delete the install and its database, then start over
+```
+
+On Apple Silicon the websocket image only exists for x86 and runs under emulation; turning on "Use Rosetta for x86/amd64 emulation" in Docker Desktop makes it faster.
+
 ## `azure-create-vm.sh`
 
 `azure-create-vm.sh` creates an Azure VM that runs Fleetbase with Docker Compose. It needs the [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli), logged in with `az login`:
@@ -219,4 +240,10 @@ Check shell syntax for the Azure VM script:
 
 ```sh
 bash -n scripts/azure-create-vm.sh
+```
+
+Check shell syntax for the local start script:
+
+```sh
+bash -n scripts/local-start.sh
 ```

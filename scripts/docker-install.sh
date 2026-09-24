@@ -27,6 +27,9 @@ for arg in "$@"; do
 done
 $NON_INTERACTIVE && info "Non-interactive mode: all optional steps will use safe defaults."
 
+# ─── Helper: lowercase (${var,,} needs bash 4; macOS ships bash 3.2) ────────
+lower() { echo "$1" | tr '[:upper:]' '[:lower:]'; }
+
 # ─── Helper: generate a random hex secret ────────────────────────────────────
 gen_secret() { openssl rand -hex "${1:-20}"; }
 
@@ -189,7 +192,8 @@ POSTMARK_TOKEN=""; SENDGRID_API_KEY=""; RESEND_KEY=""
 CONFIG_MAIL=false
 if ! $NON_INTERACTIVE; then
   read -rp "Configure a mail server? Required for password resets & notifications (y/N): " MAIL_YN
-  [[ "${MAIL_YN,,}" == "y" || "${MAIL_YN,,}" == "yes" ]] && CONFIG_MAIL=true
+  MAIL_YN=$(lower "$MAIL_YN")
+  [[ "$MAIL_YN" == "y" || "$MAIL_YN" == "yes" ]] && CONFIG_MAIL=true
 fi
 
 if $CONFIG_MAIL; then
@@ -267,7 +271,7 @@ if [[ "$FILESYSTEM_DRIVER" == "s3" ]]; then
   read -rp  "  S3 Bucket name: "                                         AWS_BUCKET
   read -rp  "  S3 Public URL (leave blank for default): "                AWS_URL
   read -rp  "  Use path-style endpoint? (for MinIO/non-AWS S3) (y/N): " PATH_STYLE_INPUT
-  [[ "${PATH_STYLE_INPUT,,}" == "y" ]] && AWS_USE_PATH_STYLE_ENDPOINT="true"
+  [[ "$(lower "$PATH_STYLE_INPUT")" == "y" ]] && AWS_USE_PATH_STYLE_ENDPOINT="true"
   success "S3 storage configured"
 elif [[ "$FILESYSTEM_DRIVER" == "gcs" ]]; then
   read -rp "  GCS Project ID: "      GOOGLE_CLOUD_PROJECT_ID
@@ -313,7 +317,8 @@ TWILIO_SID=""; TWILIO_TOKEN=""; TWILIO_FROM=""
 CONFIG_3P=false
 if ! $NON_INTERACTIVE; then
   read -rp "Configure optional third-party API keys now? (Maps, Geolocation, SMS) (y/N): " TP_YN
-  [[ "${TP_YN,,}" == "y" || "${TP_YN,,}" == "yes" ]] && CONFIG_3P=true
+  TP_YN=$(lower "$TP_YN")
+  [[ "$TP_YN" == "y" || "$TP_YN" == "yes" ]] && CONFIG_3P=true
 fi
 
 if $CONFIG_3P; then
@@ -553,7 +558,7 @@ $CONFIG_MAIL \
   || SKIPPED_ITEMS+=("Mail (using log driver — configure later)")
 
 [[ "$FILESYSTEM_DRIVER" != "public" ]] \
-  && CONFIGURED_ITEMS+=("File Storage (${FILESYSTEM_DRIVER^^})") \
+  && CONFIGURED_ITEMS+=("File Storage ($(echo "$FILESYSTEM_DRIVER" | tr '[:lower:]' '[:upper:]'))") \
   || SKIPPED_ITEMS+=("File storage (local disk — not suitable for production)")
 
 CONFIGURED_ITEMS+=("WebSocket security (origins restricted to ${HOST})")

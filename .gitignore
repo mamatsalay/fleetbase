@@ -8,6 +8,8 @@ __pycache__/
 .pnpm-store
 .tool-versions
 docker-compose.override.yml
+docker-compose.override.yml.*
+!docker-compose.override.yml.example
 npm-debug.log
 yarn-error.log
 console/public/extensions.json
