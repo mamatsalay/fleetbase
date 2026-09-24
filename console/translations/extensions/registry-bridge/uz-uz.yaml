@@ -1,0 +1,148 @@
+# Uzbek strings for @fleetbase/registry-bridge-engine, which ships no uz-uz translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+registry-bridge:
+  extension-name: Reyestr ko'prigi
+  common:
+    install: O'rnatish
+    uninstall: O'chirish
+    approve: Tasdiqlash
+    reject: Rad etish
+    details: Tafsilotlar
+    publish: E'lon qilish
+    about: Haqida
+    about-extension: '{extensionName} haqida'
+  component:
+    extension-details-modal:
+      extension: Kengaytma
+      author: Muallif
+      description: Tavsif
+      overview: Umumiy koʻrinish
+      details: Tafsilotlar
+      version: Versiya
+      updated: Yangilangan
+      website: Veb-sayt
+      self-managed: O'z-o'zini boshqarish
+      self-managed-help-text: O'z-o'zini boshqariladigan kengaytma Fleetbase ni bulut/SaaS muhitidan tashqarida, o'z serverlarida joylashtiradigan foydalanuvchilar uchun mo'ljallangan. Bunday kengaytmalar qo'lda o'rnatish va sozlashni talab qiladi. Agar Fleetbase ni o'z serveringizda ishlatsangiz, qo'shimcha imkoniyatlar qo'shish uchun ulardan foydalanishingiz mumkin. Biroq ular bulut/SaaS foydalanuvchilari uchun mavjud emas.
+      self-hosted-install: O'z serveriga o'rnatish
+      self-hosted-install-help-text: O'z serveriga o'rnatish bo'yicha ko'rsatmalarni ko'rish.
+    extension-pending-publish-viewer:
+      content-panel-title: E'lon qilinishini kutayotgan kengaytmalar
+      focused-extension-title: '{extensionName} tafsilotlari
+
+        '
+      download-bundle: To'plamni yuklab olish
+      view-details: Tafsilotlarni ko'rish
+      publish: E'lon qilish
+      no-extensions-awaiting-publish: E'lon qilinishini kutayotgan kengaytmalar yo'q
+    extension-reviewer-control:
+      content-panel-title: Ko'rib chiqishni kutayotgan kengaytmalar
+      focused-extension-title: '{extensionName} tafsilotlari
+
+        '
+      approve-confirm-title: Haqiqatan ham ushbu kengaytmani tasdiqlamoqchimisiz?
+      approve-confirm-body: Ushbu kengaytma ishlab chiqish va test muhitlarida sinchkovlik bilan sinovdan o'tkazilishi, shuningdek muvofiqlik va xavfsizlik muammolari bo'yicha tekshirilishi kerak. Tasdiqlangach, kengaytma reyestrda qo'lda e'lon qilinishi kerak bo'ladi.
+      decline-confirm-title: Haqiqatan ham ushbu kengaytmani rad etmoqchimisiz?
+      decline-confirm-body: Ushbu kengaytma rad etiladi, lekin muallifga tuzatishlar kiritib, uni qayta ko'rib chiqishga yuborish imkoniyati beriladi.
+      download-bundle: To'plamni yuklab olish
+      view-details: Tafsilotlarni ko'rish
+      approve: Tasdiqlash
+      reject: Rad etish
+      no-extensions-awaiting-review: Ko'rib chiqishni kutayotgan kengaytmalar yo'q
+  installed:
+    title: O'rnatilgan kengaytmalar
+  purchased:
+    title: Sotib olingan kengaytmalar
+  developers:
+    payments:
+      manage-account: To'lov hisobini boshqarish
+      no-account-warning: Hisob sozlamalariga kirishdan oldin Stripe da ro'yxatdan o'tish jarayonini yakunlashingiz kerak.
+      settings:
+        title: To'lov hisobini boshqarish
+        description: Stripe hisobingiz tafsilotlarini, jumladan biznes ma'lumotlaringiz va to'lovlarni olish uchun bank hisoblaringizni boshqaring.
+        loading: Hisobni boshqarish yuklanmoqda...
+    extensions:
+      extensions: Kengaytmalar
+      create-new-extension: Yangi kengaytma yaratish
+      new-extension: Yangi kengaytma
+      extension: Kengaytma
+      submission: Topshirish
+      details: Tafsilotlar
+      bundles: To'plamlar
+      monetize: Monetizatsiya
+      explore:
+        explore-extensions: Kengaytmalarni ko'rib chiqish
+        explore-category-extensions: '{categoryName} kengaytmalari
+
+          '
+      extension-form:
+        package-name: Paket nomi
+        package-json-name: package.json dagi nom
+        composer-json-name: composer.json dagi nom
+        submission-success-message: Kengaytma yuborildi va ko'rib chiqishni kutmoqda.
+        extension-category: Kategoriya
+        extension-category-help-text: Foydalanuvchilar kengaytmangizni topa oladigan toifani tanlang.
+        extension-select-category: Toifani tanlang
+        extension-name: Kengaytma nomi
+        extension-icon: Kengaytma belgisi
+        upload-extension-icon: Belgini yuklash
+        extension-description: Tavsif
+        extension-tags: Teglar
+        extension-add-tags: Kalit so'zlar va teglar qo'shish
+        extension-promotional-text: Reklama matni
+        details-content-block: Kengaytma tafsilotlari
+        extension-listing-details: E'lon tafsilotlari
+        extension-subtitle: Kichik sarlavha
+        extension-website-url: Veb-sayt URL manzili
+        extension-repo-url: Repozitoriy URL manzili
+        extension-support-url: Yordam URL manzili
+        extension-privacy-policy-url: Maxfiylik siyosati URL manzili
+        extension-tos-url: Foydalanish shartlari URL manzili
+        extension-primary-language: Asosiy til
+        extension-version: Versiya
+        extension-copyright: Mualliflik huquqi
+        extension-copyright-help-text: Kengaytmangiz uchun mualliflik huquqi bildirishnomasini kiriting. Odatda u yil va mualliflik huquqi egasi yoki kompaniya nomini o'z ichiga oladi.
+        extension-payment-required: To'lov talab qilinadi
+        extension-payment-required-help-text: Foydalanuvchilar ushbu kengaytmani o'rnatishi uchun to'lov yoki obuna talab qilinishini belgilaydi.
+        extension-price: Narx
+        extension-price-help-text: Kengaytmaning oddiy narxini ko'rsating. Bu foydalanuvchilar uchun kengaytmani sotib olish yoki unga kirishning standart narxi.
+        extension-sale-price: Chegirma narxi
+        extension-sale-price-help-text: Agar kengaytma hozirda chegirmali narxda taklif etilsa, chegirma narxini shu yerga kiriting. U oddiy narxdan kam bo'lishi kerak.
+        extension-subscription-required: Obuna talab qilinadi
+        extension-subscription-required-help-text: Ushbu kengaytmani o'rnatish va ishlatish uchun foydalanuvchida obuna bo'lishi kerakligini belgilaydi.
+        extension-subscription-billing-period: Obuna to'lov davri
+        extension-subscription-billing-period-placeholder: To'lov davrini tanlang
+        extension-subscription-billing-period-help-text: Obuna uchun to'lov davrini ko'rsating. Masalan, oylik, choraklik, yillik yoki boshqa maxsus oraliqlar.
+        extension-subscription-amount: Obuna summasi
+        extension-subscription-amount-help-text: Obuna uchun olinadigan standart summani kiriting. U har qanday chegirmalar yoki bosqichli narx o'zgarishlaridan oldingi oddiy narxni aks ettirishi kerak.
+        extension-subscription-model: Obuna modeli
+        extension-subscription-model-help-text: 'Obuna narxlash modeli turini belgilaydi. Variantlar: qat''iy tarif, bosqichli va foydalanishga asoslangan obuna.'
+        extension-subscription-tiers: Obuna bosqichlari
+        extension-subscription-tiers-help-text: Agar kerak bo'lsa, obuna uchun turli narx bosqichlarini belgilang. Bosqich darajalari, har bir bosqich narxi va har bir bosqichning o'ziga xos imkoniyatlari yoki cheklovlari kabi tafsilotlarni kiriting.
+        extension-name-help-text: Kengaytmaning rasmiy nomini kiriting. U foydalanuvchilar uchun asosiy identifikator sifatida ko'rsatiladi.
+        extension-icon-help-text: Kengaytmani ifodalovchi belgini yuklang. Bu belgi ro'yxatlar va qidiruv natijalarida ishlatiladi.
+        extension-description-help-text: Kengaytma nima qilishi va uning asosiy imkoniyatlarini batafsil tavsiflang. Bu ma'lumot foydalanuvchilarga kengaytma funksiyalarini tushunishga yordam beradi.
+        extension-tags-help-text: Kengaytmani tavsiflovchi tegishli kalit so'zlar va teglarni qo'shing, bu foydalanuvchilarga uni qidiruv orqali topishga yordam beradi.
+        extension-promotional-text-help-text: Kengaytmaning noyob afzalliklarini ta'kidlovchi reklama matnini yozing. Bu matn marketing yoki tavsiya etilgan bo'limlarda ishlatiladi.
+        extension-subtitle-help-text: Kengaytma haqida qo'shimcha kontekst yoki ma'lumot beradigan qisqa sarlavhani kiriting.
+        extension-website-url-help-text: Batafsil ma'lumot uchun kengaytmaning rasmiy veb-sayti yoki mahsulot sahifasi URL manzilini kiriting.
+        extension-repo-url-help-text: Agar mavjud bo'lsa, kengaytma kod repozitoriysi (masalan, GitHub, GitLab) URL manzilini kiriting.
+        extension-support-url-help-text: Foydalanuvchilar yordam olishi, savol berishi yoki kengaytma bilan bog'liq muammolar haqida xabar berishi mumkin bo'lgan URL manzilni ko'rsating.
+        extension-privacy-policy-url-help-text: Foydalanuvchi ma'lumotlari qanday ishlanishi va himoyalanishini batafsil tavsiflovchi maxfiylik siyosati hujjatiga havola.
+        extension-tos-url-help-text: Foydalanuvchilar kengaytmadan foydalanishdan oldin rozi bo'lishi kerak bo'lgan Foydalanish shartlari hujjatiga havola.
+        extension-primary-language-help-text: Kengaytma ishlab chiqilgan yoki mavjud bo'lgan asosiy tilni ko'rsating.
+        extension-version-help-text: Kengaytmaning joriy versiyasini ko'rsating. Bu yangilanishlar va muvofiqlikni kuzatish uchun muhim.
+        extension-payment-details: To'lov tafsilotlari
+        extension-screenshots: Skrinshotlar
+        upload-screenshots: Skrinshotlarni yuklash
+        submit-for-review: Ko'rib chiqishga yuborish
+        extension-bundle: Kengaytma to'plami
+        extension-upload-bundle: Kengaytma to'plamini yuklash
+        details: Tafsilotlar
+        bundle-id: To'plam ID
+        bundle-id-help-text: Hozirda e'lon qilingan to'plam identifikatori.
+        extension-id: Kengaytma ID
+        extension-id-help-text: Ushbu kengaytma uchun noyob identifikator.
+        bundles: To'plamlar
+        upload-new-bundle: Yangi to'plamni yuklash
+        self-managed: O'z-o'zini boshqarish
+        self-managed-help-text: Agar modulingiz faqat o'z serverlaridagi instansiyalar uchun mo'ljallangan bo'lsa, ushbu parametrni yoqing. Buni tanlasangiz, modulni Fleetbase ning bulut/SaaS versiyasiga o'rnatib bo'lmaydi va foydalanuvchi uni o'z serveriga qo'lda o'rnatishi kerak bo'ladi.

@@ -1,0 +1,201 @@
+# Uzbek strings for @fleetbase/iam-engine, which ships no uz-uz translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+iam:
+  extension-name: IAM
+  common:
+    address: Manzil
+    bulk-action: Ommaviy amal
+    country: Mamlakat
+    create: Yaratilgan
+    dashboard: Boshqaruv paneli
+    description: Tavsif
+    email: Elektron pochta
+    export: Eksport qilish
+    group: Guruhlar
+    member: A'zolar
+    name: Ism
+    new: Yangi
+    permission: Ruxsat
+    phone: Telefon
+    photo: Rasm
+    policy: Siyosat
+    policies: Siyosatlar
+    attach-policies: Siyosatlarni biriktirish
+    select-policy: Siyosatni tanlang
+    attach-permissions: Ruxsatlarni biriktirish
+    attach-inline-permissions: Ichki ruxsatlarni biriktirish
+    select-permissions: Ruxsatlarni tanlang
+    primary: Asosiy
+    role: Rol
+    roles: Rollar
+    status: Holat
+    type: Tur
+    user: Foydalanuvchilar
+    service: Xizmat
+    reload: Qayta yuklash
+    reload-data: Ma'lumotlarni qayta yuklash
+  components:
+    widget:
+      metrics:
+        title: IAM ko'rsatkichlari
+    modals:
+      group-details:
+        group-name: Guruh nomi
+      group-form:
+        group-name: Guruh nomi
+        group-description: Guruh tavsifi
+        select-users-add-group: Guruhga qo'shish uchun foydalanuvchilarni tanlang
+        search-select-users-add-group: Ushbu guruhga qo'shish uchun foydalanuvchilarni qidiring va tanlang.
+        select-user-add-group: Guruhga qo'shish uchun foydalanuvchini tanlang
+        no-user-add-group: Guruhga foydalanuvchilar qo'shilmagan
+      policy-form:
+        policy-name: Siyosat nomi
+        enter-name-your-policy: Siyosatingiz uchun nom kiriting
+        policy-description: Siyosat tavsifi
+        enter-description-your-policy: Siyosatingiz uchun tavsif kiriting
+        select-permissions: Ruxsatlarni tanlang
+      view-policy-permissions:
+        view-permissions: 'Siyosat: {policyName} ruxsatlari'
+      view-role-permissions:
+        view-permissions: 'Rol: {roleName} ruxsatlari'
+      view-user-permissions:
+        view-permissions: 'Foydalanuvchi: {userName} ruxsatlari'
+      change-user-email:
+        title: Foydalanuvchi elektron pochtasini o'zgartirish
+        heading: '{userName} uchun elektron pochtani o''zgartirish'
+        prompt: Yangi elektron pochta manzilini kiriting. U kirish elektron pochtasiga aylanishidan oldin foydalanuvchi yangi manzilni tasdiqlashi kerak.
+        current-email: Joriy elektron pochta
+        new-email: Yangi elektron pochta
+        send-verification: Tasdiqlashni yuborish
+        email-required: Yangi elektron pochta manzili talab qilinadi.
+        verification-sent: Elektron pochtani o'zgartirish tasdig'i yuborildi. Kirish elektron pochtasi o'zgarishidan oldin foydalanuvchi yangi manzilni tasdiqlashi kerak.
+      role-form:
+        role-name: Rol nomi
+        enter-name-for-this-role: Ushbu rol uchun nom kiriting
+        role-description: Rol tavsifi
+        enter-description-your-role: Rolingiz uchun tavsif kiriting
+        select-permission: Ruxsatlarni tanlang
+    table:
+      group-members:
+        no-member: A'zolar yo'q
+    permission-picker:
+      selected: 'Tanlangan: '
+      search-permissions-keyword: Ruxsatlarni kalit so'zlar bo'yicha qidirish
+      loading-permission: Ruxsatlar yuklanmoqda...
+  groups:
+    index:
+      untitled: Nomsiz
+      delete-group-title: '{groupName} guruhini o''chirish'
+      delete-group-success-message: '{name} guruhi o''chirildi.'
+      delete-group: Guruhlarni o'chirish
+      created: Yaratilgan
+      edit-group: Guruhni tahrirlash...
+      delete-group-label: Guruhni o'chirish...
+      new-group: Yangi guruh
+      new-group-created: Yangi guruh yaratildi.
+      edit-group-title: Guruhni tahrirlash
+      group-actions: Guruh amallari
+      changes-group-save: Guruhdagi o'zgarishlar saqlandi.
+      data-assosciated-this-group-deleted: Haqiqatan ham ushbu guruhni o'chirmoqchimisiz? Ushbu guruh bilan bog'liq barcha ma'lumotlar ham o'chiriladi. Bu amalni bekor qilib bo'lmaydi.
+  policies:
+    index:
+      title: Siyosatlar
+      delete-policies: Siyosatlarni o'chirish
+      contact-action: Kontakt amallari
+      edit-policy: Siyosatni tahrirlash...
+      delete-policy: Siyosatni o'chirish...
+      new-policy: Yangi siyosat
+      new-policy-created: Yangi siyosat yaratildi.
+      unable-changes-policy-warning: '{policyType} siyosatiga o''zgartirish kiritib bo''lmaydi.'
+      edit-policy-title: Siyosatni tahrirlash
+      policy-actions: Siyosat amallari
+      changes-policy-saved-success: Siyosatdagi o'zgarishlar saqlandi.
+      unable-delete-policy-warning: '{policyType} siyosatini o''chirib bo''lmaydi.'
+      data-assosciated-this-policy-deleted: Haqiqatan ham ushbu siyosatni o'chirmoqchimisiz? Ushbu siyosat bilan bog'liq barcha ma'lumotlar ham o'chiriladi. Bu amalni bekor qilib bo'lmaydi.
+      policy-deleted: '{policyName} siyosati o''chirildi.'
+  roles:
+    index:
+      delete-roles: Rollarni o'chirish
+      contact-action: Kontakt amallari
+      edit-role: Rolni tahrirlash...
+      delete-role: Rolni o'chirish...
+      new-role: Yangi rol
+      new-role-create: Yangi rol yaratildi
+      edit-role-title: Rolni tahrirlash
+      role-actions: Rol amallari
+      changes-role-saved: Roldagi o'zgarishlar saqlandi.
+      data-assosciated-this-role-deleted: Haqiqatan ham ushbu rolni o'chirmoqchimisiz? Ushbu rol bilan bog'liq barcha ma'lumotlar ham o'chiriladi. Bu amalni bekor qilib bo'lmaydi.
+      role-deleted: '{roleName} roli o''chirildi.'
+      unable-changes-role-warning: '{roleType} roliga o''zgartirish kiritib bo''lmaydi.'
+      unable-delete-role-warning: '{roleType} rolini o''chirib bo''lmaydi.'
+  users:
+    index:
+      delete-user-title: '{userName} foydalanuvchisini o''chirish'
+      delete-user-success-message: '{userName} foydalanuvchisi o''chirildi.'
+      deactivate-user-title: '{userName} foydalanuvchisi hisobini o''chirib qo''yish'
+      deactivate-user-success-message: '{userName} foydalanuvchisi o''chirib qo''yildi.'
+      re-activate-user-title: '{userName} foydalanuvchisi hisobini qayta faollashtirish'
+      re-activate-user-success-message: '{userName} foydalanuvchisi faollashtirildi.'
+      user-verified-success-message: '{userName} foydalanuvchisi tasdiqlandi.'
+      mark-verified-title: '{userName} ning {channel} ni tasdiqlangan deb belgilash'
+      mark-verified-prompt: Bu foydalanuvchining {channel} ni u tasdiqlamasdan tasdiqlangan deb belgilaydi. Ishonchingiz komilmi?
+      send-verification-title: '{channel} tasdig''ini yuborish'
+      send-verification-prompt: '{userName} uni tasdiqlash uchun {destination} ga havola oladi. Havola 48 soatdan so''ng amal qilmaydi.'
+      send-verification: Tasdiqlashni yuborish
+      verification-sent: Tasdiqlash havolasi {destination} ga yuborildi.
+      channel-email: elektron pochta manzili
+      channel-phone: telefon raqami
+      send-email-verification: Elektron pochta tasdig'ini yuborish...
+      send-phone-verification: Telefon tasdig'ini yuborish...
+      mark-email-verified: Elektron pochtani tasdiqlangan deb belgilash...
+      mark-phone-verified: Telefonni tasdiqlangan deb belgilash...
+      email-verified: Elektron pochta tasdiqlangan
+      phone-verified: Telefon tasdiqlangan
+      verified: Tasdiqlangan
+      unverified: Tasdiqlanmagan
+      timezone: Vaqt mintaqasi
+      date-of-birth: Tug'ilgan sana
+      ip-address: IP manzil
+      delete-users: Foydalanuvchilarni o'chirish
+      last-login: Oxirgi kirish
+      created-at: Yaratilgan vaqti
+      updated-at: Yangilangan vaqti
+      user-actions: Foydalanuvchi amallari
+      edit-user: Foydalanuvchini tahrirlash...
+      view-user-permissions: Ruxsatlarni ko'rish...
+      re-send-invitation: Taklifni qayta yuborish...
+      deactivate-user: Foydalanuvchini o'chirib qo'yish...
+      activate-user: Foydalanuvchini faollashtirish...
+      delete-user: Foydalanuvchini o'chirish...
+      change-user-password: Foydalanuvchi parolini o'zgartirish...
+      change-user-email: Foydalanuvchi elektron pochtasini o'zgartirish...
+      new-user: Yangi foydalanuvchi
+      user-invited-join-your-organization-success: Foydalanuvchi tashkilotingizga qo'shilishga taklif qilindi.
+      edit-user-title: Foydalanuvchini tahrirlash
+      new-user-created: Tashkilotga yangi foydalanuvchi qo'shildi.
+      user-changes-saved-success: Foydalanuvchi o'zgarishlari saqlandi.
+      error-you-cant-delete-yourself: O'zingizni o'chira olmaysiz
+      data-assosciated-user-delete: Haqiqatan ham ushbu foydalanuvchini o'chirmoqchimisiz? Ushbu foydalanuvchi bilan bog'liq barcha ma'lumotlar ham o'chiriladi. Bu amalni bekor qilib bo'lmaydi.
+      access-account-or-resources-unless-re-activated: Haqiqatan ham ushbu foydalanuvchini o'chirib qo'ymoqchimisiz? Qayta faollashtirilmaguncha u o'z hisobi yoki resurslariga kira olmaydi.
+      this-user-will-regain-access-to-your-organization: Haqiqatan ham ushbu foydalanuvchini qayta faollashtirmoqchimisiz? U tashkilotingizga kirish huquqini qayta oladi.
+      resend-invitation-to-join-organization: Tashkilotga qo'shilish taklifini qayta yuborish
+      confirming-fleetbase-will-re-send-invitation-for-user-to-join-your-organization: Tasdiqlasangiz, Fleetbase ushbu foydalanuvchiga tashkilotingizga qo'shilish taklifini qayta yuboradi.
+      invitation-resent: Taklif qayta yuborildi.
+      invite-user: Foydalanuvchini taklif qilish
+    invite:
+      title: Foydalanuvchini taklif qilish
+      description: Taklif qilmoqchi bo'lgan shaxsning elektron pochta manzilini kiriting. Agar uning Fleetbase hisobi bo'lsa, u tashkilotingizga qo'shilish taklifini oladi. Agar u yangi bo'lsa, kutilayotgan hisob yaratiladi va taklifni qabul qilganda undan parol o'rnatish so'raladi.
+      email-placeholder: hamkasb@example.com
+      name-placeholder: To'liq ism (yangi foydalanuvchilar uchun majburiy)
+      name-help: Faqat shaxsning hali Fleetbase hisobi bo'lmasa talab qilinadi.
+      send-invitation: Taklif yuborish
+      email-required: Elektron pochta manzilini kiriting.
+      invitation-sent-existing: Taklif yuborildi. Foydalanuvchi tashkilotingizga qo'shilish uchun elektron xat oladi.
+      invitation-sent-new: Taklif yuborildi. Kutilayotgan hisob yaratildi va foydalanuvchidan parol o'rnatish so'raladi.
+    role-required: Ushbu foydalanuvchi uchun rolni tanlang.
+    notifications:
+      promoted-existing-account: '{name} ning mavjud {type} hisobi jamoa a''zosiga ko''tarildi.'
+  application:
+    access-management: Kirishni boshqarish
+  home:
+    identity-access-management: Identifikatsiya va kirishni boshqarish

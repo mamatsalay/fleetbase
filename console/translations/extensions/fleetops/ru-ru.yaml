@@ -1,0 +1,1398 @@
+# Russian strings for @fleetbase/fleetops-engine, which ships an incomplete ru-ru translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+fleet-ops:
+  extension-name: Fleet-Ops
+common:
+  unassign-driver: Снять водителя
+  assign-drivers: Назначить водителей
+  positions: Позиции
+  schedule: Расписание
+  optional: Необязательно
+  unauthorized-access: У вас нет доступа к этому ресурсу.
+  loading-route: Загрузка маршрута...
+  hover-to-load-route: Загрузка предпросмотра маршрута...
+  unable-to-load-route: Не удалось загрузить предпросмотр маршрута.
+menu:
+  radar: Радар
+  schedules: Графики
+  maintenance-history: История обслуживания
+  map: Карта
+  avatars: Аватары
+  scheduling: Планирование
+  maintenances: Обслуживания
+  orchestrator: Оркестратор
+  orchestrator-settings: Настройки оркестратора
+trailer:
+  placeholders:
+    length: '0.000'
+    width: '0.000'
+    height: '0.000'
+    cargo-volume: '0.000'
+    tare-weight: '0.000'
+    gvwr: '0.000'
+    payload-capacity: '0.000'
+resource:
+  inspection: Осмотр
+  inspections: Осмотры
+  maintenance-schedule: График обслуживания
+  maintenance-schedules: Графики обслуживания
+column:
+  target: Цель
+  route-type: Тип маршрута
+  subject: Тема
+  summary: Описание
+  total-cost: Общая стоимость
+  due-at: Срок
+  serial-number: Серийный номер
+  manufacturer: Производитель
+  part-number: Номер детали
+  quantity-on-hand: Количество на складе
+  quantity: Количество
+  unit-cost: Цена за единицу
+  code: Код
+  interval: Интервал
+  next-due: Следующий срок
+  asset: Актив
+  performed-by: Выполнил
+customer:
+  fields:
+    addresses: Адреса
+    no-addresses: У этого клиента нет сохранённых адресов.
+    primary-address: Основной
+    send-welcome-email: Отправить приветственное письмо портала клиентов
+    send-welcome-email-help-text: Создать временный пароль и отправить клиенту по электронной почте ссылку для входа на портал клиентов.
+driver:
+  fields:
+    license-expiry: Срок действия удостоверения
+  actions:
+    unassign-orders: Снять заказы
+    unassign-vehicle: Снять транспортное средство
+    create-issue: Создать проблему
+  prompts:
+    assign-order-title: 'Назначить заказ: {driverName}'
+    assign-order-success: 'Заказ назначен: {driverName}.'
+    select-order-warning: Выберите заказ для назначения.
+    assign-vehicle-title: 'Назначить транспортное средство: {driverName}'
+    assign-vehicle-success: 'Транспортное средство назначено: {driverName}.'
+    select-vehicle-warning: Выберите транспортное средство для назначения.
+    no-assigned-orders-warning: Для {driverName} не найдено назначенных заказов.
+    select-orders-warning: Выберите хотя бы один заказ для снятия.
+    unassign-orders-title: Снять заказы с {driverName}
+    confirm-unassign-orders-title: Снять {count} заказ(ов) с {driverName}?
+    confirm-unassign-orders-body: '{driverName} будет снят с этих заказов: {orders}.'
+    unassign-orders-success: '{driverName} снят с {count} заказ(ов).'
+    no-vehicle-assigned-warning: За {driverName} не закреплено транспортное средство.
+    unassign-vehicle-title: Открепить {vehicleName} от {driverName}?
+    unassign-vehicle-body: '{driverName} будет откреплён от {vehicleName}. Назначения заказов не изменятся.'
+    unassign-vehicle-success: '{vehicleName} откреплено от {driverName}.'
+    issue-title: 'Сообщено о проблеме: {driverName}'
+profile-account:
+  staff-linked-helper: Связано с учётной записью участника команды — управляйте email и телефоном в IAM.
+  will-link-to-staff: Будет связано с существующим участником команды {name}.
+  actions:
+    reset-password: Сбросить пароль
+    send-credentials: Отправить учётные данные
+    deactivate-login: Отключить вход
+    reactivate-login: Восстановить вход
+    convert-to-vendor: Преобразовать в поставщика
+  prompts:
+    send-credentials-title: Отправить данные для входа
+    send-credentials-body: Создать новый временный пароль и отправить {name} данные для входа.
+    send-credentials-success: 'Данные для входа отправлены: {name}.'
+    deactivate-login-body: Отключить вход для {name}. Профиль и история будут сохранены.
+    deactivate-login-success: Вход для {name} отключён.
+    reactivate-login-body: Восстановить вход для {name}.
+    reactivate-login-success: Вход для {name} восстановлен.
+    send-portal-credentials-title: Отправить данные для входа на портал
+    send-portal-credentials-body: Создать новый временный пароль и отправить этому контакту данные для входа на портал по электронной почте.
+    send-portal-credentials-success: Данные для входа на портал отправлены.
+    deactivate-portal-login-body: Отключить доступ к порталу для этого контакта. Профиль и история будут сохранены.
+    deactivate-portal-login-success: Вход на портал отключён.
+    reactivate-portal-login-body: Восстановить доступ к порталу для этого контакта.
+    reactivate-portal-login-success: Вход на портал восстановлен.
+    reset-password-title: Сбросить учётные данные
+    reset-password-heading: Вы собираетесь сбросить пароль для {name}
+    reset-password-body: Введите новый пароль и подтвердите его ниже. При желании отметьте флажок, чтобы отправить новые учётные данные.
+    reset-password-accept: Сбросить учётные данные
+    reset-password-success: Пароль сброшен.
+    new-password: Новый пароль
+    confirm-new-password: Подтвердите новый пароль
+    send-new-credentials: Отправить новые учётные данные на эту учётную запись
+device:
+  fields:
+    notes-placeholder: Заметки
+  actions:
+    attach-device: Подключить устройство
+    attach-to-vehicle: Подключить к транспортному средству
+    detach-from-vehicle: Отключить от транспортного средства
+  prompts:
+    attach-to-vehicle-title: Подключить устройство к транспортному средству
+    attach-device-to-vehicle-title: Подключить {deviceName} к транспортному средству
+    select-vehicle-warning: Выберите транспортное средство для подключения этого устройства.
+    attach-to-vehicle-success: Устройство подключено к транспортному средству.
+    not-attached-warning: '{deviceName} не подключено к транспортному средству.'
+    detach-from-vehicle-title: Отключить {deviceName} от транспортного средства?
+    detach-from-vehicle-body: '{deviceName} будет отключено от {vehicleName}, и обновления телеметрии транспортного средства прекратятся до повторного подключения.'
+    detach-from-vehicle-success: Устройство отключено от транспортного средства.
+    select-device-to-attach-title: Выберите устройство для подключения к {resourceName}
+    confirm-attach-device: Подтвердить и подключить устройство
+    attach-device-success: Устройство успешно подключено.
+    detach-from-resource-title: Отключить {deviceName} от {resourceName}?
+    detach-from-resource-body: '{deviceName} будет отключено от {resourceName}; обновления телеметрии и события для этого объекта ({resourceType}) прекратятся.'
+    detach-from-resource-success: '{deviceName} отключено от {resourceName}.'
+    detach-telematic-device-title: Отключить {deviceName} от транспортного средства?
+    detach-telematic-device-body: '{deviceName} продолжит синхронизироваться с провайдером, но больше не будет привязано к транспортному средству.'
+    no-devices-attached-title: Нет подключённых устройств
+    no-devices-attached-body: Нажмите «Подключить устройство» выше, чтобы начать получать телематические данные для этого объекта ({resourceType}).
+fleet:
+  actions:
+    assign-vehicle: Назначить транспортное средство автопарку
+  prompts:
+    assign-driver-title: Назначить водителя в {fleetName}
+    assign-vehicle-title: Назначить транспортное средство в {fleetName}
+    select-driver-warning: Выберите водителя для назначения.
+    select-vehicle-warning: Выберите транспортное средство для назначения.
+    assign-driver-success: Водитель назначен в {fleetName}.
+    assign-vehicle-success: Транспортное средство назначено в {fleetName}.
+order:
+  card:
+    linked-order: Связанный заказ
+    unknown-order: Неизвестный заказ
+    no-type: Без типа
+    pickup: Место забора
+    dropoff: Место высадки
+    return: Возврат
+    waypoints: Контрольные точки
+    additional-stop: дополнительная остановка
+    additional-stops: дополнительные остановки
+    no-pickup-address: Нет адреса забора
+    no-dropoff-address: Нет адреса доставки
+    no-route-details: Сведения о маршруте недоступны.
+    no-order-linked: К этой проблеме не привязан ни один заказ.
+  fields:
+    updating-service-quotes-message: Обновление предложений по услугам...
+    notes-placeholder: Введите примечания к заказу здесь....
+    no-order-activity: Нет активности по заказу
+    no-service-quotes: Нет предложений по услугам.
+    input-order-routes: Введите маршрут заказа, чтобы увидеть предложения по услугам.
+    service-quote-info: Выберите тариф реального времени для применения к этому заказу. После применения тарифа заказ станет приобретенным тарифом. Транзакции будут отслеживаться в бухгалтерской книге Fleetbase.
+  schedule-card:
+    date-created: Дата создания
+    select-driver: Выберите водителя
+service-area:
+  actions:
+    edit-boundary: Редактировать границу на карте
+service-rate:
+  fields:
+    algorithm-placeholder: (( '{distance}' / 50 ) * .05 ) + (( '{time}' / 60 ) * .01)
+vehicle:
+  fields:
+    select-driver: Выберите водителя
+  actions:
+    attach-device: Подключить устройство
+    unassign-orders: Снять заказы
+    create-issue: Создать проблему
+    schedule-maintenance: Запланировать обслуживание
+    create-work-order: Создать рабочий заказ
+    log-maintenance: Записать обслуживание
+  empty:
+    inspections: Нет осмотров
+    inspections-description: Здесь появятся осмотры, которые водитель оформит по этому транспортному средству.
+  prompts:
+    attach-device-title: Подключить устройство к {vehicleName}
+    select-device-warning: Выберите устройство для подключения.
+    attach-device-success: Устройство подключено к {vehicleName}.
+    no-assigned-orders-warning: Для {vehicleName} не найдено назначенных заказов.
+    select-orders-warning: Выберите хотя бы один заказ для снятия.
+    unassign-orders-title: Снять заказы с {vehicleName}
+    confirm-unassign-orders-title: Снять {count} заказ(ов) с {vehicleName}?
+    confirm-unassign-orders-body: '{vehicleName} будет снято с этих заказов: {orders}.'
+    unassign-orders-success: '{vehicleName} снято с {count} заказ(ов).'
+    issue-title: 'Сообщено о проблеме: {vehicleName}'
+zone:
+  actions:
+    edit-boundary: Редактировать границу на карте
+scheduler:
+  add-shift: Добавить смену
+  create-shift: Создать смену
+  edit-shift: Редактировать смену
+  delete-shift: Удалить смену
+  delete-shift-confirm: Вы уверены, что хотите удалить эту смену? Это действие нельзя отменить.
+  shift-created: Смена успешно создана.
+  shift-updated: Смена успешно обновлена.
+  shift-title: Название смены
+  shift-title-placeholder: напр., Утренняя доставка
+  shift-start: Начало смены
+  shift-end: Окончание смены
+  shift-notes-placeholder: Необязательные примечания к смене
+  select-start-datetime: Выберите дату и время начала
+  select-end-datetime: Выберите дату и время окончания
+  select-driver: Выберите водителя
+  upcoming-shifts: Предстоящие смены
+  no-upcoming-shifts: Нет запланированных смен.
+  hours-of-service: Рабочее время
+  daily-driving-hours: Часы вождения в день
+  weekly-hours: Часы в неделю
+  compliance-status: Статус соответствия
+  set-availability: Указать доступность
+  availability-set: Доступность успешно сохранена.
+  availability-time-off: Доступность и отгулы
+  no-availability-restrictions: Ограничения доступности не заданы.
+  available: Доступен
+  unavailable: Недоступен
+  unavailable-time-off: Недоступен / Отгул
+  availability-type: Тип доступности
+  request-time-off: Запросить отгул
+  submit-request: Отправить запрос
+  time-off-requested: Запрос на отгул отправлен.
+  delete-availability: Удалить доступность
+  delete-availability-confirm: Вы уверены, что хотите удалить эту запись о доступности?
+  availability-deleted: Запись о доступности удалена.
+  start-date: Дата начала
+  end-date: Дата окончания
+  select-start-date: Выберите дату начала
+  select-end-date: Выберите дату окончания
+  reason: Причина
+  reason-placeholder: напр., Личная встреча
+  notes-placeholder: Необязательные дополнительные примечания
+  shift: Смена
+  add-shift-hint: Нажмите «Добавить смену», чтобы запланировать новую смену.
+  time-off-exceptions: Отгулы и исключения
+  no-exceptions: Отгулы и исключения не зарегистрированы.
+  exception-approved: Исключение одобрено.
+  exception-rejected: Исключение отклонено.
+  exception-deleted: Исключение удалено.
+  delete-exception: Удалить исключение
+  delete-exception-confirm: Вы уверены, что хотите удалить это исключение?
+  approve: Одобрить
+  reject: Отклонить
+  recurring-schedule-created: Повторяющееся расписание создано, смены сформированы.
+  recurring-schedule: Повторяющееся расписание
+  is-recurring: Повторяющееся
+  recurrence-pattern: Шаблон повторения
+  recurrence-start-date: Начинается
+  recurrence-end-date: Заканчивается (необязательно)
+  template-name: Название шаблона
+  template-name-placeholder: напр., Стандартная неделя
+  schedule-name: Название расписания
+  schedule-name-placeholder: напр., Стандартная неделя
+  one-off-shift: Разовая смена
+  one-off-shift-help: Включите, чтобы добавить одну смену на конкретные дату и время вместо повторяющегося расписания.
+  template-color: Цвет
+  shift-start-time: Время начала смены
+  shift-end-time: Время окончания смены
+  break-start-time: Время начала перерыва
+  break-end-time: Время окончания перерыва
+  day-monday: Понедельник
+  day-tuesday: Вторник
+  day-wednesday: Среда
+  day-thursday: Четверг
+  day-friday: Пятница
+  day-saturday: Суббота
+  day-sunday: Воскресенье
+  frequency-daily: Ежедневно
+  frequency-weekly: Еженедельно
+  frequency-monthly: Ежемесячно
+  today: Сегодня
+  orders-tab: Расписание заказов
+  fleet-schedule-tab: Расписание автопарка
+  break-start: Начало перерыва
+  break-end: Окончание перерыва
+  select-break-start: Выберите время начала перерыва
+  select-break-end: Выберите время окончания перерыва
+  select-date: Выберите дату
+  working-days: Рабочие дни
+  recurrence-start: Начинается
+  recurrence-end: Заканчивается
+  recurring-schedule-help: Задайте шаблон повторяющихся смен по дням и времени. Смены будут автоматически созданы для водителя.
+  shift-deleted: Смена успешно удалена.
+  day-mon: Пн
+  day-tue: Вт
+  day-wed: Ср
+  day-thu: Чт
+  day-fri: Пт
+  day-sat: Сб
+  day-sun: Вс
+  view-day: День
+  view-week: Неделя
+  undo: Отменить последнее действие
+  redo: Повторить последнее действие
+  search-orders: Поиск заказов...
+  select-all: Выбрать все
+  all-scheduled: Все заказы запланированы
+  not-scheduled: Не запланировано
+  expand-sidebar: Развернуть боковую панель
+  collapse-sidebar: Свернуть боковую панель
+  bulk-assign: 'Назначить заказы: {count}'
+  bulk-assign-title: 'Массовое назначение заказов: {count}'
+  bulk-assign-success: 'Успешно назначено заказов: {count}.'
+  bulk-assign-order-count: 'Выбрано заказов для назначения: {count}'
+  bulk-assign-spacing-hint: Заказы будут запланированы последовательно, начиная с выбранных даты и времени, с интервалом по расчётной длительности.
+  assign-to-driver: Назначить водителю
+  assign-orders: Назначить заказы
+  orders-to-assign: 'Заказов к назначению: {count}'
+  scheduled-date: Запланированная дата
+  conflict-title: Обнаружен конфликт расписания
+  conflict-description: '{orderTracking} пересекается с существующим заказом водителя {driverName}.'
+  conflicting-orders: Конфликтующие заказы
+  conflict-resolution-prompt: Как вы хотите разрешить этот конфликт?
+  auto-adjust: Скорректировать время автоматически
+  assign-anyway: Всё равно назначить
+  clear-selection: Очистить выбор
+modals:
+  assign-driver:
+    select-driver: Выберите водителя
+  fuel-report-form:
+    select-driver: Выберите водителя
+  issue-form:
+    select-driver: Выберите водителя
+  order-assign-driver:
+    select-driver: Выберите водителя
+  order-form:
+    select-driver: Выберите водителя
+  vehicle-form:
+    select-driver: Выберите водителя
+radar:
+  title: Радар
+  eyebrow: Ресурсы
+  subtitle: Всё, что требует решения по ресурсам, обслуживанию, осмотрам и персоналу, — по одной строке на запись.
+  summary: '{open} открыто · {snoozed} отложено · последняя синхронизация {time}'
+  search-placeholder: Фильтровать элементы
+  reload: Перезагрузить
+  new-notice: Новое уведомление
+  showing: Показано {count} из {total} · сгруппировано по сроку
+  sources-warning: 'Не удалось загрузить некоторые источники: {sources}'
+  briefing:
+    title: Утренняя сводка
+    score: Индекс состояния автопарка
+    of-100: / 100
+    vs-yesterday: '{delta} по сравнению со вчера'
+    no-history: первое измерение
+    generated: Сформировано {time} · источники связаны
+    yesterday: 'Вчера: закрыто пробелов — {closed}, перенесено — {rolled}'
+    decisions: Решения, ожидающие вас
+    decisions-count: '{shown} из {total}'
+    nothing-to-decide: Нечего решать.
+    confirm: Подтвердить
+    not-now: Не сейчас
+    undo: Отменить
+    wake-now: Вернуть сейчас
+    confirmed: Подтверждено {time}
+    snoozed-until: Отложено до {time}
+    filter: Фильтр
+    collapse: Свернуть сводку
+    expand: Показать сводку
+    open-record: Открыть запись
+    working: Выполняется…
+  views:
+    list: Список
+    agenda: Повестка
+  agenda:
+    window-24h: Ближайшие 24 ч
+    window-7d: 7 дней
+    overdue: Просрочено
+    later: Позже
+    anytime: В любое время
+    anytime-count: 'Без даты: {count}'
+    no-events: В этом интервале нет событий.
+    drag-hint: Перетащите элемент на дорожку, чтобы назначить ему время.
+    print: Печать листа передачи смены
+    see-all: Показать все ({count}) →
+    planned: Запланировано
+    now: сейчас
+    lanes:
+      shifts: Смены
+      maintenance: Обслуживание
+      expiries: Истекающие сроки
+      notices: Уведомления
+    shift-states:
+      on_shift: на смене
+      not_online: не в сети
+      upcoming: предстоящие
+      ended: завершённые
+    summary: 'Смен в интервале: {shifts} · просрочено: {overdue} · без даты: {anytime}'
+  handover:
+    title: Смена заканчивается
+    ends-in: через {minutes}
+    orders-on-driver: 'За {name} ещё активных заказов: {count}'
+    finishes-after: завершится после окончания смены
+    suggested: Рекомендуемая передача
+    on-shift-till: на смене до {time}
+    away: '{distance} км отсюда'
+    reassign: Переназначить заказы ({count}) на {name}
+    extend: Продлить смену на 1 ч
+    snooze: Отложить на 1 ч
+    no-cover: Никто не пробудет на смене достаточно долго, чтобы подменить; продлите смену или переназначьте вручную.
+    reassigned: 'Заказы переданы: {name}.'
+    extended: Смена продлена на час.
+    loading: Поиск замены…
+  tabs:
+    open: Открыть
+    snoozed: Отложено
+    resolved: Решено
+  pills:
+    overdue: Просрочено
+    due_week: Срок на этой неделе
+    unassigned: Не назначено
+    issues: Открытые проблемы
+    inspections: Осмотры
+    shifts: Изменения смен
+    expiring: Истекает через 30 дн.
+    low_stock: Мало на складе
+    fuel: Несопоставленное топливо
+    notices: Уведомления
+  groups:
+    overdue: Просрочено
+    today: Сегодня
+    week: На этой неделе
+    later: Позже
+    none: Без даты
+  rules:
+    maintenance_overdue: ТО
+    maintenance_due_soon: ТО
+    inspection_due: Осмотр
+    inspection_failed: Осмотр
+    inspection_unresolved: Осмотр
+    inspection_draft: Осмотр
+    inspection_link_pending: Осмотр
+    vehicle_inspection_failed: Осмотр
+    work_order_overdue: Рабочий заказ
+    work_order_blocked: Рабочий заказ
+    issue_open: Проблема
+    shift_late_start: Смена
+    shift_no_vehicle: Смена
+    shift_handover: Передача смены
+    driver_without_vehicle: Не назначено
+    vehicle_without_driver: Простой
+    vehicle_without_device: Устройство
+    device_unattached: Устройство
+    license_expiring: Удостоверение
+    lease_expiring: Лизинг
+    fuel_unmatched: Топливо
+    part_low_stock: Запчасти
+    notice: Уведомление
+  actions:
+    acknowledge: Подтвердить
+    snooze: Отложить
+    wake: Вернуть сейчас
+    assign: Назначить
+    unassign: Снять ответственного
+    plan: Назначить время
+    unplan: Очистить время
+    resolve: Решить
+    open-record: Открыть запись
+    assign-vehicle: Назначить транспортное средство
+    assign-driver: Назначить водителя
+    create-work-order: Создать заказ-наряд
+    create-issue: Создать проблему
+    mark-resolved: Отметить как решённое
+    send-pin: Отправить PIN
+    revoke-link: Отозвать ссылку
+    revoke-links: Отозвать {count, plural, one {# ссылку} few {# ссылки} many {# ссылок} other {# ссылки}}
+    match-vehicle: Сопоставить с ТС
+    ignore: Игнорировать
+    attach: Прицепить к транспортному средству
+    call: Позвонить
+    cover-shift: Подменить на смене
+    reassign: Переназначить заказы
+    extend-shift: Продлить смену на 1 ч
+    select: Выбрать
+    deselect: Снять выбор
+    more: Ещё
+  snooze:
+    1h: 1 час
+    4h: 4 часа
+    tomorrow: Завтра утром
+    next-week: На следующей неделе
+    pick: Выбрать дату…
+    pick-title: Отложить до
+    pick-label: Вернуть
+  state:
+    acknowledged-by: 'Подтверждено: {name}, {time}'
+    acknowledged: Подтверждено
+    snoozed-until: Отложено до {time}
+    assigned-to: 'Назначено: {name}'
+    unassigned: Не назначено
+    planned-for: Запланировано на {time}
+    resolved-by: 'Решено: {name}, {time}'
+    resolved-auto: Закрыто в записи
+  bulk:
+    selected: 'Выбрано: {count}'
+    clear: Очистить
+    summary: 'Элементов: {count}'
+  keys:
+    move: переместить
+    select: выбрать
+    acknowledge: подтвердить
+    snooze: отложить
+    assign: назначить
+    open: открыть запись
+    close: закрыть
+  empty:
+    title: Ничего не требует решения.
+    snoozed-hint: 'Отложенных элементов, возвращающихся на этой неделе: {count}.'
+    nothing-snoozed: Ничего не отложено.
+    wakes: вернётся {time}
+    filtered-title: Ничего не соответствует этим фильтрам.
+    filtered-hint: Сбросьте фильтр или поиск, чтобы увидеть больше.
+    snoozed-title: Ничего не отложено.
+    snoozed-tab-hint: Отложенные элементы возвращаются в список, когда наступает время их возврата.
+    resolved-title: За последние 7 дней ничего не решено.
+    resolved-hint: Элементы закрываются здесь, когда меняется описываемая ими запись или когда уведомление решено.
+  saved-views:
+    title: Представления
+    save-current: Сохранить текущее
+    name-prompt: Назовите это представление
+    name-placeholder: напр., Срок на этой неделе
+    saved: Представление сохранено.
+    delete: Удалить представление
+    deleted: Представление удалено.
+    defaults:
+      my-assignments: Мои назначения
+      shift-changes: Изменения смен
+      due-this-week: Срок на этой неделе
+      unmatched-fuel: Несопоставленное топливо
+  notice:
+    title: Новое уведомление
+    message: Сообщение
+    message-placeholder: В субботу площадка закрыта на ремонт покрытия — переставьте прицепы до пт 18:00
+    severity: Важность
+    due: Крайний срок
+    scope: Относится к
+    scope-placeholder: Площадка 3 · весь автопарк
+    create: Опубликовать уведомление
+    created: Уведомление опубликовано.
+    delete: Удалить уведомление
+    deleted: Уведомление удалено.
+    severities:
+      info: Информация
+      warning: Предупреждение
+      critical: Критично
+  drawer:
+    failed-items: Непройденные пункты
+    state: Штат
+    subject: Запись
+    due: Срок
+    window: Смена
+    details: Детали
+  prompts:
+    select-vehicle: Выберите транспортное средство
+    select-user: Выберите человека
+    assign-vehicle-title: 'Назначить транспортное средство: {name}'
+    assign-driver-title: 'Назначить водителя: {name}'
+    match-vehicle-title: Сопоставьте эту транзакцию с транспортным средством
+    create-work-order-title: Создать рабочий заказ по этому графику?
+    create-work-order-body: Рабочий заказ откроется со значениями по умолчанию и сроком из графика.
+    ignore-title: Игнорировать эту транзакцию?
+    ignore-body: Она уйдёт из очереди несопоставленных и не будет привязана к транспортному средству.
+    attach-device-title: Подключите это устройство к транспортному средству
+    revoke-link-title: Отозвать эту ссылку на осмотр?
+    send-pin-title: Отправить PIN-код осмотра
+    send-pin-to: Как {name} должен получить ссылку и PIN?
+    send-pin-body: Как отправить ссылку и PIN?
+    send-pin-unavailable: У получателя ссылки нет email или номера телефона для отправки PIN.
+    revoke-link-body: Ссылка сразу перестанет работать.
+    bulk-revoke-link-title: Отозвать {count, plural, one {# ссылку на осмотр} few {# ссылки на осмотр} many {# ссылок на осмотр} other {# ссылки на осмотр}}?
+    bulk-revoke-link-body: Ссылки сразу перестанут работать. Остальные выбранные элементы останутся без изменений.
+    assign-user-title: Кто за это отвечает?
+    assign-user-help: Ответственный отображается в строке и в представлении «Мои назначения».
+    no-selection: Сначала выберите одного.
+  toasts:
+    acknowledged: Подтверждено.
+    snoozed: Отложено до {time}.
+    woken: Снова в списке.
+    assigned: 'Назначено: {name}.'
+    unassigned: Ответственный снят.
+    planned: Время назначено.
+    resolved: Решено.
+    work-order-created: Рабочий заказ создан.
+    vehicle-assigned: Транспортное средство назначено.
+    driver-assigned: Водитель назначен.
+    matched: Транзакция сопоставлена.
+    ignored: Транзакция проигнорирована.
+    device-attached: Устройство подключено.
+    pin-sent: PIN отправлен.
+    link-revoked: Ссылка отозвана.
+    links-revoked: '{count, plural, one {Отозвана # ссылка} few {Отозваны # ссылки} many {Отозвано # ссылок} other {Отозвано # ссылки}}.'
+    links-revoke-failed: '{count, plural, one {Не удалось отозвать # ссылку} few {Не удалось отозвать # ссылки} many {Не удалось отозвать # ссылок} other {Не удалось отозвать # ссылки}}.'
+    bulk-done: 'Обновлено элементов: {count}.'
+widget:
+  refresh: Обновить
+  radar:
+    title: Радар
+    description: Что сейчас требует решения по всему автопарку.
+    open: открыто
+    overdue: просрочено
+    snoozed: отложено
+    open-radar: Открыть радар
+  kpi-earnings:
+    title: Доходы
+  kpi-distance:
+    title: Пройденное расстояние
+  kpi-aov:
+    title: Средняя стоимость заказа
+  kpi-active-orders:
+    title: Активные заказы
+  kpi-drivers-online:
+    title: Водители онлайн
+  kpi-open-issues:
+    title: Открытые проблемы
+  operations-pulse:
+    title: Пульс операций
+  revenue-trend:
+    title: Динамика выручки
+  orders-by-status:
+    title: Объём заказов по статусам
+  on-time-delivery:
+    title: Доставка вовремя
+  top-drivers:
+    title: Лучшие водители
+  fuel-efficiency:
+    title: Расходы на топливо и эффективность
+  issues-insights:
+    title: Аналитика проблем
+  maintenance-overview:
+    title: Обзор обслуживания
+  geofence-violations:
+    title: Нарушения геозон
+  live-fleet:
+    title: Карта автопарка в реальном времени
+  get-started:
+    title: Начните работу с Fleet-Ops
+    subtitle: Настройте основное и завершите первый процесс отправки.
+    completed: выполнено
+    preview-title: Процесс первого заказа
+  recommended-features:
+    title: Рекомендуемые для вас возможности
+    subtitle: Изучите инструменты, которые помогают новым операционным командам быстрее выйти на рабочий ритм.
+    learn-more: Подробнее
+settings:
+  avatar-management: Управление аватарами
+  map:
+    fleet-ops-map-settings: Настройки карты Fleet-Ops
+    fleet-ops-map: Карта Fleet-Ops
+    configure-map: Настроить карту
+    map-provider: Провайдер карт
+    map-provider-help-text: Выберите движок карты для отображения карты операций в реальном времени. Leaflet использует тайлы OpenStreetMap и не требует API-ключа. Google Maps требует действительный ключ Google Maps JavaScript API.
+    select-map-provider: Выберите провайдера карт
+    leaflet-tile-url: URL провайдера тайлов Leaflet
+    leaflet-tile-url-help-text: Необязательный шаблон URL собственного провайдера XYZ-тайлов для карты Leaflet. Оставьте пустым, чтобы использовать тайлы OpenStreetMap по умолчанию, не требующие API-ключа. Используйте, чтобы подключить Leaflet к своему провайдеру тайлов, в том числе к провайдерам с ключом, например CARTO.
+    leaflet-dark-tile-url: URL провайдера тайлов Leaflet для тёмной темы
+    leaflet-dark-tile-url-help-text: Необязательный URL провайдера тайлов для тёмной темы консоли. Оставьте пустым, чтобы использовать URL провайдера выше или тайлы OpenStreetMap по умолчанию.
+    google-maps-map-type: Тип карты
+    google-maps-map-type-help-text: Стиль карты по умолчанию при использовании Google Maps.
+    select-map-type: Выберите тип карты
+    show-traffic-layer: Показывать слой пробок
+    show-traffic-layer-help-text: Показывать пробки в реальном времени на карте Google Maps.
+    show-transit-layer: Показывать слой общественного транспорта
+    show-transit-layer-help-text: Показывать маршруты общественного транспорта на карте Google Maps.
+    settings-saved: Настройки карты успешно сохранены.
+    settings-save-failed: Не удалось сохранить настройки карты. Попробуйте ещё раз.
+  scheduling:
+    scheduling-settings: Настройки планирования
+    materialisation: Формирование
+    horizon-days: Горизонт расписания (дни)
+    horizon-days-help: На сколько дней вперёд создавать смены при применении шаблона расписания.
+    default-shift-duration: Длительность смены по умолчанию (часы)
+    default-shift-duration-help: Количество часов смены по умолчанию, если время окончания не указано.
+    hours-of-service: Ограничения рабочего времени
+    hos-daily-limit: Дневной лимит вождения (часы)
+    hos-daily-limit-help: Максимальное число часов вождения водителя за один день.
+    hos-weekly-limit: Недельный лимит вождения (часы)
+    hos-weekly-limit-help: Максимальное число часов вождения водителя за скользящий 7-дневный период.
+    behaviour: Поведение
+    auto-activate-schedule: Автоматически активировать расписание
+    auto-activate-schedule-help: Автоматически переводить расписание из черновика в активное при создании первой смены.
+    notify-drivers: Уведомлять водителей об изменениях смен
+    notify-drivers-help: Отправлять водителям push-уведомления при создании, изменении или удалении их смен.
+    schedule-templates: Многоразовые шаблоны расписаний
+    no-templates: Многоразовые шаблоны ещё не созданы.
+    new-template: Новый шаблон
+    edit-template: Редактировать шаблон
+    delete-template: Удалить шаблон
+    delete-template-confirm: Вы уверены, что хотите удалить шаблон «{name}»? Это не повлияет на существующие расписания.
+    template-deleted: Шаблон успешно удалён.
+    settings-saved: Настройки планирования сохранены.
+maintenance-schedule:
+  actions:
+    trigger-now: Создать рабочий заказ сейчас
+    pause: Приостановить график
+    resume: Возобновить график
+work-order:
+  actions:
+    view: Просмотреть рабочий заказ
+    edit: Редактировать рабочий заказ
+    delete: Удалить рабочий заказ
+maintenance:
+  actions:
+    view: Просмотреть запись об обслуживании
+    edit: Редактировать запись об обслуживании
+    delete: Удалить запись об обслуживании
+equipment:
+  actions:
+    view: Просмотреть оборудование
+    edit: Редактировать оборудование
+    delete: Удалить оборудование
+part:
+  actions:
+    view: Просмотреть запчасть
+    edit: Редактировать запчасть
+    delete: Удалить запчасть
+orchestrator:
+  settings-title: Настройки оркестратора
+  engine-settings: Механизм распределения
+  active-engine: Активный механизм распределения
+  active-engine-help: Выберите механизм распределения, который назначает заказы водителям и транспортным средствам.
+  auto-allocate-on-create: Автораспределение при создании заказа
+  auto-allocate-on-create-label: Автоматически запускать распределение при создании нового заказа.
+  auto-reallocate-on-complete: Автоперераспределение после завершения доставки
+  auto-reallocate-on-complete-label: Повторно запускать распределение после завершения доставки, чтобы заполнить освободившуюся вместимость.
+  constraint-settings: Ограничения распределения
+  max-travel-time: Максимальное время в пути (секунды)
+  max-travel-time-help: Максимальное время в пути в секундах, на которое может быть назначен водитель. 0 — без ограничений.
+  balance-workload: Балансировать нагрузку
+  balance-workload-label: Равномерно распределять заказы между доступными водителями и транспортными средствами.
+  settings-saved: Настройки оркестратора сохранены.
+  workbench-title: Рабочее место оркестратора
+  unassigned-orders: Неназначенные заказы
+  no-unassigned-orders: Нет неназначенных заказов — всё разобрано!
+  run-allocation: Запустить оркестратор
+  running: Выполняется…
+  plan-ready: План готов — проверьте и подтвердите.
+  commit-plan: Подтвердить план
+  discard-plan: Отбросить
+  committed: 'Оркестрация подтверждена — назначено заказов: {count}.'
+  committed-badge: План подтверждён
+  overridden: Изменено вручную
+  on-shift: На смене
+  empty-state-title: Плана оркестрации пока нет
+  empty-state-body: Нажмите «Запустить оркестратор», чтобы сформировать оптимизированный план назначения для неназначенных заказов.
+  unassigned-warning: Некоторые заказы не удалось назначить — недостаточно вместимости транспортных средств или нет водителей на смене.
+  run-orchestration: Запустить оркестратор
+  options: Опции
+  mode: Режим
+  mode-allocate: Распределить заказы
+  mode-optimize: Оптимизировать маршруты
+  engine: Механизм
+  allocation-strategy: Стратегия распределения
+  allocation-strategy-route-aware: Маршрут + вместимость
+  allocation-strategy-capacity-only: Только вместимость
+  vehicle-packing: Загрузка транспортных средств
+  vehicle-packing-minimize-vehicles: Минимизировать число ТС
+  vehicle-packing-balanced: Сбалансированно
+  respect-skills: Учитывать навыки
+  respect-capacity: Учитывать вместимость
+  return-to-depot: Возврат на депо
+  unassigned-count: 'Не назначено:'
+  clear: Очистить
+  search-orders: Поиск заказов…
+  filter-all: Все
+  filter-scheduled: Запланировано
+  filter-urgent: Срочно
+  filter-today: Сегодня
+  filter-unassigned: Не назначено
+  filter-imported: Импортировано
+  advanced-filters: Расширенные фильтры
+  filter-country: Страна
+  filter-type: Тип заказа
+  filter-status: Статус
+  filter-date: Запланированная дата
+  filter-country-placeholder: Все страны
+  filter-type-placeholder: Все типы
+  filter-status-placeholder: Все статусы
+  filter-date-placeholder: Любая дата
+  clear-filters: Сбросить фильтры
+  no-address: Нет адреса
+  selected: выбрано
+  clear-selection: Очистить
+  show-orders: Показать пул заказов
+  hide-orders: Скрыть пул заказов
+  show-drivers: Показать ресурсы
+  hide-drivers: Скрыть ресурсы
+  available-drivers: Доступные водители
+  available-vehicles: Доступные транспортные средства
+  no-available-drivers: Сейчас нет доступных водителей.
+  no-available-vehicles: Сейчас нет доступных транспортных средств.
+  no-search-results: Нет результатов по вашему запросу.
+  search-drivers: Поиск водителей...
+  search-vehicles: Поиск транспортных средств...
+  no-position: Нет местоположения
+  filter-online: В сети
+  filter-offline: Не в сети
+  filter-on-shift: На задании
+  filter-on-job: На задании
+  filter-active: Активный
+  filter-no-driver: Водитель не назначен
+  proposed-routes: Предлагаемые маршруты
+  stops: остановки
+  route: Маршрут
+  drivers-selected: водителей выбрано
+  vehicles-selected: ТС выбрано
+  drop-orders-here: Перетащите заказы сюда
+  import-orders: Импорт заказов
+  import-step-upload: Загрузить
+  import-step-map: Сопоставление столбцов
+  import-step-preview: Предпросмотр и импорт
+  drop-file-here: Перетащите сюда файл CSV или Excel
+  or: или
+  browse-file: Выбрать файл
+  accepted-formats: 'Допустимые форматы: .csv, .xlsx, .xls'
+  remove-file: Удалить файл
+  download-template: Скачать шаблон импорта
+  download-template-desc: Используйте наш шаблон, чтобы данные импортировались корректно.
+  download: Скачать
+  next: Далее
+  back: Назад
+  map-columns-title: Сопоставление столбцов
+  map-columns-desc: Сопоставьте столбцы в
+  col-target-field: Целевое поле
+  col-your-spreadsheet: Ваша таблица
+  mapped: сопоставлено
+  mapping-required-hint: Прежде чем продолжить, укажите «Улица доставки 1».
+  select-column: — пропустить —
+  data-preview: 'Предпросмотр первых 3 заказов:'
+  preview-import: Предпросмотр импорта
+  preview-desc: 'Заказов готово к импорту: {count}'
+  errors: ошибки
+  all-rows-valid: Все строки корректны
+  validation-warning: 'Заказов с ошибками, которые будут пропущены: {count}.'
+  import-confirm: Подтвердить импорт
+  importing: Импорт…
+  col-pickup: Место забора
+  col-dropoff: Место высадки
+  col-scheduled: Запланировано
+  col-weight: Вес
+  col-customer: Клиент
+  col-status: Статус
+  col-preview-ref: Ссылка / ID
+  col-preview-type: Тип
+  col-preview-facilitator: Фасилитатор
+  col-preview-vehicle: Транспортное средство
+  col-preview-driver: Водитель
+  col-preview-entities: Предметы
+  col-preview-multi-stop: 'Остановок: {count}'
+  col-preview-pickup-dropoff: Забор и доставка
+  col-preview-pickup-dropoff-stops: 'З и Д + остановок: {count}'
+  error: Ошибка
+  valid: Корректно
+  import-success: 'Успешно импортировано заказов: {count}.'
+  no-valid-rows: Нет корректных заказов для импорта.
+  invalid-file-type: Загрузите файл .csv, .xlsx или .xls.
+  parse-error: Не удалось разобрать файл. Проверьте формат.
+  read-error: Не удалось прочитать файл.
+  empty-file: Файл, похоже, пуст.
+  missing-dropoff: Поле «Улица доставки 1» обязательно.
+  stops-count: 'Остановок: {count}'
+  pickup: Место забора
+  dropoff: Место высадки
+  scheduled: Запланировано
+  customer: Клиент
+  driver-assigned: Водитель назначен
+  vehicle-assigned: Транспорт назначен
+  no-vehicle-assigned: Транспорт не назначен
+  no-driver-assigned: Водитель не назначен
+  created: Создано
+  phases: Этапы
+  phases-description: Составьте многоэтапный запуск оркестрации. Каждый этап по очереди выполняет определённый режим.
+  add-phase: Добавить этап
+  no-phases: Этапы не настроены. Добавьте этап, чтобы начать.
+  phase-n: Этап {n}
+  phase-label: Название этапа
+  save-phase: Сохранить этап
+  select-phase-to-edit: Выберите этап, чтобы изменить его настройки.
+  run-phases: 'Запустить этапы: {count}'
+  include-order-statuses: Включить статусы заказов
+  constraints: Ограничения
+  auto-commit: Автоподтверждение после этапа
+  mode-assign-vehicles: Назначить транспортные средства
+  mode-assign-drivers: Назначить водителей
+  mode-optimize-routes: Оптимизировать маршруты
+  status-created: Создано
+  status-dispatched: Отправлено
+  status-started: Начато
+  card-fields: Поля карточки
+  card-fields-description: Настройте, какие поля отображаются на карточках заказов в рабочем месте. Поля сгруппированы по конфигурациям заказов, поэтому вид можно настроить для каждого типа заказа.
+  card-fields-saved: Поля карточки заказа сохранены.
+  save-card-fields: Сохранить поля карточки
+  standard-fields: Стандартные поля
+  standard-fields-description: Эти поля отображаются на каждой карточке заказа независимо от типа заказа.
+  config-fields-description: Пользовательские поля для заказов {name}.
+  meta-fields: Метаполя
+  meta-fields-description: Произвольные ключи метаданных, передаваемые интеграциями.
+  no-custom-fields: Для этой конфигурации заказа не заданы пользовательские поля.
+  field-tracking: Номер отслеживания
+  field-status: Статус
+  field-scheduled-at: Запланировано на
+  field-customer: Клиент
+  field-type: Тип
+  field-notes: Заметки
+  field-priority: Приоритет
+  field-dropoff: Адрес доставки
+  field-pickup: Адрес забора
+  filter-available: Доступен
+  vehicle: Транспортное средство
+  expand-all: Развернуть все
+  tab-routes: Маршруты
+  tab-timeline: Хронология
+  collapse-all: Свернуть все
+  collapse-route: Свернуть маршрут
+  expand-route: Развернуть маршрут
+  no-plan: Запустите оркестратор, чтобы увидеть предлагаемый план.
+  unassigned-description: Эти заказы не удалось назначить. Они останутся в очереди на перераспределение.
+  unassigned: не назначено
+  vehicles: Транспортные средства
+  drivers: Водители
+  orders: Заказы
+  cancel: Отмена
+  no-vehicles: Транспортные средства не найдены.
+  no-drivers: Водители не найдены.
+  no-orders: Заказы не найдены.
+  expand-panel: Развернуть панель
+  collapse-panel: Свернуть панель
+  run-failed-title: Назначения не получены
+  try-again: Попробуйте снова
+  change-resources: Изменить ресурсы
+  no-assignments-returned: Оркестратору не удалось назначить ни одного заказа. Проверьте, что у транспортных средств достаточно вместимости, а водители на смене.
+  stop-type-pickup: Место забора
+  stop-type-dropoff: Место высадки
+  pod-required: ПД
+  no-pod: Без ПД
+inspection:
+  form:
+    overview: Обзор
+    submissions: Отправленные
+    no-vehicle: Без ТС
+    no-submissions: Пока ничего не отправлено
+    no-submissions-description: Здесь появятся осмотры, оформленные по этой форме.
+    details: Сведения о форме
+    name: Имя
+    name-placeholder: Ежедневный осмотр транспортного средства
+    type: Тип
+    status: Статус
+    description: Описание
+    description-placeholder: Что охватывает этот осмотр
+    builder: Конструктор форм
+    fields: Поля
+    published: Опубликовано
+    structure: Структура формы
+    loading-structure: Загрузка структуры формы...
+    no-structure: В этой форме ещё нет групп полей.
+    settings: Настройки
+    type-placeholder: Выберите вид осмотра для этой формы
+    status-placeholder: Выберите статус
+    setting-create-issue: Открывать запись о дефекте при непройденном пункте
+    setting-create-issue-help: Непройденный осмотр создаёт проблему по транспортному средству, чтобы у неисправности было место учёта.
+    setting-create-work-order: Открывать рабочий заказ при непройденном пункте
+    setting-create-work-order-help: Непройденные пункты становятся чек-листом рабочего заказа для мастерской. Требуется включить мастерские.
+    setting-require-signature: Требовать подпись водителя
+    setting-require-signature-help: Приложение водителя не отправит форму без подписи. Если подпись нужна в определённом месте, добавьте в форму поле подписи.
+    legacy-checklist: Устаревший чек-лист
+    legacy-checklist-help: Чек-лист первой версии, сохранён только для чтения. Он переносится в группу «Чек-лист» из полей «пройдено/не пройдено».
+    create: Создать форму осмотра
+    created: Форма осмотра создана.
+    updated: Форма осмотра обновлена.
+  builder:
+    help: Сгруппируйте то, что проверяет водитель, затем добавьте поле для каждого пункта.
+    loading: Загрузка конструктора форм...
+    new-group: Новая группа полей
+    new-field: Новое поле
+    edit-field: 'Редактировать поле: {label}'
+    save-field: Сохранить поле
+    untitled-group: Группа без названия
+    untitled-field: Поле без названия
+    group-name: Название группы
+    group-name-placeholder: Кузов снаружи
+    group-description: Описание группы
+    group-description-placeholder: Что охватывает эта группа
+    grid-size: Колонки
+    move-up: Выше
+    move-down: Ниже
+    no-fields: В этой группе ещё нет полей.
+    empty-title: Нет групп полей
+    empty-description: Добавьте первую группу полей, чтобы начать создание формы.
+    delete: Удалить
+    delete-group-title: Удалить эту группу полей?
+    delete-group-body: Удаление группы удалит все поля внутри неё. После сохранения формы это нельзя отменить.
+    delete-field-title: Удалить это поле?
+    delete-field-body: Удаление поля удалит и все уже отправленные ответы на него. После сохранения формы это нельзя отменить.
+  field:
+    label: Подпись поля
+    label-placeholder: Стоп-сигналы
+    name: Имя поля
+    name-help: Машинное имя, по которому отправленная форма ссылается на это поле. Повторяет подпись, пока вы не зададите его сами.
+    name-placeholder: brake-lights
+    type: Тип поля
+    description: Описание поля
+    description-placeholder: Что проверять и как выглядит успешная проверка
+    help-text: Подсказка к полю
+    help-text-placeholder: Показывается рядом с полем при заполнении
+    required: Поле обязательно
+    editable: Поле можно редактировать
+    options: Варианты поля
+    no-options: Вариантов пока нет.
+    option-placeholder: Добавить вариант
+    add-option: Добавить
+    unit: Единица
+    unit-help: Показывается рядом с числом, например км или часы.
+    unit-placeholder: км
+    odometer-role: Это показание одометра
+    odometer-role-help: Ответ копируется в столбец одометра самого осмотра.
+    on-fail: При непрохождении
+    on-fail-help: Что означает ответ «не пройдено» и что проверяющий должен предоставить, чтобы ответ был принят.
+    default-severity: Важность по умолчанию
+    require-photo-on-fail: Требовать фото при непрохождении
+    require-comment-on-fail: Требовать комментарий при непрохождении
+    unsafe-on-fail: Отмечать ТС как небезопасное при непрохождении
+    unsafe-on-fail-help: Ответ «не пройдено» по умолчанию означает «небезопасно» — это и есть дефект, выводящий из эксплуатации.
+    instructions: Инструкции
+    instructions-placeholder: Как это проверить, показывается водителю
+    column-span: Ширина в столбцах
+  field-type:
+    pass-fail: Пройдено / Не пройдено
+    input: Текст
+    textarea: Длинный текст
+    number: Число
+    select: Выбрать
+    radio-button: Переключатели
+    boolean: Да / Нет
+    date-picker: Дата
+    date-time-input: Дата и время
+    file-upload: Фото или файл
+    signature: Подпись
+  severity:
+    low: Низкая
+    medium: Средняя
+    high: Высокая
+    critical: Критично
+  answer:
+    pass: Пройдено
+    fail: Не пройдено
+    not-applicable: Н/П
+    unanswered: Без ответа
+    severity: Важность
+    unsafe: Эксплуатация небезопасна
+    comments: Комментарии
+    comments-placeholder: Что не так и что требуется
+    photos: Фото
+    add-photo: Добавить фото
+    upload-photo: Загрузить фото
+    no-photo: Фото не прикреплено.
+    upload-signature: Загрузить подпись
+    no-signature: Подпись не получена.
+    select-placeholder: Выберите ответ
+    note-placeholder: Добавить примечание
+    text-placeholder: Введите ответ
+    no-options: У этого поля нет вариантов ответа.
+    uploads-unavailable: Можно добавить из консоли или приложения водителя.
+    comments-required: Укажите, что не так и что требуется
+    comment-required: Комментарий обязателен при непрохождении
+    photo-required: Фото обязательно при непрохождении
+    comment-and-photo-required: Комментарий и фото обязательны при непрохождении
+  record:
+    overview: Обзор
+    inspection: Осмотр
+    details: Сведения об осмотре
+    form: Форма
+    select-form: Выберите форму осмотра
+    status: Статус
+    result: Результат
+    vehicle: Транспортное средство
+    select-vehicle: Выберите транспортное средство
+    driver: Водитель
+    select-driver: Выберите водителя
+    odometer: Одометр
+    odometer-placeholder: Текущий пробег
+    engine-hours: Моточасы
+    engine-hours-placeholder: Текущие моточасы
+    answers: Ответы
+    loading-form: Загрузка формы осмотра...
+    loading-answers: Загрузка ответов...
+    form-has-no-fields: В этой форме ещё нет полей. Создайте её на экране формы осмотра, прежде чем заполнять.
+    summary: Описание
+    failed-of: Не пройдено {failed} из {total} проверок «пройдено/не пройдено»
+    metadata: Метаданные
+    submitted: Отправлено
+    submitted-by: Отправил
+    submission-title: 'Отправка формы: {form}'
+    due: Срок
+    create-issue: Создать проблему
+    create-work-order: Создать рабочий заказ
+    resolve: Решить
+    via-link: По публичной ссылке
+    via-link-pin: По публичной ссылке, PIN подтверждён
+    signed-as: Подписано как «{name}»
+    name-unverified: Имя введено вручную, а не из учётной записи
+    resolved: Решено
+    item-results: Результаты по пунктам
+    no-item-results: Результаты по пунктам не записаны.
+    follow-up: Дальнейшие действия
+    open-form: Открыть эту форму осмотра
+    failed: Не удалось
+    failed-count: '{count, plural, one {# не пройден} few {# не пройдено} many {# не пройдено} other {# не пройдено}}'
+    linked-inspections: '{count, plural, one {Связанный осмотр} few {Связанные осмотры} many {Связанные осмотры} other {Связанные осмотры}}'
+    linked-issue: Связанная проблема
+    linked-work-order: Связанный рабочий заказ
+    photos: Фото
+    loading-photos: Загрузка фото...
+    audit: Аудит
+    create: Создать осмотр
+    saved: Осмотр сохранён.
+    updated: Осмотр обновлён.
+    form-help: Опубликованная форма, по которой заполняется этот осмотр.
+    choose-a-form: Выберите форму осмотра, чтобы начать.
+    group-has-no-fields: В этом разделе нет проверок.
+    outstanding: ещё без ответа
+    section-outstanding: '{count, plural, one {осталось #} few {осталось #} many {осталось #} other {осталось #}}'
+    outstanding-field: 'Перед отправкой заполните: {label}'
+    review: Проверить →
+    jump-to: Перейти →
+  follow-up:
+    create-issue-title: Создать проблему по этому осмотру?
+    create-issue-summary: По транспортному средству и водителю будет создана проблема с перечнем непройденных проверок и наивысшей важностью среди них. Осмотр будет с ней связан.
+    create-issue-accept: Создать проблему
+    create-work-order-title: Открыть рабочий заказ по этому осмотру?
+    create-work-order-summary: По транспортному средству будет открыт рабочий заказ с чек-листом непройденных проверок. Если у осмотра нет проблемы, сначала будет создана она.
+    create-work-order-accept: Создать рабочий заказ
+    resolve-title: Закрыть этот осмотр как решённый?
+    resolve-summary: Осмотр будет отмечен как решённый с отметкой времени. Созданные им проблемы и рабочие заказы останутся открытыми.
+    resolve-accept: Закрыть осмотр
+    from-these: '{count, plural, one {По этой непройденной проверке} few {По этим # непройденным проверкам} many {По этим # непройденным проверкам} other {По этим # непройденным проверкам}}'
+    unsafe-note: '{count, plural, one {# проверка отмечена как небезопасная для эксплуатации} few {# проверки отмечены как небезопасные для эксплуатации} many {# проверок отмечены как небезопасные для эксплуатации} other {# проверки отмечены как небезопасные для эксплуатации}}'
+    due-note: Срок {due}, по наивысшей важности среди них.
+    nothing-failed: В этом осмотре ничего не провалено, поэтому создавать нечего.
+    submit-title: Отправить этот осмотр?
+    submit-summary: Осмотр будет оформлен, время отправки зафиксировано, итоги «пройдено/не пройдено» пересчитаны. Отменить отправку нельзя.
+    submit-accept: Отправить осмотр
+    cancel: Отмена
+  link:
+    public-links: Публичные ссылки
+    existing: Созданные ссылки
+    modal-help: Создайте одноразовую ссылку для формы {form}. Открывший её вводит PIN и заполняет опубликованную форму без входа в систему.
+    loading: Загрузка ссылок...
+    none: Для этой формы ещё не создано ссылок.
+    load-failed: Не удалось загрузить ссылки.
+    copy: Копировать
+    copied: Ссылка на осмотр скопирована.
+    revoke: Отозвать
+    revoked: Ссылка на осмотр отозвана.
+    generated: Создана
+    generated-toast: Ссылка на осмотр создана.
+    publish-first: Опубликуйте эту форму осмотра, прежде чем создавать публичную ссылку.
+    expires: Истекает
+    no-expiry: Бессрочно
+    used: Использована
+    viewed: Последнее открытие
+    never-opened: Не открывалась
+    unassigned: Любой, у кого есть ссылка и PIN
+    url-not-kept: Эта ссылка создана до того, как ссылки начали сохраняться, поэтому её URL нельзя показать повторно.
+    state-active: Активный
+    state-expired: Истекла
+    state-used: Использована
+    state-revoked: Отозвана
+    state-locked: Заблокирована
+    expires-at: Истекает в
+    expires-help: Ссылки истекают через 72 часа после создания, если вы не выберете другое время.
+    assign-to: Назначить
+    assign-to-help: Необязательно. Осмотр может выполнить любой сотрудник организации; отправка засчитывается ему.
+    select-assignee: Выберите пользователя
+    pin: PIN
+    pin-delivery: Отправить ссылку и PIN
+    pin-delivery-none: Не отправлять, я поделюсь сам
+    pin-delivery-email: По электронной почте
+    pin-delivery-sms: По SMS
+    pin-delivery-help: 'Отправлено {name}: ссылка для открытия и PIN для ввода.'
+    pin-delivery-no-recipient: Назначьте ссылку кому-нибудь или выберите водителя, чтобы отправить её им. Иначе поделитесь ссылкой и PIN сами — они будут показаны после создания.
+    generated-title: Ссылка создана
+    generated-help: Ссылка скопирована в буфер обмена. Открывшему её также понадобится PIN.
+    copied-pin: PIN скопирован.
+    email-pin: Отправить ссылку по email
+    text-pin: Отправить ссылку по SMS
+    pin-sent-email: 'Ссылка и PIN отправлены по email: {to}.'
+    pin-sent-sms: 'Ссылка и PIN отправлены по SMS: {to}.'
+    pin-not-sent: 'Ссылка и PIN не отправлены: {reason}'
+    pin-sent-by: '{via, select, email {Отправлено по email} sms {Отправлено по SMS} other {Отправлено}}'
+    wrong-pins: '{count, plural, one {# неверный PIN} few {# неверных PIN} many {# неверных PIN} other {# неверного PIN}}'
+    no-pin: Без PIN. Эта ссылка создана до того, как у ссылок появились PIN.
+  public:
+    submitted-title: Осмотр отправлен
+    submitted-body: Спасибо. Осмотр оформлен, ссылка закрыта.
+    unavailable-title: Этот осмотр недоступен
+    sign-off: Подписать
+    your-name: Ваше имя
+    your-name-help: Записывается в осмотр как имя заполнившего.
+    your-name-placeholder: Полное имя
+    for: Для
+    pin-title: Введите PIN
+    pin-help: Введите 6-значный PIN, выданный вам для этого осмотра.
+    pin-label: PIN
+    pin-continue: Продолжить
+    pin-wrong: 'Неверный PIN. До блокировки ссылки {count, plural, one {осталась # попытка} few {осталось # попытки} many {осталось # попыток} other {осталось # попытки}}.'
+    submit: Отправить осмотр
+    blocked-required: '{count, plural, one {Не хватает # обязательного ответа} few {Не хватает # обязательных ответов} many {Не хватает # обязательных ответов} other {Не хватает # обязательного ответа}}'
+    blocked-defects: '{count, plural, one {# неисправности ещё нужен комментарий или фото} few {# неисправностям ещё нужен комментарий или фото} many {# неисправностям ещё нужен комментарий или фото} other {# неисправности ещё нужен комментарий или фото}}'
+  flyout:
+    title: 'Дефект: {label}'
+    done: Готово
+    close: Закрыть
+  defect:
+    edit: Редактировать дефект
+    photos: '{count, plural, one {# фото} few {# фото} many {# фото} other {# фото}}'
+    comment: Комментарий
+    needs-comment: Нужен комментарий
+    needs-photo: Нужно фото
+    needs-both: Нужны комментарий и фото
+    no-evidence: Пока нет комментария или фото
+  tray:
+    title: Дефекты
+    review: Проверка
+select-option:
+  vehicle:
+    vin: VIN
+    serial_number: С/Н
+    call_sign: Позывной
+resource-summary:
+  facts:
+    address: Адрес
+    altitude: Высота
+    amount: Количество
+    arrived: Прибыл
+    assignee: Исполнитель
+    attached-to: Подключено к
+    attachment: Сцепка
+    axles: Оси
+    base-fee: Базовая плата
+    body-coupling: Кузов / сцепка
+    calculation: Расчёт
+    category: Категория
+    cod: Наложенный платёж
+    code: Код
+    comments: Комментарии
+    completion: Завершение
+    connected: Подключено
+    coordinates: Координаты
+    core-service: Основная услуга
+    countries: Страны
+    country: Страна
+    coverage: Покрытие
+    created: Создано
+    customer: Клиент
+    declared-value: Объявленная стоимость
+    description: Описание
+    destination: Пункт назначения
+    details: Детали
+    device: Устройство
+    dimensions: Габариты
+    disconnected: Отключено
+    distance: Расстояние
+    driver: Водитель
+    drivers: Водители
+    dropoff: Место высадки
+    due: Срок
+    dwell: Время стоянки
+    email: Электронная почта
+    entities: Сущности
+    environment: Окружение
+    equipped-to: Установлено на
+    eta: Ожидаемое время прибытия
+    event-type: Тип события
+    expires: Истекает
+    failed-items: Непройденные пункты
+    fallback: Резервный вариант
+    fee: Плата
+    fees: Сборы
+    firmware: Прошивка
+    fitted-to: Установлено на
+    fleet: Автопарк
+    form: Форма
+    fuel-report: Отчёт по топливу
+    heading: Курс
+    host: Хост
+    imei: IMEI
+    installed: Установлено
+    interval: Интервал
+    items: Предметы
+    key: Ключ
+    last-error: Последняя ошибка
+    last-online: Последний выход в сеть
+    last-reading: Последнее показание
+    last-seen: Последний раз в сети
+    last-status: Последний статус
+    last-synced: Последняя синхронизация
+    last-value: Последнее значение
+    licence: Удостоверение
+    location: Местоположение
+    maintainable: Обслуживаемый объект
+    make-model: Марка / модель
+    model: Модель
+    namespace: Пространство имён
+    next-due: Следующий срок
+    next-occurrence: Следующее выполнение
+    occurred: Произошло
+    odometer: Одометр
+    order: Заказ
+    order-config: Конфигурация заказа
+    performed-by: Выполнил
+    period: Период
+    phone: Телефон
+    pickup: Место забора
+    place: Место
+    plate: Госномер / VIN
+    policy: Политика
+    priority: Приоритет
+    progress: Прогресс
+    provider: Поставщик
+    published: Опубликовано
+    purchase-price: Цена покупки
+    quantity: Количество
+    reason: Причина
+    recorded: Записано
+    region: Регион
+    relationship: Связь
+    reporter: Сообщающий
+    request: Запрос
+    route: Маршрут
+    sandbox: Песочница
+    schedule: Расписание
+    scheduled: Запланировано
+    sequence: Последовательность
+    serial: Серийный номер
+    service-area: Зона обслуживания
+    service-quote: Предложение по услуге
+    service-rate: Тариф обслуживания
+    service-types: Типы услуг
+    severity: Важность
+    sku: Артикул
+    speed: Скорость
+    speed-limit: Ограничение скорости
+    station: Станция
+    status: Статус
+    subject: Тема
+    submitted: Отправлено
+    submitted-by: Отправил
+    target: Цель
+    task: Задача
+    telematic: Телематика
+    threshold: Порог
+    timezone: Часовой пояс
+    title: Заголовок
+    total-cost: Общая стоимость
+    tracking: Отслеживание
+    trailer: Прицеп
+    transaction-at: Время транзакции
+    triggers: Триггеры
+    type: Тип
+    unit-cost: Цена за единицу
+    user: Пользователь
+    vehicle: Транспортное средство
+    vehicles: Транспортные средства
+    vendor: Поставщик
+    version: Версия
+    volume: Объем
+    warranty: Гарантия
+    waypoints: Контрольные точки
+    website: Сайт
+    weight: Вес
+    window: Окно
+    work-order: Рабочий заказ
+    zone: Зона
+    zones: Зоны

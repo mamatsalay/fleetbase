@@ -1,0 +1,41 @@
+# Russian strings for @fleetbase/dev-engine, which ships an incomplete ru-ru translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+developers:
+  extension-name: Разработчики
+  component:
+    modals:
+      webhook-form:
+        endpoint-url-placeholder: https://
+    widget:
+      dashboard:
+        name: Панель разработчика
+        empty: Нет данных
+        kpi:
+          api-requests: API запросы
+          api-error-rate: Доля ошибок API
+          api-latency: Средняя задержка API
+          webhook-success: Успешность вебхуков
+          active-api-keys: Активные API-ключи
+          active-webhooks: Активные вебхуки
+          webhook-failures: Сбои вебхуков
+          events-emitted: Отправленные события
+        api-traffic:
+          title: Трафик API
+          subtitle: Объём запросов, успешные запросы и ошибки
+        webhook-delivery:
+          title: Состояние доставки вебхуков
+          subtitle: Объём доставки, повторы и сбои
+        endpoint-health:
+          title: Состояние эндпоинтов
+          subtitle: Надёжность эндпоинтов вебхуков за последнее время
+        event-stream:
+          title: Поток событий
+          subtitle: Основные типы и источники событий
+          types: Типы событий
+          sources: Источники
+        developer-activity:
+          title: Активность разработчиков
+          subtitle: Последние журналы, вебхуки и события
+        quick-resources:
+          title: Быстрые ссылки
+          subtitle: Перейти к инструментам разработчика

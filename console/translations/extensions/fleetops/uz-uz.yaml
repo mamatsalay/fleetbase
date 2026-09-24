@@ -1,0 +1,3353 @@
+# Uzbek strings for @fleetbase/fleetops-engine, which ships no uz-uz translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+fleet-ops:
+  extension-name: Fleet-Ops
+common:
+  proof-of-delivery: Yetkazib berishni tasdiqlash
+  ad-hoc: Ad-hoc
+  bulk-dispatch: Ommaviy jo'natish
+  dispatch-orders: Buyurtmalarni jo'natish
+  dispatch-order: Buyurtmani jo'natish
+  assign-driver: Haydovchi tayinlash
+  unassign-driver: Haydovchini olib tashlash
+  assign-drivers: Haydovchilarni tayinlash
+  no-driver-assigned: Haydovchi tayinlanmagan
+  no-vehicle-assigned: Transport vositasi tayinlanmagan
+  internal-id: Ichki ID
+  address: Manzil
+  create-order: Buyurtma yaratish
+  coordinates: Koordinatalar
+  city: Shahar
+  country: Mamlakat
+  upload-new-photo: Yangi rasm yuklash
+  search-countries: Mamlakatlarni qidirish
+  select-resource-filter-by: Filtrlash uchun {resource} tanlang
+  table-view: Jadval ko'rinishi
+  grid-view: To'r ko'rinishi
+  calendar-view: Kalendar ko'rinishi
+  change-layout: Maketni o'zgartirish
+  livemap: Jonli xarita
+  tracking: Kuzatuv
+  eta: Taxminiy yetib kelish vaqti
+  position: Joylashuv
+  positions: Joylashuvlar
+  pos: POS
+  edit-address: Manzilni tahrirlash
+  new-address: Yangi manzil
+  select-address: Manzilni tanlang
+  schedule: Jadval
+  optional: Ixtiyoriy
+  unauthorized-access: Sizda ushbu resursga kirish huquqi yo'q.
+  loading-route: Marshrut yuklanmoqda...
+  hover-to-load-route: Marshrutni oldindan ko'rish yuklanmoqda...
+  unable-to-load-route: Marshrutni oldindan ko'rishni yuklab bo'lmadi.
+menu:
+  operations: Operatsiyalar
+  dashboard: Boshqaruv paneli
+  radar: Radar
+  orders: Buyurtmalar
+  service-rates: Xizmat tariflari
+  scheduler: Rejalashtiruvchi
+  order-config: Buyurtma sozlamalari
+  resources: Resurslar
+  drivers: Haydovchilar
+  vehicles: Transport vositalari
+  trailers: Tirkamalar
+  fleets: Avtoparklar
+  vendors: Yetkazib beruvchilar
+  contacts: Kontaktlar
+  places: Joylar
+  fuel-reports: Yoqilg'i hisobotlari
+  fuel-transactions: Yoqilg'i tranzaksiyalari
+  issues: Muammolar
+  maintenance: Texnik xizmat
+  schedules: Jadvallar
+  work-orders: Ish buyurtmalari
+  inspection-forms: Ko'rik shakllari
+  inspections: Ko'riklar
+  equipment: Uskunalar
+  parts: Ehtiyot qismlar
+  maintenance-history: Texnik xizmat tarixi
+  connectivity: Ulanish
+  telematics: Telematika
+  fuel-providers: Yoqilg'i integratsiyalari
+  devices: Qurilmalar
+  sensors: Sensorlar
+  events: Hodisalar
+  tracking: Kuzatuv
+  analytics: Analitika
+  reports: Hisobotlar
+  settings: Sozlamalar
+  navigator-app: Navigator ilovasi
+  payments: To'lovlar
+  notifications: Bildirishnomalar
+  routing: Marshrutlash
+  map: Xarita
+  custom-fields: Maxsus maydonlar
+  order-board: Buyurtmalar doskasi
+  avatars: Avatarlar
+  scheduling: Rejalashtirish
+  maintenances: Texnik xizmatlar
+  orchestrator: Orkestrator
+  orchestrator-settings: Orkestrator sozlamalari
+trailer:
+  navigation-description: Tortiladigan aktivlar, tirkash ulanishlari, uskunalar va telematikani boshqaring.
+  sections:
+    details: Tafsilotlar
+    identification: Tirkama identifikatsiyasi
+    classification: Tasnif va holat
+    registration: Ro'yxatdan o'tkazish
+    location: Joylashuv
+    dimensions: O'lchamlar va sig'im
+    measurement: O'lchov va foydalanish
+    dimensions-fields: O'lchamlar ({unit})
+    weight: Og'irlik ({unit})
+    running-gear: O'qlar, tormozlar va ulagich
+    refrigeration: Sovutish
+    ownership: Egalik va moliya
+    finance: Moliyaviy tafsilotlar
+    connection: Tirkash ulanishi
+    telemetry: Joylashuv va telematika
+    notes: Izohlar va tarix
+  fields:
+    photo: Rasm
+    id: ID
+    name: Ism
+    code: Kod
+    description: Tavsif
+    type: Tirkama turi
+    body-type: Kuzov turi
+    color: Rang
+    status: Holat
+    category: Kategoriya
+    vin: VIN
+    plate-number: Davlat raqami
+    serial-number: Seriya raqami
+    make: Ishlab chiqaruvchi
+    model: Model
+    year: Yil
+    vendor: Yetkazib beruvchi
+    warranty: Kafolat
+    vehicle: Tortuvchi transport vositasi
+    attachment-state: Ulanish holati
+    attached-at: Ulangan vaqtdan beri
+    position: Tirkash pozitsiyasi
+    source: Manba
+    connected-at: Ulangan vaqt
+    disconnected-at: Uzilgan vaqt
+    duration: Davomiylik
+    connectivity: Ulanish
+    last-online: Oxirgi marta onlayn
+    last-provider: Telemetriya provayderi
+    last-event-at: Oxirgi telemetriya hodisasi
+    coordinates: Koordinatalar
+    speed: Tezlik
+    heading: Yo'nalish
+    altitude: Balandlik
+    devices-count: Ulangan qurilmalar
+    equipment-count: Biriktirilgan uskunalar
+    measurement-system: O'lchov tizimi
+    odometer: Odometr / xabometr {unit}
+    odometer-unit: Odometr birligi
+    length: Uzunlik ({unit})
+    width: Kenglik ({unit})
+    height: Balandlik ({unit})
+    cargo-volume: Yuk hajmi ({unit})
+    tare-weight: Bo'sh og'irlik ({unit})
+    gvwr: To'la og'irlik ({unit})
+    payload-capacity: Yuk ko'tarish qobiliyati ({unit})
+    axle-count: O'qlar
+    tire-count: Shinalar
+    door-count: Eshiklar
+    coupling-type: Ulagich turi
+    brake-type: Tormoz turi
+    abs: ABS
+    ebs: EBS
+    refrigerated: Sovutgichli
+    temperature-min: Minimal harorat ({unit})
+    temperature-max: Maksimal harorat ({unit})
+    reefer-hours: Sovutgich dvigateli soatlari
+    ownership-type: Egalik
+    financing-status: Moliyalashtirish holati
+    currency: Valyuta
+    acquisition-cost: Sotib olish narxi
+    current-value: Joriy qiymat
+    insurance-value: Sug'urta qiymati
+    depreciation-rate: Amortizatsiya darajasi (yiliga %)
+    purchased-at: Sotib olingan sana
+    lease-expires-at: Lizing tugash sanasi
+    notes: Eslatmalar
+    created-at: Yaratilgan
+    updated-at: Oxirgi yangilangan
+  placeholders:
+    filter-vendor: Yetkazib beruvchi bo'yicha filtrlash
+    name: masalan, Refrijerator 12
+    code: Ichki avtopark kodi, masalan, TRL-0012
+    description: Ushbu tirkama nima uchun ishlatiladi
+    type: Tirkama turini tanlang
+    status: Holatni tanlang
+    body-type: masalan, yopiq, pardali, platforma
+    color: masalan, Oq
+    category: Toifani tanlang (ixtiyoriy)
+    vin: 17 belgili VIN
+    plate-number: Davlat raqami
+    serial-number: Ishlab chiqaruvchining seriya raqami
+    make: masalan, Utility, Schmitz, Wabash
+    model: masalan, 3000R
+    year: masalan, 2024
+    vendor: Yetkazib beruvchini tanlang (ixtiyoriy)
+    warranty: Kafolatni tanlang (ixtiyoriy)
+    vehicle: Transport vositasini tanlang
+    trailer: Tirkamani tanlang
+    equipment: Uskunani tanlang
+    filter-vehicle: Tortuvchi transport vositasi bo'yicha filtrlash
+    position: '1'
+    measurement-system: O'lchov tizimini tanlang
+    odometer-unit: Birlikni tanlang
+    odometer: Joriy ko'rsatkich
+    length: '0.000'
+    width: '0.000'
+    height: '0.000'
+    cargo-volume: '0.000'
+    tare-weight: '0.000'
+    gvwr: '0.000'
+    payload-capacity: '0.000'
+    axle-count: masalan, 2
+    tire-count: masalan, 8
+    door-count: masalan, 2
+    coupling-type: Ulagich turini tanlang
+    brake-type: Tormoz turini tanlang
+    temperature-min: masalan, -20
+    temperature-max: masalan, 4
+    reefer-hours: Sovutgich qurilmasining ish soatlari
+    ownership-type: Egalik turini tanlang
+    financing-status: masalan, to'liq to'langan, 2028-yilgacha moliyalashtirilgan
+    depreciation-rate: masalan, 10
+    date: KK-OO-YYYY
+    notes: Ushbu tirkama haqida ichki izohlar
+  help:
+    photo: Ushbu tirkamaning rasmini yuklang.
+    name: Fleet-Ops bo'ylab ko'rsatiladigan nom. Majburiy.
+    code: Ushbu tirkama uchun avtoparkingizdagi ichki belgi.
+    type: Tur qaysi bo'limlar qo'llanilishini belgilaydi, masalan, refrijeratorlar uchun sovutish.
+    status: Hayot sikli holati. Ulanish va aloqa alohida kuzatiladi.
+    body-type: Tasniflash va qidirish uchun ishlatiladigan erkin kuzov tavsifi.
+    category: Boshqa avtopark resurslari bilan umumiy ixtiyoriy guruhlash.
+    vin: Tirkamaga bosilgan shassi yoki transport vositasini identifikatsiya qilish raqami.
+    coordinates: Oxirgi ma'lum yoki asosiy joylashuv. Telematika qurilmalari buni avtomatik yangilaydi.
+    measurement-system: O'lchamlar, og'irliklar, hajm va haroratlar uchun ishlatiladigan birliklarni belgilaydi.
+    odometer: Tanlangan odometr birligidagi xabometr yoki odometr ko'rsatkichi.
+    cargo-volume: Tirkama kuzovining foydali yuk hajmi.
+    tare-weight: Bo'sh tirkamaning og'irligi.
+    gvwr: To'la og'irlik reytingi — ruxsat etilgan maksimal yuklangan og'irlik.
+    payload-capacity: Tirkama tashishi mumkin bo'lgan maksimal yuk og'irligi.
+    coupling-type: Tirkama tortuvchi transport vositasiga qanday ulanadi.
+    abs: Blokirovkaga qarshi tormoz tizimi o'rnatilgan.
+    ebs: Elektron tormoz tizimi o'rnatilgan.
+    refrigerated: Sovutgich sozlamalarini qayd etish uchun harorat nazorat qilinadigan tirkamalarda yoqing.
+    temperature: Sovutgich qurilmasining ish harorati oralig'i.
+    reefer-hours: Sovutish qurilmasida qayd etilgan ish soatlari.
+    ownership-type: Ushbu tirkama qanday asosda saqlanadi. Lizing va moliyalashtirish tafsilotlari kerak bo'lganda ko'rsatiladi.
+    lease-expires-at: Lizing, ijara yoki moliyalashtirish shartnomasi qachon tugaydi.
+    vendor: Tirkama olingan yetkazib beruvchi yoki lizing beruvchi.
+    warranty: Ushbu tirkamani qamrab oluvchi kafolat siyosati.
+    acquisition-cost: Tanlangan valyutadagi sotib olish narxi yoki kapitallashtirilgan qiymat.
+    depreciation-rate: Joriy qiymatni baholash uchun ishlatiladigan yillik amortizatsiya.
+    attach-vehicle: Tirkama tanlangan transport vositasiga ulanadi. Tirkama bir vaqtda faqat bitta transport vositasiga ulanishi mumkin.
+    select-trailer: Faqat ajratilgan tirkamalar ko'rsatilgan.
+    select-equipment: Faqat biriktirilmagan uskunalar ko'rsatilgan.
+    position: Transport vositasi orqasidagi tirkash pozitsiyasi. 1-pozitsiya — to'g'ridan-to'g'ri tyagach orqasida; avtopoyezdlar uchun 2 yoki undan ko'pini ishlating.
+  units:
+    length-metric: m
+    length-imperial: fut
+    weight-metric: kg
+    weight-imperial: funt
+    volume-metric: m³
+    volume-imperial: fut³
+    temperature-metric: °C
+    temperature-imperial: °F
+  actions:
+    new: Yangi tirkama
+    locate: Xaritada ko'rsatish
+    attach-vehicle: Transport vositasiga ulash
+    detach-vehicle: Transport vositasidan ajratish
+    attach-device: Qurilmani ulash
+    attach-equipment: Uskunani biriktirish
+    detach-equipment: Uskunani ajratish
+    schedule-maintenance: Texnik xizmatni rejalashtirish
+    create-work-order: Ish buyurtmasini yaratish
+    log-maintenance: Texnik xizmatni qayd etish
+  prompts:
+    attach-vehicle-title: '{trailerName} ni transport vositasiga ulash'
+    select-vehicle-warning: Ushbu tirkamani ulash uchun transport vositasini tanlang.
+    attach-vehicle-success: '{trailerName} {vehicleName} ga ulandi.'
+    detach-vehicle-title: '{trailerName} ajratilsinmi?'
+    detach-vehicle-body: Bu {trailerName} va {vehicleName} o'rtasidagi joriy tirkash ulanishini tugatadi. Ulanish tirkama tarixida saqlanadi.
+    detach-vehicle-success: '{trailerName} {vehicleName} dan ajratildi.'
+    not-attached-warning: '{trailerName} transport vositasiga ulanmagan.'
+    attach-device-title: '{trailerName} ga qurilma ulash'
+    select-device-warning: Ushbu tirkamaga ulash uchun qurilmani tanlang.
+    attach-device-success: Qurilma {trailerName} ga ulandi.
+    attach-equipment-title: '{resourceName} ga uskuna biriktirish'
+    select-equipment-warning: Biriktirish uchun uskunani tanlang.
+    attach-equipment-success: '{equipmentName} {resourceName} ga biriktirildi.'
+    detach-equipment-title: '{equipmentName} ajratilsinmi?'
+    detach-equipment-body: '{equipmentName} endi {resourceName} ga biriktirilmaydi.'
+    detach-equipment-success: '{equipmentName} {resourceName} dan ajratildi.'
+    no-location-warning: '{trailerName} uchun hali joylashuv qayd etilmagan.'
+    photo-upload-error: 'Rasmni yuklab bo''lmadi: {message}'
+  empty:
+    title: Birinchi tirkamangizni qo'shing
+    description: Tirkamalar tortiladigan aktivlaringiz uchun tirkash ulanishlari, ulangan qurilmalar va uskunalar, jonli telemetriya va texnik xizmatni kuzatadi.
+    filtered-title: Filtrlaringizga mos tirkamalar yo'q
+    filtered-description: Boshqa tirkamani topish uchun qidiruv yoki filtrlarni o'zgartiring.
+    connections: Hali tirkash tarixi yo'q
+    connections-description: Tirkash ulanishlarini qayd etishni boshlash uchun ushbu tirkamani transport vositasiga ulang.
+    equipment: Biriktirilgan uskuna yo'q
+    equipment-description: Ushbu tirkamaga liftlar, tasmalar yoki sovutgich qurilmalari kabi uskunalarni biriktiring.
+    schedules: Texnik xizmat jadvallari yo'q
+    schedules-description: Ushbu tirkama uchun takroriy ko'riklar yoki xizmatni rejalashtirish uchun jadval yarating.
+    work-orders: Ish buyurtmalari yo'q
+    work-orders-description: Ushbu tirkamadagi ta'mirlash yoki xizmatni kuzatish uchun ish buyurtmasi yarating.
+    maintenance: Texnik xizmat tarixi yo'q
+    maintenance-description: Ushbu tirkama uchun qayd etilgan texnik xizmat shu yerda ko'rinadi.
+  docs:
+    title: Tirkamalar bo'yicha qo'llanma
+    link: Tirkamalar bo'yicha qo'llanmani ochish
+  tabs:
+    overview: Umumiy koʻrinish
+    positions: Joylashuvlar
+    devices: Qurilmalar
+    equipment: Uskunalar
+    connections: Tirkash tarixi
+    schedules: Jadvallar
+    work-orders: Ish buyurtmalari
+    maintenance: Texnik xizmat
+  columns:
+    name: Ism
+    id: ID
+    code: Kod
+    type: Tur
+    plate-number: Davlat raqami
+    status: Holat
+    vehicle: Tortuvchi transport vositasi
+    attachment-state: Ulanish
+    connectivity: Ulanish
+    last-online: Oxirgi marta onlayn
+    location: Joylashuv
+    devices: Qurilmalar
+    equipment: Uskunalar
+    vin: VIN
+    serial-number: Seriya raqami
+    make: Ishlab chiqaruvchi
+    model: Model
+    year: Yil
+    vendor: Yetkazib beruvchi
+    ownership: Egalik
+    axles: O'qlar
+    gvwr: To'la og'irlik
+    payload-capacity: Yuk ko'tarish qobiliyati
+    length: Uzunlik
+    refrigerated: Sovutgichli
+    created-at: Yaratilgan vaqti
+    updated-at: Yangilangan vaqti
+  filters:
+    created-between: Yaratilgan oraliq
+    updated-between: Yangilangan oraliq
+    last-online-between: Oxirgi onlayn bo'lgan oraliq
+  connections:
+    description: Ushbu tirkama ulangan barcha transport vositalari, eng yangisi birinchi.
+    ongoing: Davom etmoqda
+    connected: 'Ulangan: {date}'
+    disconnected: 'Uzilgan: {date}'
+    still-attached: Hali ulangan
+  equipment:
+    description: Hozirda ushbu tirkamaga biriktirilgan uskunalar.
+  telemetry:
+    no-location: Joylashuv qayd etilmagan
+  maintenance:
+    interval: Interval
+    next-due: Keyingi muddat
+    code: Kod
+    subject: Mavzu
+    priority: Muhimlik
+    due: Muddat
+    summary: Xulosa
+    odometer: Odometr
+    total-cost: Umumiy xarajat
+    date: Sana
+  statuses:
+    available: Mavjud
+    in_use: Foydalanilmoqda
+    maintenance: Texnik xizmatda
+    out_of_service: Ishlamaydi
+    retired: Hisobdan chiqarilgan
+  status-descriptions:
+    available: Jo'natish yoki ulashga tayyor.
+    in_use: Hozirda ish bajarmoqda yoki transport vositasiga ulangan.
+    maintenance: Xizmat, ko'rik yoki ta'mirlashda.
+    out_of_service: Keyingi xabargacha foydalanib bo'lmaydi.
+    retired: Faol xizmatdan butunlay chiqarilgan.
+  attachment:
+    attached: Ulangan
+    detached: Ajratilgan
+    no-vehicle: Transport vositasiga ulanmagan
+    towed-by: Tortuvchi
+    position: '{position}-pozitsiya'
+  connectivity:
+    online: Onlayn
+    recently_offline: Yaqinda oflayn bo'lgan
+    offline: Oflayn
+    never_connected: Hech qachon ulanmagan
+  measurement:
+    metric: Metrik
+    imperial: Imperial
+  measurement-descriptions:
+    metric: Metr, kilogramm, kub metr va Selsiy.
+    imperial: Fut, funt, kub fut va Farengeyt.
+  odometer-units:
+    km: Kilometr
+    mi: Mil
+  coupling-types:
+    fifth_wheel: Egar-ulagich
+    pintle_hook: Ilgakli ulagich
+    ball_hitch: Sharli ulagich
+    gooseneck: G'oz bo'yin
+    drawbar: Tortish tayoqchasi
+    other: Boshqa
+  brake-types:
+    air: Pnevmatik tormozlar
+    electric: Elektr tormozlar
+    hydraulic_surge: Gidravlik inersion tormozlar
+    none: Tormozsiz
+    other: Boshqa
+  ownership-types:
+    owned: Xususiy
+    leased: Lizingda
+    financed: Moliyalashtirilgan
+    rented: Ijarada
+  types:
+    dry_van: Yopiq furgon
+    reefer: Refrijerator
+    flatbed: Bortli platforma
+    step_deck: Pog'onali platforma
+    lowboy: Past ramali tral
+    tanker: Sisterna
+    bulk: Sochiluvchan yuk
+    dump: Samosval
+    chassis: Shassi
+    curtain_side: Pardali
+    car_carrier: Avtovoz
+    livestock: Chorva tashuvchi
+    logging: Yog'och tashuvchi
+    dolly: Dolli
+    specialty: Maxsus
+    other: Boshqa
+resource:
+  asset: Aktiv
+  assets: Aktivlar
+  trailer: Tirkama
+  trailers: Tirkamalar
+  activity: Faoliyat
+  activities: Faoliyatlar
+  contact: Aloqa
+  contacts: Kontaktlar
+  customer-contact: Mijoz kontakti
+  customer-contacts: Mijoz kontaktlari
+  customer-vendor: Mijoz yetkazib beruvchisi
+  customer-vendors: Mijoz yetkazib beruvchilari
+  customer: Mijoz
+  customers: Mijozlar
+  custom-entity: Maxsus obyekt
+  custom-entities: Maxsus obyektlar
+  device-event: Qurilma hodisasi
+  device-events: Qurilma hodisalari
+  device: Qurilma
+  devices: Qurilmalar
+  driver: Haydovchi
+  drivers: Haydovchilar
+  entity: Obyekt
+  entities: Obyektlar
+  equipment: Uskunalar
+  equipments: Uskunalar
+  facilitator-contact: Vositachi kontakti
+  facilitator-contacts: Vositachi kontaktlari
+  facilitator-customer: Vositachi mijoz
+  facilitator-customers: Vositachi mijozlar
+  facilitator-integrated-vendor: Vositachi integratsiyalangan yetkazib beruvchi
+  facilitator-integrated-vendors: Vositachi integratsiyalangan yetkazib beruvchilar
+  facilitator-vendor: Vositachi yetkazib beruvchi
+  facilitator-vendors: Vositachi yetkazib beruvchilar
+  facilitator: Vositachi
+  facilitators: Vositachilar
+  fleet-driver: Avtopark haydovchisi
+  fleet-drivers: Avtopark haydovchilari
+  fleet: Avtopark
+  fleets: Avtoparklar
+  fuel-report: Yoqilg'i hisoboti
+  fuel-reports: Yoqilg'i hisobotlari
+  inspection: Ko'rik
+  inspections: Ko'riklar
+  integrated-vendor: Integratsiyalangan yetkazib beruvchi
+  integrated-vendors: Integratsiyalangan yetkazib beruvchilar
+  issue: Muammo
+  issues: Muammolar
+  maintenance: Texnik xizmat
+  maintenances: Texnik xizmatlar
+  maintenance-schedule: Texnik xizmat jadvali
+  maintenance-schedules: Texnik xizmat jadvallari
+  order-config: Buyurtma sozlamalari
+  order-configs: Buyurtma sozlamalari
+  order: Buyurtma
+  orders: Buyurtmalar
+  part: Ehtiyot qism
+  parts: Ehtiyot qismlar
+  payload: Yuk
+  payloads: Yuklar
+  place: Joy
+  places: Joylar
+  purchase-rate: Xarid tarifi
+  purchase-rates: Xarid tariflari
+  route: Marshrut
+  routes: Marshrutlar
+  sensor: Sensor
+  sensors: Sensorlar
+  service-area: Xizmat hududi
+  service-areas: Xizmat hududlari
+  service-quote-item: Xizmat taklifi bandi
+  service-quote-items: Xizmat taklifi bandlari
+  service-quote: Xizmat taklifi
+  service-quotes: Xizmat takliflari
+  service-rate-fee: Xizmat tarifi to'lovi
+  service-rate-fees: Xizmat tarifi to'lovlari
+  service-rate-parcel-fee: Xizmat tarifi posilka to'lovi
+  service-rate-parcel-fees: Xizmat tarifi posilka to'lovlari
+  service-rate: Xizmat tarifi
+  service-rates: Xizmat tariflari
+  telematic: Telematika
+  telematics: Telematika
+  tracking-number: Kuzatuv raqami
+  tracking-numbers: Kuzatuv raqamlari
+  tracking-status: Kuzatuv holati
+  tracking-statuses: Kuzatuv holatlari
+  vehicle-device: Transport vositasi qurilmasi
+  vehicle-devices: Transport vositasi qurilmalari
+  vehicle: Transport vositasi
+  vehicles: Transport vositalari
+  vendor: Yetkazib beruvchi
+  vendors: Yetkazib beruvchilar
+  warranty: Kafolat
+  warranties: Kafolatlar
+  waypoint: Oraliq nuqta
+  waypoints: Oraliq nuqtalar
+  work-order: Ish buyurtmasi
+  work-orders: Ish buyurtmalari
+  zone: Zona
+  zones: Zonalar
+order-status:
+  created: Yaratilgan
+  ready: Tayyor
+  dispatched: Jo'natilgan
+  started: Boshlangan
+  completed: Bajarildi
+  canceled: Bekor qilingan
+column:
+  target: Maqsad
+  address: Manzil
+  country: Mamlakat
+  created-at: Yaratilgan vaqti
+  id: ID
+  internal-id: Ichki ID
+  name: Ism
+  phone: Telefon
+  route-type: Marshrut turi
+  status: Holat
+  type: Tur
+  updated-at: Yangilangan vaqti
+  vehicle: Transport vositasi
+  vendor: Yetkazib beruvchi
+  created: Yaratilgan
+  email: Elektron pochta
+  title: Sarlavha
+  updated: Yangilangan
+  fleet: Avtopark
+  license: Guvohnoma
+  active-manpower: Faol ishchi kuchi
+  manpower: Ishchi kuchi
+  parent-fleet: Asosiy avtopark
+  service-area: Xizmat hududi
+  task: Vazifa
+  zone: Zona
+  driver: Haydovchi
+  edit-fuel: Yoqilg'ini tahrirlash
+  odometer: Odometr
+  reporter: Xabar beruvchi
+  view: Ko'rish
+  volume: Hajm
+  assignee: Mas'ul
+  category: Kategoriya
+  priority: Muhimlik
+  city: Shahar
+  neighborhood: Mahalla
+  postal-code: Pochta indeksi
+  state: Viloyat
+  make: Ishlab chiqaruvchi
+  model: Model
+  plate-number: Davlat raqami
+  year: Yil
+  website-url: Veb-sayt URL manzili
+  created-by: Yaratgan
+  customer: Mijoz
+  driver-assigned: Tayinlangan haydovchi
+  dropoff: Topshirish joyi
+  facilitator: Vositachi
+  items: Elementlar
+  payload: Yuk
+  pickup: Olib ketish joyi
+  scheduled-at: Rejalashtirilgan vaqt
+  tracking: Kuzatuv
+  transaction: Tranzaksiya
+  updated-by: Yangilagan
+  vehicle-assigned: Tayinlangan transport vositasi
+  service: Xizmat
+  location: Joylashuv
+  coordinates: Koordinatalar
+  current-job: Joriy ish
+  last-seen: Oxirgi ko'rilgan
+  place: Joy
+  subject: Mavzu
+  summary: Xulosa
+  total-cost: Umumiy xarajat
+  due-at: Muddat
+  serial-number: Seriya raqami
+  manufacturer: Ishlab chiqaruvchi
+  part-number: Qism raqami
+  quantity-on-hand: Ombordagi miqdor
+  quantity: Miqdori
+  unit-cost: Birlik narxi
+  code: Kod
+  interval: Interval
+  next-due: Keyingi muddat
+  asset: Aktiv
+  performed-by: Bajargan
+map:
+  visibility-controls:
+    title: Ko'rinish sozlamalari
+    hide-places: Barcha joylarni yashirish
+    show-places: Barcha joylarni ko'rsatish
+    driver-controls: Haydovchi boshqaruvlari
+    driver-visibility-controls: Haydovchilar ko'rinishi sozlamalari
+    show-drivers: Barcha haydovchilarni ko'rsatish
+    hide-drivers: Barcha haydovchilarni yashirish
+    show-online-drivers: Faqat onlayn haydovchilarni ko'rsatish
+    show-offline-drivers: Faqat oflayn haydovchilarni ko'rsatish
+    vehicle-controls: Transport vositasi boshqaruvlari
+    vehicle-visibility-controls: Transport vositalari ko'rinishi sozlamalari
+    hide-vehicles: Barcha transport vositalarini yashirish
+    show-vehicles: Barcha transport vositalarini ko'rsatish
+    show-online-vehicles: Faqat onlayn transport vositalarini ko'rsatish
+    show-offline-vehicles: Faqat oflayn transport vositalarini ko'rsatish
+  zones-panel:
+    title: Xizmat hududlari
+    create-service: Yangi xizmat hududini yaratish
+    show: Barcha xizmat hududlarini ko'rsatish
+    hide: Barcha xizmat hududlarini yashirish
+    action: Amallar
+    focus: Fokus
+    focus-resource: 'Fokus: {resource}'
+    blur: Xizmat hududini yashirish
+    blur-resource: 'Yashirish: {resource}'
+    create-zone: Ichida zona yaratish
+    create-zone-inside: 'Zona yaratish: {serviceAreaName}'
+    edit-resource-boundaries: '{resource} chegaralarini tahrirlash'
+    edit-boundaries: 'Chegaralarni tahrirlash: {resource}'
+  toolbar:
+    create: Buyurtma yaratish
+    view-order: Buyurtmalarni ko'rish
+    view-service-area: Xizmat hududlarini ko'rish
+    visibility: Ko'rinish sozlamalari
+    scope: Qamrov
+activity:
+  form:
+    code: Kod
+    code-help-text: Ushbu faoliyatga xos noyob identifikatorni kiriting.
+    completes-order: Buyurtmani yakunlaydi
+    details: Tafsilotlar
+    details-help-text: Oxirgi foydalanuvchi tushunishi uchun faoliyatning batafsil tavsifini kiriting.
+    key: Kalit
+    key-help-text: '"Dasturiy qaror qabul qilish uchun ishlatiladigan kalitni kiriting. Bu kalit bir xil identifikatorli bitta yoki bir nechta faoliyatni ifodalashi mumkin. Eslatma: bu kalit noyob bo''lishi shart emas."'
+    pod-method-placeholder: Yetkazib berishni tasdiqlash usulini tanlang
+    require-pod: Yetkazib berishni tasdiqlash talab qilinadi
+    require-pod-help-text: Bu faoliyat buyurtmaga qo'llanishidan oldin tasdiq yaratilishini talab qiladi.
+    select-pod-method: Yetkazib berishni tasdiqlash usuli
+    status: Holat
+    status-help-text: Ushbu faoliyat ishga tushganda oxirgi foydalanuvchiga ko'rsatiladigan holatni belgilang.
+    logic-builder:
+      activity-logic: Faoliyat mantiqi
+      activity-logic-help-text: Ish jarayonida faoliyat qachon mavjud bo'lishini belgilovchi maxsus mantiqiy shartlarni aniqlang. Bu imkoniyat jarayonni aniq mezonlarga moslashtirish va har bir faoliyat faqat oldindan belgilangan shartlar bajarilganda ishga tushishini ta'minlash imkonini beradi.
+      activity-logic-add-logic-help-text: Faoliyat qachon faollashtirilishini belgilaydigan yangi shartlar to'plamini yarating. Yangi mantiqiy qoida tuzishni boshlash uchun shu yerni bosing.
+      activity-logic-select-logic-type-help-text: Ushbu shart qaysi mantiq turiga amal qilishini tanlang. To'g'ridan-to'g'ri shart uchun 'If', murakkab shartlar uchun 'And'/'Or', shartni inkor qilish uchun 'Not' ni tanlang.
+      activity-logic-add-condition-help-text: Ushbu mantiqiy to'plam doirasida bajarilishi kerak bo'lgan aniq talabni qo'shing. Faoliyat mavjudligini boshqaradigan qo'shimcha mezonlarni belgilash uchun foydalaning.
+      field: Maydon
+      value: Qiymat
+      add-logic: Mantiq qo'shish
+      types:
+        and: 'Mantiqiy VA: barcha shartlar rost bo''lsa, rost'
+        or: 'Mantiqiy YOKI: kamida bitta shart rost bo''lsa, rost'
+        not: 'Mantiqiy EMAS: shartning rostlik qiymatini teskari qiladi'
+        if: 'Shartli mantiq: shart rost bo''lsa, keyingi amalni bajaradi'
+      operators:
+        equal: Ikki qiymat tengligini tekshiradi
+        not-equal: Ikki qiymat teng emasligini tekshiradi
+        greater-than: Qiymat boshqasidan kattaligini tekshiradi
+        less-than: Qiymat boshqasidan kichikligini tekshiradi
+        greater-than-or-equal: Qiymat boshqasidan katta yoki tengligini tekshiradi
+        less-than-or-equal: Qiymat boshqasidan kichik yoki tengligini tekshiradi
+        exists: Maydon yoki qiymat mavjudligini tekshiradi
+        has: Obyektda ma'lum xususiyat borligini yoki to'plamda ma'lum element borligini tekshiradi
+        contains: Satrda boshqa satr borligini yoki massivda ma'lum element borligini tekshiradi
+        begins-with: Satr ko'rsatilgan qism satr bilan boshlanishini tekshiradi
+        ends-with: Satr ko'rsatilgan qism satr bilan tugashini tekshiradi
+        in: Qiymat berilgan to'plam yoki oraliqda ekanligini tekshiradi
+        not-in: Qiymat berilgan to'plam yoki oraliqda emasligini tekshiradi
+        and: Mantiqiy VA, ikkala operand rost bo'lsa, rost
+        or: Mantiqiy YOKI, kamida bitta operand rost bo'lsa, rost
+        not: Mantiqiy EMAS, rostlik qiymatini teskari qiladi
+    event-selector:
+      activity-events: Faoliyat hodisalari
+      activity-events-select-to-fire: Ushbu faoliyat sodir bo'lganda qaysi hodisalar faollashishini tanlang.
+      activity-events-select-events-info: Ushbu faoliyatga javoban ishga tushirmoqchi bo'lgan aniq hodisani tanlang.
+      select-event-to-add: Qo'shish uchun hodisani tanlang...
+      events:
+        order:
+          dispatched: Buyurtma muvaffaqiyatli jo'natilganda ishga tushadi.
+          failed: Buyurtma xato yoki istisno tufayli muvaffaqiyatsiz bo'lganda ishga tushadi.
+          canceled: Buyurtma foydalanuvchi, haydovchi yoki tizim jarayoni tomonidan bekor qilinganda ishga tushadi.
+          completed: Buyurtma haydovchi yoki tizim jarayoni tomonidan yakunlanganda ishga tushadi.
+contact:
+  fields:
+    contact-details: Kontakt tafsilotlari
+    upload-new-photo: Yangi rasm yuklash
+customer:
+  fields:
+    addresses: Manzillar
+    no-addresses: Ushbu mijozda saqlangan manzillar yo'q.
+    primary-address: Asosiy
+    customer-details: Mijoz tafsilotlari
+    select-address: Manzilni tanlang
+    new-address: Yangi manzil
+    select-user: Foydalanuvchini tanlang
+    send-welcome-email: Mijozlar portaliga xush kelibsiz xatini yuborish
+    send-welcome-email-help-text: Vaqtinchalik parol yaratish va ushbu mijozga mijozlar portaliga kirish havolasini elektron pochta orqali yuborish.
+    upload-new-photo: Yangi rasm yuklash
+    user-account: Foydalanuvchi hisobi
+    user-account-help-text: Har bir mijoz profili ma'lum foydalanuvchi hisobiga bog'lanishi kerak. Bu bog'lanish autentifikatsiya jarayoni uchun zarur va har bir mijoz o'z profili va boshqa xizmatlariga xavfsiz kirishi va ularni boshqarishini ta'minlaydi.
+custom-entity:
+  fields:
+    description: Tavsif
+    details: Tafsilotlar
+    entity-image: Obyekt rasmi
+    height: Balandlik
+    height-text: Balandlik matni
+    length: Uzunlik
+    length-text: Uzunlik matni
+    measurements: O'lchamlar
+    name: Ism
+    type: Tur
+    weight: Og'irlik
+    weight-text: Og'irlik matni
+    width: Kenglik
+    width-text: Kenglik matni
+driver:
+  fields:
+    avatar: Avatar
+    driver-details: Haydovchi tafsilotlari
+    select-vehicle: Transport vositasini tanlang
+    upload-new-photo: Yangi rasm yuklash
+    user-account: Foydalanuvchi hisobi
+    vendor: Yetkazib beruvchi
+    select-vendor: Yetkazib beruvchini tanlang
+    driver-license: Haydovchilik guvohnomasi
+    license-expiry: Guvohnoma amal qilish muddati
+    no-vehicle-assigned: Transport vositasi tayinlanmagan
+  actions:
+    unassign-orders: Buyurtmalarni olib tashlash
+    unassign-vehicle: Transport vositasini olib tashlash
+    create-issue: Muammo yaratish
+    assign-order: Buyurtmani haydovchiga tayinlash
+    assign-vehicle: Transport vositasini haydovchiga tayinlash
+    locate-driver: Haydovchini xaritada ko'rsatish
+  prompts:
+    assign-order-title: '{driverName} ga buyurtma tayinlash'
+    assign-order-success: Buyurtma {driverName} ga tayinlandi.
+    select-order-warning: Tayinlash uchun buyurtmani tanlang.
+    assign-vehicle-title: '{driverName} ga transport vositasi tayinlash'
+    assign-vehicle-success: Transport vositasi {driverName} ga tayinlandi.
+    select-vehicle-warning: Tayinlash uchun transport vositasini tanlang.
+    no-assigned-orders-warning: '{driverName} uchun tayinlangan buyurtmalar topilmadi.'
+    select-orders-warning: Olib tashlash uchun kamida bitta buyurtmani tanlang.
+    unassign-orders-title: '{driverName} dan buyurtmalarni olib tashlash'
+    confirm-unassign-orders-title: '{driverName} dan {count} ta buyurtma olib tashlansinmi?'
+    confirm-unassign-orders-body: 'Bu {driverName} ni quyidagi buyurtmalardan olib tashlaydi: {orders}.'
+    unassign-orders-success: '{driverName} {count} ta buyurtmadan olib tashlandi.'
+    no-vehicle-assigned-warning: '{driverName} ga transport vositasi tayinlanmagan.'
+    unassign-vehicle-title: '{vehicleName} {driverName} dan olib tashlansinmi?'
+    unassign-vehicle-body: Bu {driverName} ni {vehicleName} dan olib tashlaydi. Buyurtma tayinlovlari o'zgarmaydi.
+    unassign-vehicle-success: '{vehicleName} {driverName} dan olib tashlandi.'
+    issue-title: '{driverName} uchun muammo qayd etildi'
+profile-account:
+  staff-linked-helper: Jamoa a'zosi hisobiga bog'langan — elektron pochta va telefonni IAM orqali boshqaring.
+  will-link-to-staff: Mavjud jamoa a'zosi {name} ga bog'lanadi.
+  actions:
+    reset-password: Parolni tiklash
+    send-credentials: Kirish ma'lumotlarini yuborish
+    deactivate-login: Kirishni o'chirish
+    reactivate-login: Kirishni qayta yoqish
+    convert-to-vendor: Yetkazib beruvchiga aylantirish
+  prompts:
+    send-credentials-title: Kirish ma'lumotlarini yuborish
+    send-credentials-body: Yangi vaqtinchalik parol yaratish va {name} ga kirish ma'lumotlarini yuborish.
+    send-credentials-success: Kirish ma'lumotlari {name} ga yuborildi.
+    deactivate-login-body: '{name} uchun kirishni o''chirish. Profil va tarix saqlanib qoladi.'
+    deactivate-login-success: '{name} uchun kirish o''chirildi.'
+    reactivate-login-body: '{name} uchun kirishni qayta yoqish.'
+    reactivate-login-success: '{name} uchun kirish qayta yoqildi.'
+    send-portal-credentials-title: Portal kirish ma'lumotlarini yuborish
+    send-portal-credentials-body: Yangi vaqtinchalik parol yaratish va ushbu kontaktga portal kirish ma'lumotlarini elektron pochta orqali yuborish.
+    send-portal-credentials-success: Portal kirish ma'lumotlari yuborildi.
+    deactivate-portal-login-body: Ushbu kontakt uchun portalga kirishni o'chirish. Profil va tarix saqlanib qoladi.
+    deactivate-portal-login-success: Portalga kirish o'chirildi.
+    reactivate-portal-login-body: Ushbu kontakt uchun portalga kirishni qayta yoqish.
+    reactivate-portal-login-success: Portalga kirish qayta yoqildi.
+    reset-password-title: Kirish ma'lumotlarini tiklash
+    reset-password-heading: Siz {name} uchun parolni tiklamoqchisiz
+    reset-password-body: Quyida yangi parolni kiriting va tasdiqlang. Belgilash katagini tanlab, yangi kirish ma'lumotlarini yuborishingiz ham mumkin.
+    reset-password-accept: Kirish ma'lumotlarini tiklash
+    reset-password-success: Parol tiklandi.
+    new-password: Yangi parol
+    confirm-new-password: Yangi parolni tasdiqlang
+    send-new-credentials: Yangi kirish ma'lumotlarini ushbu hisobga yuborish
+device:
+  attachment:
+    title: Biriktirilgan aktiv
+    description: Ushbu qurilmadan keladigan telemetriya uchun avtopark konteksti.
+    open: Aktivni ochish
+    asset: Biriktirilgan aktiv
+    synced-device: Sinxronlangan qurilma
+    asset-type: Aktiv turi
+    select-asset-type: Aktiv turini tanlang
+    locate: Joylashuvni aniqlash
+    change: Aktivni o'zgartirish
+    detach: Ajratish
+    attached-device: Ulangan qurilma
+    last-seen: Qurilma oxirgi ko'rilgan
+    none-title: Aktiv biriktirilmagan
+    none-message: Telemetriya avtopark kontekstiga ega bo'lishi uchun ushbu qurilmani transport vositasi yoki tirkamaga ulang.
+    latest-positions: So'nggi joylashuvlar
+    positions-description: Ushbu qurilma orqali xabar qilingan so'nggi aktiv koordinatalari.
+    full-history: To'liq tarix
+    no-positions: So'nggi joylashuvlar yo'q
+    no-positions-message: Ushbu biriktirilgan aktiv uchun hali so'nggi joylashuv tarixi mavjud emas.
+    attach-or-change: Aktivni biriktirish yoki o'zgartirish
+    view-attached: Biriktirilgan aktivni ko'rish
+    locate-attached: Biriktirilgan aktivni xaritada ko'rsatish
+    unknown: Noma'lum aktiv
+  fields:
+    title: Qurilma tafsilotlari
+    device-name: Qurilma nomi
+    device-name-placeholder: Qurilma nomi
+    device-type: Qurilma turi
+    device-type-placeholder: Qurilma turini tanlang
+    device-id: Qurilma ID
+    device-id-placeholder: Qurilma ID
+    device-provider: Qurilma provayderi
+    device-provider-placeholder: Qurilma provayderi
+    device-model: Qurilma modeli
+    device-model-placeholder: Qurilma modeli
+    manufacturer: Ishlab chiqaruvchi
+    manufacturer-placeholder: Ishlab chiqaruvchi
+    serial-number: Seriya raqami
+    serial-number-placeholder: Seriya raqami
+    device-location: Qurilma joylashuvi
+    device-location-placeholder: Qurilma joylashuvi
+    installation-date: O'rnatilgan sana
+    installation-date-placeholder: O'rnatilgan sanani tanlang
+    last-maintenance-date: Oxirgi texnik xizmat sanasi
+    last-maintenance-date-placeholder: Oxirgi texnik xizmat sanasini tanlang
+    data-frequency: Ma'lumot chastotasi
+    data-frequency-placeholder: Ma'lumot chastotasi
+    status: Holat
+    status-placeholder: Holatni tanlang
+    telematic: Telematika
+    telematic-placeholder: Telematikani tanlang
+    warranty: Kafolat
+    warranty-placeholder: Kafolatni tanlang
+    notes: Eslatmalar
+    notes-placeholder: Eslatmalar
+  actions:
+    attach-device: Qurilmani ulash
+    attach-to-vehicle: Transport vositasiga ulash
+    detach-from-vehicle: Transport vositasidan ajratish
+    attach-to-asset: Aktivga ulash
+  prompts:
+    attach-to-vehicle-title: Qurilmani transport vositasiga ulash
+    attach-device-to-vehicle-title: '{deviceName} ni transport vositasiga ulash'
+    select-vehicle-warning: Ushbu qurilmani ulash uchun transport vositasini tanlang.
+    attach-to-vehicle-success: Qurilma transport vositasiga ulandi.
+    attach-to-asset-title: Qurilmani aktivga ulash
+    select-asset-warning: Ushbu qurilmani ulash uchun transport vositasi yoki tirkamani tanlang.
+    attach-to-asset-success: Qurilma aktivga ulandi.
+    detach-from-asset-title: '{deviceName} aktivdan ajratilsinmi?'
+    detach-from-asset-body: Bu {deviceName} ni {assetName} dan ajratadi va qayta ulanmaguncha aktiv telemetriya yangilanishlarini to'xtatadi.
+    detach-from-asset-success: Qurilma aktivdan ajratildi.
+    not-attached-warning: '{deviceName} transport vositasiga ulanmagan.'
+    detach-from-vehicle-title: '{deviceName} transport vositasidan ajratilsinmi?'
+    detach-from-vehicle-body: Bu {deviceName} ni {vehicleName} dan ajratadi va qayta ulanmaguncha transport vositasi telemetriya yangilanishlarini to'xtatadi.
+    detach-from-vehicle-success: Qurilma transport vositasidan ajratildi.
+    select-device-to-attach-title: '{resourceName} ga ulash uchun qurilmani tanlang'
+    confirm-attach-device: Tasdiqlash va qurilmani ulash
+    attach-device-success: Qurilma muvaffaqiyatli ulandi.
+    detach-from-resource-title: '{deviceName} {resourceName} dan ajratilsinmi?'
+    detach-from-resource-body: Bu {deviceName} ni {resourceName} dan ajratadi va ushbu {resourceType} uchun telemetriya yangilanishlari va hodisalarni to'xtatadi.
+    detach-from-resource-success: '{deviceName} {resourceName} dan ajratildi.'
+    detach-telematic-device-title: '{deviceName} transport vositasidan ajratilsinmi?'
+    detach-telematic-device-body: '{deviceName} provayder bilan sinxronlanishda qoladi, lekin endi transport vositasiga bog''lanmaydi.'
+    manager-description: Ushbu {resourceType} ga o'rnatilgan telematika qurilmalari. Joylashuvlar va hodisalarni qabul qilishni boshlash uchun qurilmani ulang.
+    no-devices-attached-title: Ulangan qurilmalar yo'q
+    no-devices-attached-body: Ushbu {resourceType} uchun telematika ma'lumotlarini qabul qilishni boshlash uchun yuqoridagi Qurilmani ulash tugmasini bosing.
+entity:
+  fields:
+    declare: Deklaratsiya
+    declare-text: Deklaratsiya matni
+    description: Tavsif
+    description-text: Tavsif matni
+    height: Balandlik
+    height-text: Balandlik matni
+    id-text: ID matni
+    length: Uzunlik
+    length-text: Uzunlik matni
+    measurement-title: O'lchov sarlavhasi
+    name-text: Nom matni
+    price: Narx
+    price-text: Narx matni
+    price-title: Narx sarlavhasi
+    sale-price: Chegirma narxi
+    sale-price-text: Chegirma narxi matni
+    sku: SKU
+    sku-text: SKU matni
+    weight: Og'irlik
+    weight-text: Og'irlik matni
+    width: Kenglik
+    width-text: Kenglik matni
+fleet:
+  fields:
+    fleet-details: Avtopark tafsilotlari
+    fleet-name: Avtopark nomi
+    parent-fleet: Asosiy avtopark
+    select-parent-fleet: Avtoparkni biriktirish uchun asosiy avtoparkni tanlang
+    select-service: Avtoparkni biriktirish uchun xizmat hududini tanlang
+    select-status: Holatni tanlang
+    select-status-fleet: Avtopark holatini tanlang.
+    select-vendor: Avtoparkni biriktirish uchun yetkazib beruvchini tanlang
+    select-zone: Avtoparkni biriktirish uchun zonani tanlang
+    service-title: Xizmat hududiga biriktirish
+    task-mission-title: Vazifa / Missiya
+    task-text: Agar mavjud bo'lsa, ushbu avtoparkning asosiy vazifasi yoki missiyasini tavsiflang.
+    zone-title: Zonaga biriktirish
+    active-manpower: Faol ishchi kuchi
+    task: Vazifa
+  driver-listing:
+    search-driver: Avtoparkdagi haydovchilarni qidirish
+    add-driver: Avtoparkka haydovchi qo'shish
+    loading-message: Avtopark haydovchilari yuklanmoqda...
+  vehicle-listing:
+    search-vehicle: Avtoparkdagi transport vositasini qidirish
+    add-vehicle: Avtoparkka transport vositasi qo'shish
+    loading-message: Avtopark transport vositasi yuklanmoqda...
+  actions:
+    assign-vehicle: Transport vositasini avtoparkka tayinlash
+    assign-driver: Haydovchini avtoparkka tayinlash
+  prompts:
+    assign-driver-title: '{fleetName} ga haydovchi tayinlash'
+    assign-vehicle-title: '{fleetName} ga transport vositasi tayinlash'
+    select-driver-warning: Tayinlash uchun haydovchini tanlang.
+    select-vehicle-warning: Tayinlash uchun transport vositasini tanlang.
+    assign-driver-success: Haydovchi {fleetName} ga tayinlandi.
+    assign-vehicle-success: Transport vositasi {fleetName} ga tayinlandi.
+fuel-report:
+  fields:
+    details: Yoqilg'i hisoboti tafsilotlari
+    reporter: Xabar beruvchi
+    select-reporter: Xabar beruvchini tanlang
+    fuel-cost: Yoqilg'i narxi
+    odometer: Odometr
+    select-volume-help-text: Hisobot uchun o'lchov birligi va yoqilg'i hajmini tanlang.
+    fuel-volume: Yoqilg'i / Hajm
+issue:
+  fields:
+    title: Sarlavha
+    add-tags: Teglar qo'shish
+    assigned-to: Tayinlangan
+    category: Muammo toifasi
+    issue-report: Muammo hisoboti
+    priority: Muammo muhimligi
+    report: Muammo hisoboti
+    reported-by: Xabar bergan
+    select-assign: Mas'ulni tanlang
+    select-category: Muammo toifasini tanlang
+    select-priority: Muammo muhimligini tanlang
+    select-reporter: Xabar beruvchini tanlang
+    select-status: Muammo holatini tanlang
+    select-type: Muammo turini tanlang
+    tags: Muammo teglari
+    type: Muammo turi
+order:
+  placeholders:
+    filter-internal-id: Ichki ID larni kiriting yoki skanerlang
+  card:
+    linked-order: Bog'langan buyurtma
+    unknown-order: Noma'lum buyurtma
+    no-type: Tur yo'q
+    pickup: Olib ketish joyi
+    dropoff: Topshirish joyi
+    return: Qaytish
+    waypoints: Oraliq nuqtalar
+    additional-stop: qo'shimcha to'xtash joyi
+    additional-stops: qo'shimcha to'xtash joylari
+    no-pickup-address: Olib ketish manzili yo'q
+    no-dropoff-address: Topshirish manzili yo'q
+    no-route-details: Marshrut tafsilotlari mavjud emas.
+    no-order-linked: Ushbu muammoga hech qanday buyurtma bog'lanmagan.
+  fields:
+    ad-hoc: Ad-hoc
+    ad-hoc-help-text: Ad-hoc ni yoqsangiz, buyurtma olib ketish joyi yaqinidagi haydovchilarga buyurtma haqida aqlli xabar yuboradi va birinchi bo'sh haydovchi buyurtmani qabul qilishi mumkin bo'ladi. Bu real vaqtdagi buyurtmalar uchun haydovchini qo'lda tayinlashga muqobil.
+    add-entity: Obyekt qo'shish
+    add-item-button: Element qo'shish
+    add-item-order: Buyurtmaga element qo'shish
+    add-waypoint: Oraliq nuqta qo'shish
+    add-waypoint-help-text: Ushbu buyurtma uchun ko'proq to'xtash joylari qo'shish uchun `Oraliq nuqta qo'shish` tugmasidan foydalaning. Har bir to'xtash joyi qo'shilganda yoki olib tashlanganda Fleetbase marshrutlash mexanizmi marshrutni avtomatik optimallashtiradi.
+    adhoc-ping: Ad-hoc xabar masofasi
+    adhoc-ping-help-text: Bu sozlama ushbu buyurtma uchun ad-hoc xabar yuborish masofasini belgilaydi, agar belgilanmagan bo'lsa, standart sozlamadan foydalaniladi.
+    adhoc-ping-message: Masofa metrlarda bo'lishi kerak
+    apply-service-rate: Xizmat tarifini qo'llash
+    assign-driver: Haydovchi tayinlash
+    assign-driver-help-text: Ushbu buyurtma jo'natiladigan haydovchini tayinlang.
+    assign-driver-placeholder: Haydovchini tanlang
+    assign-vehicle: Transport vositasini tayinlash
+    assign-vehicle-help-text: Ushbu buyurtma bajariladigan transport vositasini tayinlang.
+    assign-vehicle-placeholder: Transport vositasini tanlang
+    breakdown: Tafsilot
+    customer: Mijoz
+    customer-help-text: Ixtiyoriy ravishda ushbu buyurtmaning mijozini tayinlang. Agar bu yangi mijoz bo'lsa, yuqoridagi 'Yangi mijoz' tugmasidan foydalaning.
+    customer-placeholder: Mijozni tanlang
+    dispatch: Jo'natish
+    dispatch-help-text: Jo'natishni yoqsangiz, ushbu buyurtma yaratilgandan so'ng darhol jo'natiladi.
+    documents-panel-title: Hujjatlar va fayllar
+    dropoff: Topshirish joyi
+    edit-address: Manzilni tahrirlash
+    edit-item: Elementni tahrirlash
+    facilitator: Vositachi
+    facilitator-help-text: Ixtiyoriy ravishda ushbu buyurtma uchun vositachi tayinlang. Vositachi ushbu buyurtmani tashishni ta'minlaydigan uchinchi tomon pudratchisi yoki xizmat bo'lishi mumkin.
+    facilitator-placeholder: Vositachini tanlang
+    info-text: Ushbu buyurtmaga qo'llash uchun real vaqtdagi xizmat taklifini tanlang. Taklif buyurtmaga qo'llanilgach, u xarid tarifiga aylanadi. Tranzaksiyalar Fleetbase hisob kitobida kuzatiladi.
+    internal-id: Ichki ID
+    internal-id-help-text: Buyurtma uchun ixtiyoriy maxsus yoki ichki identifikator belgilash uchun ushbu maydondan foydalaning.
+    invalid-coordinates: Noto'g'ri koordinatalar!
+    items-drop: Elementlar topshiriladigan joy
+    loading-message: Xizmat takliflari yuklanmoqda...
+    updating-service-quotes-message: Xizmat takliflari yangilanmoqda...
+    notes-placeholder: Buyurtma izohlarini shu yerga kiriting....
+    notes-title: Eslatmalar
+    optimize-route: Marshrutni optimallashtirish
+    optimize-route-help-text: Fleetbase marshrutni avtomatik optimallashtiradi.
+    order-type: Buyurtma turi
+    order-type-help-text: Buyurtma turini tanlash Fleetbase ga qaysi buyurtma sozlamalaridan foydalanishni bildiradi.
+    order-type-placeholder: Buyurtma turini tanlang
+    payload-entities: Yuk / Obyektlar
+    pickup: Olib ketish joyi
+    proof-delivery: Yetkazib berishni tasdiqlash
+    proof-delivery-help-text: Talab qilinadigan yetkazib berishni tasdiqlash turini tanlang. Bu QR kodni skanerlash yoki imzo usuli bo'lishi mumkin.
+    proof-delivery-placeholder: Yetkazib berishni tasdiqlash usulini tanlang
+    refresh-button: Yangilash
+    require-proof: Yetkazib berishni tasdiqlashni talab qilish
+    require-proof-help-text: Buni yoqsangiz, haydovchi yetkazib berishni tasdiqlashni bajarishi talab qilinadi.
+    return: Qaytish
+    route: Marshrut
+    route-error: Marshrutni optimallashtirib bo'lmadi, marshrut ma'lumotlarini tekshiring va qayta urinib ko'ring.
+    route-label: Bir nechta topshirish joylari
+    schedule: Jadval
+    schedule-help-text: Buyurtma jo'natiladigan sana va vaqt. Agar jo'natish vaqtida haydovchi tayinlanmagan bo'lsa, jo'natish muvaffaqiyatsiz bo'ladi. Agar buyurtma ad-hoc bo'lsa, u olib ketish joyi yaqinidagi haydovchilarga yuboriladi.
+    select-destination: Manzilni tanlang
+    select-dropoff: Topshirish joyini tanlang
+    select-pickup: Olib ketish joyini tanlang
+    select-return: Qaytish joyini tanlang
+    select-waypoint: Oraliq nuqtani tanlang
+    service: Xizmat
+    select-service-rate: Xizmat tarifini tanlang
+    service-help-text: Ushbu buyurtmaga qo'llash uchun real vaqtdagi xizmat takliflarini yaratish uchun belgilangan xizmat tarifini tanlang.
+    service-quotes-help-text: Qaysi xizmat tarifi uchun takliflarni olishni tanlang.
+    service-type: Xizmat turi
+    service-type-placeholder: Xizmat turini tanlang
+    sku: SKU
+    activity: Faoliyat
+    comments-title: Izohlar
+    date-dispatched: Jo'natilgan sana
+    date-scheduled: Rejalashtirilgan sana
+    date-started: Boshlangan sana
+    driver: Haydovchi
+    driver-assigned: Tayinlangan haydovchi
+    no-driver-assigned: Haydovchi tayinlanmagan
+    get-label: Yorliqni olish
+    order-notes-updated: Buyurtma izohlari yangilandi.
+    payload: Yuk
+    proof-of-delivery: Yetkazib berishni tasdiqlash
+    purchase-rate-panel-title: Xarid tarifi
+    route-panel-title: Marshrut
+    save-order-note: Buyurtma izohini saqlash
+    tracking: Kuzatuv
+    tracking-number: Kuzatuv raqami
+    vehicle-assigned: Tayinlangan transport vositasi
+    view-activity: Faoliyatni ko'rish
+    no-order-activity: Buyurtma faoliyati yo'q
+    waypoint-actions: Oraliq nuqta amallari
+    documents-files: Hujjatlar va fayllar
+    order-metadata: Buyurtma metama'lumotlari
+    order-label: Buyurtma yorlig'i
+    waypoint-label: Oraliq nuqta yorlig'i
+    entity-label: Obyekt yorlig'i
+    current-eta: Joriy taxminiy yetib kelish vaqti
+    ect: Taxminiy yakunlash vaqti
+    current-destination: Joriy manzil
+    no-service-quotes: Xizmat takliflari yo'q.
+    input-order-routes: Xizmat takliflarini ko'rish uchun buyurtma marshrutini kiriting.
+    service-quote-info: Ushbu buyurtmaga qo'llash uchun real vaqtdagi xizmat taklifini tanlang. Taklif buyurtmaga qo'llanilgach, u xarid tarifiga aylanadi. Tranzaksiyalar Fleetbase hisob kitobida kuzatiladi.
+  prompts:
+    update-details-success: '{orderId} tafsilotlari yangilandi.'
+    route-error: Marshrutni optimallashtirib bo'lmadi, marshrut ma'lumotlarini tekshiring va qayta urinib ko'ring.
+    route-update-success: '{orderId} marshrut tafsilotlari yangilandi.'
+    unassign-driver-title: Haqiqatan ham haydovchini ({driverName}) ushbu buyurtmadan olib tashlamoqchimisiz?
+    unassign-driver-body: Haydovchi olib tashlangach, u endi ushbu buyurtma tafsilotlariga kira olmaydi.
+    unassign-driver-success: Haydovchi ushbu buyurtmadan olib tashlandi.
+    no-driver-assigned-error: Ushbu buyurtmaga haydovchi tayinlanmagan.
+    failed-to-load-order-label: Buyurtma yorlig'ini yuklab bo'lmadi.
+    failed-to-load-waypoint-label: Oraliq nuqta yorlig'ini yuklab bo'lmadi.
+    failed-to-load-entity-label: Obyekt yorlig'ini yuklab bo'lmadi.
+    unable-to-add-entity: Buyurtmaga yangi obyekt qo'shib bo'lmadi.
+    assign-driver-success: Haydovchi ({driverName}) {orderId} buyurtmasiga tayinlandi.
+    cancel-title: Haqiqatan ham ushbu buyurtmani bekor qilmoqchimisiz?
+    cancel-body: Buyurtma bekor qilingach, uning yozuvi ko'rinib turadi, lekin unga faoliyat qo'shib bo'lmaydi.
+    cancel-success: '{orderId} buyurtmasi bekor qilindi.'
+    dispatch-title: Haqiqatan ham ushbu buyurtmani jo'natmoqchimisiz?
+    dispatch-body: Buyurtma jo'natilgach, tayinlangan haydovchiga xabar beriladi.
+    dispatch-success: '{orderId} buyurtmasi jo''natildi.'
+    order-bulk-search: Ommaviy qidiruv uchun buyurtma ID lari yoki kuzatuv raqamlarini vergul bilan ajratib kiriting
+  actions:
+    create-new-customer: Yangi mijoz yaratish
+    create-new-facilitator: Yangi vositachi yaratish
+    create-new-place: Yangi joy yaratish
+    change-driver: Haydovchini o'zgartirish
+    assign-driver: Haydovchi tayinlash
+    update-activity: Faoliyatni yangilash
+    reload-activity: Faoliyatni qayta yuklash
+    view-activity-as-timeline: Vaqt chizig'i sifatida ko'rish
+    view-activity-as-list: Ro'yxat sifatida ko'rish
+    cancel-order: Buyurtmani bekor qilish
+    dispatch-order: Buyurtmani jo'natish
+    dispatch-orders: Buyurtmalarni jo'natish
+    assign-driver-to-orders: Buyurtmalarga haydovchi tayinlash
+    edit-order-details: Buyurtma tafsilotlarini tahrirlash
+    edit-order-route: Buyurtma marshrutini tahrirlash
+    edit-order-metadata: Buyurtma metama'lumotlarini tahrirlash
+    update-order-activity: Buyurtma faoliyatini yangilash
+    submit-new-activity: Yangi faoliyatni yuborish
+    add-entity: Obyekt qo'shish
+    unassign-driver-name: 'Haydovchini olib tashlash: {driverName}'
+  schedule-card:
+    destination: Manzil
+    unassign-driver: Haydovchi olib tashlansinmi?
+    unassign-text: Siz {orderId} buyurtmasi haydovchisini olib tashlamoqchisiz. Haydovchini olib tashlashni tasdiqlash uchun davom etish tugmasini bosing.
+    unassign-button: Davom etish va haydovchini olib tashlash
+    assign-driver: Yangi haydovchi tayinlansinmi?
+    assign-text: Siz {orderId} buyurtmasiga yangi haydovchi ({driverName}) tayinlamoqchisiz. Haydovchini tasdiqlash uchun davom etish tugmasini bosing.
+    assign-button: Davom etish va haydovchini tayinlash
+    date: Rejalashtirilgan sana
+    date-created: Yaratilgan sana
+    driver-assigned: Haydovchi
+    vehicle-assigned: Transport vositasi
+    no-driver: Haydovchi yo'q
+    no-vehicle: Transport vositasi yo'q
+    select-driver: Haydovchini tanlang
+    select-vehicle: Transport vositasini tanlang
+  kanban:
+    status-updated: Buyurtma faoliyati {status} holatiga yangilandi.
+    cannot-update-status: Buyurtmani {status} holatiga o'tkazib bo'lmadi.
+order-config-manager:
+  title: Buyurtmalar konfiguratsiyasi
+  message: Buyurtma konfiguratsiyalari Fleetbase ga turli turdagi buyurtmalar qanday bajarilishi kerakligini bildiradigan dinamik sozlamalarni belgilash imkonini beradi.
+  configuration: Konfiguratsiya
+  new-order-config: Yangi buyurtma konfiguratsiyasi
+  select-order-config: Buyurtma konfiguratsiyasini tanlang
+  create-new-title: Yangi buyurtma konfiguratsiyasini yaratish
+  create-warning-message: Buyurtma konfiguratsiyasi uchun nom talab qilinadi
+  create-success-message: Yangi buyurtma konfiguratsiyasi muvaffaqiyatli yaratildi.
+  no-order-config-selected: Buyurtma konfiguratsiyasi tanlanmagan.
+  saved-success-message: '{orderConfigName} konfiguratsiyasi saqlandi.'
+  cloned-success-message: Buyurtma konfiguratsiyasi muvaffaqiyatli nusxalandi.
+  enter-clone-name: Nusxalangan konfiguratsiya nomini kiriting
+  no-config-name-warning-message: Konfiguratsiya nomi kiritilmagan.
+  delete-warning-message: Ushbu buyurtma konfiguratsiyasi o'chirilgach, u bilan buyurtma yarata olmaysiz. Ishonchingiz komilmi?
+  uninstall-order-config: Konfiguratsiyani o'chirish
+  uninstall-order-config-success-message: '{extensionName} kengaytmasi o''chirildi.'
+  select-order-config-to-start: Boshlash uchun buyurtma konfiguratsiyasini tanlang yoki yarating.
+  tabs:
+    details: Tafsilotlar
+    custom-fields: Maxsus maydonlar
+    activity-flow: Faoliyat oqimi
+    entities: Obyektlar
+  details:
+    details: Tafsilotlar
+    name: Ism
+    description: Tavsif
+    tags: Teglar
+    add-tags: Teglar qo'shish
+    key: Kalit
+    version: Versiya
+    namespace: Nomlar maydoni
+    controls: Boshqaruvlar
+    delete-config: Konfiguratsiyani o'chirish
+    delete:
+      delete-title: Ushbu buyurtma konfiguratsiyasi o'chirilsinmi?
+      delete-body-message: Ushbu buyurtma konfiguratsiyasi o'chirilgach, uni tiklab bo'lmaydi va barcha sozlamalarni yo'qotasiz.
+      confirm-delete: O'chirish
+  activity-flow:
+    save-activity-flow: Faoliyat oqimini saqlash
+    edit-activity-unique-code-warning: Faoliyat kodi noyob bo'lishi kerak!
+  custom-fields:
+    new-field-group: Yangi maydonlar guruhi
+    new-custom-field: Yangi maxsus maydon yaratish
+    grid-size: To'r o'lchami
+    delete-custom-field-prompt:
+      modal-title: Ushbu maxsus maydon o'chirilsinmi?
+      delete-body-message: Ushbu maxsus maydon o'chirilgach, uni tiklab bo'lmaydi va barcha sozlamalarni yo'qotasiz.
+      confirm-delete: O'chirish
+    delete-custom-field-group-prompt:
+      modal-title: Ushbu maydonlar guruhi o'chirilsinmi?
+      delete-body-message: Ushbu maydonlar guruhi o'chirilgach, uni tiklab bo'lmaydi va ichidagi barcha maxsus maydonlarni yo'qotasiz.
+      confirm-delete: O'chirish
+  entities:
+    new-custom-entity: Yangi maxsus obyekt
+    name: Ism
+    description: Tavsif
+    type: Tur
+    length: Uzunlik
+    width: Kenglik
+    height: Balandlik
+    weight: Og'irlik
+    delete-custom-entity-title: Ushbu maxsus obyekt o'chirilsinmi?
+    delete-custom-entity-body: Ushbu maxsus obyekt o'chirilgach, uni tiklab bo'lmaydi va barcha sozlamalarni yo'qotasiz.
+    confirm-delete: Tasdiqlash
+  types:
+    no-order-installed: Buyurtma konfiguratsiyalari o'rnatilmagan!
+    you-have-no-configs: Hozirda sizda o'rnatilgan buyurtma konfiguratsiyalari yo'q. Boshlash uchun buyurtma konfiguratsiyasini o'rnatish uchun kengaytmalarni ko'rib chiqing.
+    view-extensions: Kengaytmalarni ko'rish
+place:
+  fields:
+    details: Joy tafsilotlari
+    building: Bino
+    neighborhood: Mahalla
+    postal-code: Pochta indeksi
+    security-access-code: Xavfsizlik kirish kodi
+    city: Shahar
+    province: Viloyat
+    country: Mamlakat
+    state: Viloyat
+    street-1: Ko'cha 1
+    street-2: Ko'cha 2
+    coordinates: Koordinatalar
+    phone: Telefon
+  prompts:
+    vendor-assigned-success: Yetkazib beruvchi {placeName} ni yangi yetkazib beruvchi joylashuvi sifatida belgiladi.
+  actions:
+    locate-place: Joyni xaritada ko'rsatish
+service-area:
+  actions:
+    edit-boundary: Chegarani xaritada tahrirlash
+  fields:
+    details: Xizmat hududi tafsilotlari
+    area-color: To'ldirish rangi
+    area-color-help-text: Ushbu xizmat hududi uchun to'ldirish rangini sozlang.
+    border-color: Chegara rangi
+    border-color-help-text: Ushbu xizmat hududi uchun chegara rangini sozlang.
+    country: Mamlakat
+    country-help-text: Ixtiyoriy ravishda ushbu xizmat hududi joylashgan yoki asoslangan mamlakatni belgilang.
+    name: Ism
+    name-help-text: Xizmat hududi uchun ko'rsatiladigan nomni belgilang.
+    type: Tur
+    type-help-text: Ushbu xizmat hududi uchun tur ta'rifini tanlang.
+service-rate:
+  fields:
+    details: Xizmat tarifi tafsilotlari
+    terms: Shartlar
+    add-drop-off-button: Topshirish oralig'ini qo'shish
+    additional-fee: Qo'shimcha to'lov
+    algorithm-help-text: Ushbu xizmat tarifini hisoblash uchun baholanadigan formulani belgilang.
+    algorithm-label: Algoritm
+    algorithm-placeholder: (( '{distance}' / 50 ) * .05 ) + (( '{time}' / 60 ) * .01)
+    base-fee-help-text: Ushbu xizmat uchun minimal narxni ifodalovchi asosiy to'lovni belgilang.
+    base-fee-label: Asosiy to'lov
+    calculation-method-help-text: Naqd pul bilan to'lov to'lovini hisoblash usuli.
+    calculation-method-label: Naqd to'lov to'lovini hisoblash usuli
+    calculation-method-placeholder: Naqd to'lov to'lovini hisoblash usulini tanlang
+    cash-delivery-label: Yetkazib berishda naqd to'lanadigan buyurtmalar uchun qo'shimcha to'lov yoqilsinmi?
+    cash-delivery-title: Yetkazib berishda naqd to'lov
+    custom-algorithm-info-message: Bu parametr ushbu xizmat to'lovi uchun o'zgaruvchilar bilan maxsus hisoblashni belgilash uchun.
+    custom-algorithm-info-second-message: E'tibor bering, o'zgaruvchilar bitta jingalak qavsga olinishi kerak.
+    custom-algorithm-title: Maxsus algoritm
+    delivery-flat-fee: Naqd to'lov uchun qat'iy to'lov
+    delivery-flat-fee-help-text: Eng yuqori yuklama soatlarida qo'shiladigan qat'iy to'lovni belgilaydi.
+    deminsions-unit: O'lcham
+    distance: Masofa
+    distance-continue-message: '- buyurtma marshrutidagi metrlardagi masofa.'
+    distance-message: masofa
+    distance-unit: Masofa birligi
+    distance-unit-help-text: Masofa birligi kilometr yoki metr bo'lishi mumkin.
+    distance-unit-placeholder: Masofa birligini tanlang.
+    duration-terms-help-text: Ushbu xizmat tarifi uchun muddat bo'yicha qo'shimcha xizmat shartlarini qo'shing.
+    duration-terms-label: Muddat shartlari
+    duration-terms-placeholder: Agar mavjud bo'lsa, muddat shartlari
+    estimated-days: Taxminiy yetkazib berish kunlari
+    estimated-days-help-text: Ushbu xizmat davom etadigan taxminiy kunlar soni. Shu kungi xizmat uchun `0` dan foydalaning.
+    example: Misol
+    example-message: Agar buyurtma so'rovi 2200 metr masofada va taxminiy yetib kelish vaqti 30 daqiqa bo'lsa.
+    example-second-message: Unda quyidagi formula asosiy to'lovga qo'shiladigan 2,50 $ xizmat to'lovini hisoblaydi.
+    fee: To'lov
+    fee-percentage: Naqd to'lov to'lovi foizi
+    fee-percentage-help-text: Naqd to'lov to'lovi sifatida qo'shiladigan xizmat tarifi oraliq summasidan foiz asosidagi to'lovni belgilaydi.
+    fixed-meter: Qat'iy metr parametrlari
+    fixed-meter-example-text: 'Masalan: har 1 kilometr uchun qat''iy to''lov belgilanadi. Agar buyurtma bosib o''tgan masofa 3300 metr bo''lsa, 3-kilometr uchun qat''iy to''lov asosiy to''lov summasiga qo''shiladi.'
+    fixed-meter-text: Bu parametr har bir kilometr uchun qat'iy to'lovni belgilaydi.
+    flat-fee-help-text: Eng yuqori yuklama soatlarida qo'shiladigan qat'iy to'lovni belgilaydi.
+    flat-fee-label: Eng yuqori yuklama soatlari uchun qat'iy to'lov
+    height-label: Balandlik
+    height-placeholder: Balandlik ({parcelFeeDimension} da)
+    length-label: Uzunlik
+    length-placeholder: Uzunlik ({parcelFeeDimension} da)
+    max: Maks
+    max-drop: Maks. topshirish
+    maximum-distance: Maksimal masofa
+    maximum-distance-help-text: Xizmat ko'rsatiladigan maksimal masofa.
+    min: Min
+    min-drop: Min. topshirish
+    order-type-placeholder: Buyurtma turi o'rinbosari
+    peak-hours-end-help-text: Eng yuqori yuklama soati to'lovi qachon tugashini belgilaydi.
+    peak-hours-end-label: Eng yuqori yuklama soatlari tugashi
+    peak-hours-fee-help-text: Eng yuqori yuklama soatlari to'lovini hisoblash usuli.
+    peak-hours-fee-label: Eng yuqori yuklama soatlari to'lovini hisoblash usuli
+    peak-hours-fee-placeholder: Eng yuqori yuklama soatlari to'lovini hisoblash usulini tanlang
+    peak-hours-label: Xizmatda belgilangan eng yuqori yuklama soatlarida berilgan buyurtmalar uchun qo'shimcha to'lov yoqilsinmi?
+    peak-hours-percentage-help-text: Eng yuqori yuklama soatlarida qo'shiladigan xizmat tarifi oraliq summasidan foiz asosidagi to'lovni belgilaydi.
+    peak-hours-percentage-label: Eng yuqori yuklama soatlari to'lovi foizi
+    peak-hours-start-help-text: Eng yuqori yuklama soati to'lovi qachon boshlanishini belgilaydi.
+    peak-hours-start-label: Eng yuqori yuklama soatlari boshlanishi
+    peak-hours-title: Eng yuqori yuklama soatlari
+    per-drop-off-example-text: 'Masalan: buyurtmadagi 1-5 ta topshirish joyi $x turadi, buyurtmadagi 5-10 ta topshirish joyi $x turadi. Bu asosiy to''lov summasiga qo''shiladi.'
+    per-drop-off-text: Bu parametr har bir topshirish joyi uchun qat'iy to'lovni belgilaydi.
+    per-drop-off-title: Har bir topshirish joyi parametrlari
+    per-meter: Har bir metr uchun
+    per-meter-example-text: 'Masalan: ''{fee}'' * ''{distance}'' + ''{baseFee}'''
+    per-meter-rate-fee: Har bir metr uchun qat'iy tarif to'lovi
+    per-meter-rate-fee-help-text: Masofaga ko'paytiriladigan yagona qat'iy to'lov.
+    per-meter-text: Bu parametr xizmatni har bir kilometr yoki metr uchun hisoblash imkonini beradi, ya'ni siz qat'iy to'lovni belgilaysiz va u metr yoki kilometrdagi masofaga ko'paytiriladi.
+    percel-fee-title: Posilka to'lovlari
+    percentage-placeholder: Foiz
+    rate-calculation-help-text: So'rov qilinganda ushbu xizmat tariflarni hisoblash uchun foydalanadigan usul.
+    rate-calculation-label: Tarifni hisoblash usuli
+    rate-calculation-placeholder: Tarifni hisoblash usulini tanlang
+    restrict-service-title: Xizmatni cheklash
+    select-unit-placeholder: Birlikni tanlang
+    select-order-type: Buyurtma turini tanlang
+    service-area-help-text: Ushbu xizmatni xizmat hududidan kelgan buyurtma so'rovlari bilan cheklash.
+    service-area-label: Xizmat hududi
+    service-area-placeholder: Xizmat hududi bilan cheklash
+    service-name: Xizmat nomi
+    service-name-help-text: Ushbu xizmat uchun ko'rsatiladigan nom.
+    service-order-help-text: Ushbu xizmat tarifi faqat qo'llaniladigan buyurtma konfiguratsiyasini tanlang. Bu faqat tanlangan buyurtma konfiguratsiyasi bilan yaratilgan buyurtmalar ushbu xizmat tarifidan foydalanishini ta'minlaydi.
+    service-order-label: Xizmat buyurtma turi
+    time-continue-message: '- marshrutning soniyalardagi taxminiy yetib kelish vaqti.'
+    time-message: vaqt
+    weight-label: Og'irlik
+    weight-unit: Og'irlik birligi
+    width-label: Kenglik
+    width-placeholder: Kenglik ({parcelFeeDimension} da)
+    zone-help-text: Ushbu xizmatni ma'lum zonadan kelgan buyurtma so'rovlari bilan cheklash.
+    zone-label: Zona
+    zone-placeholder: Zona bilan cheklash
+    cod-fee-label: Naqd to'lov to'lovi yorlig'i
+vehicle:
+  placeholders:
+    filter-internal-id: Ichki ID larni kiriting yoki skanerlang
+  filters:
+    has-trailer: Tirkama ulangan
+    has-driver: Haydovchi tayinlangan
+    has-device: Qurilma ulangan
+    any: Istalgan
+    attached: Ulangan
+    not-attached: Ulanmagan
+    assigned: Tayinlangan
+    not-assigned: Tayinlanmagan
+  fields:
+    updated-at: Oxirgi yangilangan
+    avatar: Avatar
+    driver-assigned: Tayinlangan haydovchi
+    make: Ishlab chiqaruvchi
+    model: Model
+    plate-number: Davlat raqami
+    select-driver: Haydovchini tanlang
+    upload-new-photo: Yangi rasm yuklash
+    vehicle-make: Transport vositasi markasi
+    vehicle-model: Transport vositasi modeli
+    vehicle-year: Transport vositasi ishlab chiqarilgan yili
+    vin-number: VIN raqami
+    year: Yil
+  actions:
+    attach-trailer: Tirkamani ulash
+    attach-equipment: Uskunani biriktirish
+    detach-equipment: Uskunani ajratish
+    attach-device: Qurilmani ulash
+    unassign-orders: Buyurtmalarni olib tashlash
+    create-issue: Muammo yaratish
+    locate-vehicle: Transport vositasini xaritada ko'rsatish
+    schedule-maintenance: Texnik xizmatni rejalashtirish
+    create-work-order: Ish buyurtmasini yaratish
+    log-maintenance: Texnik xizmatni qayd etish
+  empty:
+    trailers: Ulangan tirkamalar yo'q
+    trailers-description: Tirkash ulanishini boshlash uchun ajratilgan tirkamani ushbu transport vositasiga ulang.
+    equipment: Biriktirilgan uskuna yo'q
+    equipment-description: Ushbu transport vositasiga liftlar, asboblar yoki xavfsizlik jihozlari kabi uskunalarni biriktiring.
+    inspections: Ko'riklar topshirilmagan
+    inspections-description: Haydovchi ushbu transport vositasi bo'yicha topshirgan ko'riklar shu yerda ko'rinadi.
+  trailers:
+    description: Hozirda ushbu transport vositasiga ulangan tirkamalar.
+  equipment:
+    description: Hozirda ushbu transport vositasiga biriktirilgan uskunalar.
+  prompts:
+    attach-trailer-title: '{vehicleName} ga tirkama ulash'
+    select-trailer-warning: Ushbu transport vositasiga ulash uchun tirkamani tanlang.
+    attach-trailer-success: '{trailerName} {vehicleName} ga ulandi.'
+    attach-device-title: '{vehicleName} ga qurilma ulash'
+    select-device-warning: Ulash uchun qurilmani tanlang.
+    attach-device-success: Qurilma {vehicleName} ga ulandi.
+    no-assigned-orders-warning: '{vehicleName} uchun tayinlangan buyurtmalar topilmadi.'
+    select-orders-warning: Olib tashlash uchun kamida bitta buyurtmani tanlang.
+    unassign-orders-title: '{vehicleName} dan buyurtmalarni olib tashlash'
+    confirm-unassign-orders-title: '{vehicleName} dan {count} ta buyurtma olib tashlansinmi?'
+    confirm-unassign-orders-body: 'Bu {vehicleName} ni quyidagi buyurtmalardan olib tashlaydi: {orders}.'
+    unassign-orders-success: '{vehicleName} {count} ta buyurtmadan olib tashlandi.'
+    issue-title: '{vehicleName} uchun muammo qayd etildi'
+vendor:
+  fields:
+    setup-vendor: Yetkazib beruvchini sozlash
+    choose-vendor: Integratsiyalangan yetkazib beruvchi provayderini tanlang
+    email-help-text: Yetkazib beruvchining elektron pochtasi, undan yetkazib beruvchiga xat yuborish uchun foydalanish mumkin.
+    name-help-text: Yetkazib beruvchining nomi, odatda korxona nomi.
+    phone-text: Yetkazib beruvchining telefon raqami, undan yetkazib beruvchiga SMS yoki xabar yuborish uchun foydalanish mumkin.
+    website: Veb-sayt URL manzili
+    edit-address: Manzilni tahrirlash
+    new-address: Yangi manzil
+    select-address: Manzilni tanlang
+    select-vendor-status: Yetkazib beruvchi holatini tanlang
+    select-vendor-type: Yetkazib beruvchi turini tanlang
+    title: Sozlash
+    vendor-details: Yetkazib beruvchi tafsilotlari
+    website-help-text: Yetkazib beruvchining veb-sayti, ma'lumot uchun ixtiyoriy ravishda qo'shing.
+integrated-vendor:
+  fields:
+    provider: Provayder
+    credentials: Kirish ma'lumotlari
+    credentials-configure-help-text: Ushbu yetkazib beruvchini sozlash uchun ixtiyoriy ravishda o'z {param} ingizni kiriting.
+    options: Parametrlar
+    choose-vendor: Integratsiyalangan yetkazib beruvchi provayderini tanlang
+    select-integrated: Integratsiyalangan yetkazib beruvchi provayderini tanlang.
+    advanced-options: Kengaytirilgan parametrlar
+    cancel-credentials: Kirish ma'lumotlarini tiklashni bekor qilish
+    sensitive-credentials: Maxfiy kirish ma'lumotlarini faqat tiklash mumkin; ularni yangilash uchun qayta kiritishingiz kerak.
+    reset-credentials: Kirish ma'lumotlarini tiklash uchun shu yerni bosing
+    sandbox: Sandbox
+    webhook: Vebhuk URL manzili
+    webhook-help-text: Integratsiyalangan yetkazib beruvchilar odatda buni talab qiladi, shunda Fleetbase buyurtma bo'yicha faoliyat yangilanishlarini qabul qiladi. Nima qilayotganingizni bilmasangiz, o'zgartirmang! Buni o'zgartirish buyurtma yangilanishlarini buzishi mumkin!
+    host: Maxsus xost
+    host-help-text: Ixtiyoriy ravishda ushbu integratsiya uchun ishlatiladigan maxsus xostni kiriting.
+    namespace: Maxsus nomlar maydoni
+    namespace-help-text: Ixtiyoriy ravishda integratsiya uchun ishlatiladigan maxsus nomlar maydoni yoki API versiyasini kiriting.
+zone:
+  actions:
+    edit-boundary: Chegarani xaritada tahrirlash
+  fields:
+    details: Zona tafsilotlari
+    border-color: Chegara rangi
+    customize-border: Chegarani sozlash
+    customize-fill-color: To'ldirish rangini sozlash
+    description: Tavsif
+    name: Ism
+    name-help-text: Ushbu zona uchun nom kiriting.
+    zone-color: Zona rangi
+activity-logic-builder:
+  activity-logic: Faoliyat mantiqi
+  activity-logic-help-text: Ish jarayonida faoliyat qachon mavjud bo'lishini belgilovchi maxsus mantiqiy shartlarni aniqlang. Bu imkoniyat jarayonni aniq mezonlarga moslashtirish va har bir faoliyat faqat oldindan belgilangan shartlar bajarilganda ishga tushishini ta'minlash imkonini beradi.
+  activity-logic-add-logic-help-text: Faoliyat qachon faollashtirilishini belgilaydigan yangi shartlar to'plamini yarating. Yangi mantiqiy qoida tuzishni boshlash uchun shu yerni bosing.
+  activity-logic-select-logic-type-help-text: Ushbu shart qaysi mantiq turiga amal qilishini tanlang. To'g'ridan-to'g'ri shart uchun 'If', murakkab shartlar uchun 'And'/'Or', shartni inkor qilish uchun 'Not' ni tanlang.
+  activity-logic-add-condition-help-text: Ushbu mantiqiy to'plam doirasida bajarilishi kerak bo'lgan aniq talabni qo'shing. Faoliyat mavjudligini boshqaradigan qo'shimcha mezonlarni belgilash uchun foydalaning.
+  field: Maydon
+  value: Qiymat
+  add-logic: Mantiq qo'shish
+activity-event-selector:
+  activity-events: Faoliyat hodisalari
+  activity-events-select-to-fire: Ushbu faoliyat sodir bo'lganda qaysi hodisalar faollashishini tanlang.
+  activity-events-select-events-info: Ushbu faoliyatga javoban ishga tushirmoqchi bo'lgan aniq hodisani tanlang.
+  select-event-to-add: Qo'shish uchun hodisani tanlang...
+custom-field-form-panel:
+  meta-col-span: 'Meta: ustunlar kengligi'
+  col-span-size: Ustunlar kengligi o'lchami
+  custom-field-title-concat: 'Maxsus maydon: '
+  new-custom-field: Yangi maxsus maydon
+  close-new-custom-field: Maxsus maydon o'zgarishlarini bekor qilish
+  save-custom-field: O'zgarishlarni saqlash
+  create-custom-field: Yangi maydon yaratish
+  field-name: Maydon nomi
+  field-label: Maydon yorlig'i
+  field-type: Maydon turi
+  select-field-type: Maydon turini tanlang...
+  field-description: Maydon tavsifi
+  field-help-text: Maydon yordam matni
+  field-default-value: Maydonning standart qiymati
+  field-is-required: Maydon majburiy
+  field-is-editable: Maydonni tahrirlash mumkin
+  field-options: Maydon parametrlari
+  field-validation-rules: Maydonni tekshirish qoidalari
+  field-model-type: Maydon model turi
+  field-select-model-type: Model turini tanlang
+  add-new-option: Yangi parametr qo'shish
+activity-form-panel:
+  title-concat: 'Faoliyat: '
+  new-activity-title: Yangi faoliyat yaratish
+  key: Kalit
+  code: Kod
+  status: Holat
+  details: Tafsilotlar
+  proof-of-delivery: Yetkazib berishni tasdiqlash
+  require-pod: Yetkazib berishni tasdiqlash talab qilinadi
+  require-pod-help-text: Bu faoliyat buyurtmaga qo'llanishidan oldin tasdiq yaratilishini talab qiladi.
+  select-pod-method: Yetkazib berishni tasdiqlash usuli
+  pod-method-placeholder: Yetkazib berishni tasdiqlash usulini tanlang
+  completes-order: Buyurtmani yakunlaydi
+  complete: Yakunlash
+  key-help: 'Dasturiy qaror qabul qilish uchun ishlatiladigan kalitni kiriting. Bu kalit bir xil identifikatorli bitta yoki bir nechta faoliyatni ifodalashi mumkin. Eslatma: bu kalit noyob bo''lishi shart emas.'
+  code-help: Ushbu faoliyatga xos noyob identifikatorni kiriting.
+  status-help: Ushbu faoliyat ishga tushganda oxirgi foydalanuvchiga ko'rsatiladigan holatni belgilang.
+  details-help: Oxirgi foydalanuvchi tushunishi uchun faoliyatning batafsil tavsifini kiriting.
+custom-entity-issue-form-panel:
+  new-custom-entity: Yangi maxsus obyekt
+  name: Ism
+  description: Tavsif
+  details: Tafsilotlar
+  type: Tur
+  length: Uzunlik
+  width: Kenglik
+  height: Balandlik
+  weight: Og'irlik
+  entity-image: Obyekt rasmi
+  measurements: O'lchamlar
+avatar-picker:
+  avatar: Avatar
+  select-map-avatar: Xarita avatarini tanlang
+  select-avatar-rendering: Geolokatsiya kuzatuv funksiyalaridan foydalanilganda xaritada ko'rsatish uchun ishlatiladigan avatarni tanlang.
+  select-avatar: Avatarni tanlang
+  select-for-preview: Oldindan ko'rish uchun tanlang
+admin:
+  navigator-app:
+    title: Navigator ilovasi
+    name: Instansiyani bog'lash URL manzili
+    message: Rasmiy Navigator ilovasini ushbu {companyName} instansiyasiga bog'lash uchun ushbu URL dan foydalaning. Bu URL mobil qurilmada ochilganda Navigator ilovasi ochiladi va uning konfiguratsiyasi hamda brendingi yangilanadi.
+    settings: Obyekt sozlamalari
+    select-input: Haydovchiga obyekt tafsilotlarini yangilashga ruxsat berish
+    driver-settings: Haydovchi sozlamalari
+    description: Haydovchining mustaqil ro'yxatdan o'tishini yoqish
+    upload-document: Haydovchidan hujjatlar yuklashni talab qilish
+    upload-body: Hujjatlar qo'shish
+    document: Hujjat
+  avatar-management:
+    upload-avatar: Avatarni yuklash
+    view-avatar: Avatarni ko'rish
+    vehicles: Transport vositalari
+    drivers: Haydovchilar
+    places: Joylar
+entity-field-editing-settings:
+  entitiy-field-editing-settings: Obyekt maydonlarini tahrirlash sozlamalari
+  entity-field-editing-settings-help-text: Bu sozlamalar obyektning qaysi maydonlarini haydovchi Navigator ilovasi orqali tahrirlashi mumkinligini belgilaydi
+  select-order-config: Buyurtma konfiguratsiyasini tanlang
+  select-order-config-help-text: Bu sozlamalar qo'llaniladigan buyurtma konfiguratsiyasini tanlang
+  enable-driver-to-edit-entity-fields: Haydovchiga obyekt tafsilotlarini tahrirlashga ruxsat berish
+  enable-driver-to-edit-entity-fields-help-text: Buni yoqish haydovchiga quyida tanlangan obyekt maydonlarini o'zgartirishga ruxsat beradi.
+driver-onboard-settings:
+  driver-onboard-settings: Haydovchining ro'yxatdan o'tish sozlamalari
+  enable-driver-onboard-from-app: Navigator ilovasidan haydovchining ro'yxatdan o'tishini yoqish
+  enable-driver-onboard-from-app-help-text: Bu sozlamani yoqish haydovchilarga Navigator ilovasi orqali mustaqil ro'yxatdan o'tish (o'z hisobini yaratish) imkonini beradi.
+  select-onboard-method: Haydovchining ro'yxatdan o'tish usulini tanlang
+  select-onboard-method-help-text: Bu sozlama haydovchilar Navigator ilovasi orqali hisob yaratishiga qanday ruxsat berilishini belgilaydi. Agar haydovchilar hisob yaratish uchun elektron pochta orqali taklif olishi kerak bo'lsa, 'Invite' ni tanlang. Agar ilovada har kim haydovchi hisobini yarata oladigan tugmani yoqmoqchi bo'lsangiz, 'Button' ni tanlang.
+  require-driver-to-upload-onboard-documents: Haydovchidan ro'yxatdan o'tish hujjatlarini yuklashni talab qilish
+  require-driver-to-upload-onboard-documents-help-text: Bu sozlama haydovchi hisobi yaratilishidan oldin taqdim etishi kerak bo'lgan hujjatlarni majburiy qiladi.
+  required-onboard-documents: Ro'yxatdan o'tish uchun majburiy hujjatlar
+  required-onboard-documents-help-text: Haydovchi taqdim etishi kerak bo'lgan barcha ro'yxatdan o'tish hujjatlarini quyidagi "Ro'yxatdan o'tish hujjatini qo'shish" tugmasi orqali kiriting.
+  enter-document-name: Hujjat nomini kiriting
+  add-onboard-document: Ro'yxatdan o'tish hujjatini qo'shish
+cell:
+  driver-name:
+    not-assigned: Haydovchi tayinlanmagan
+live-map-drawer:
+  driver-listing:
+    location: Joylashuv
+    current-job: Joriy ish
+    last-seen: Oxirgi ko'rilgan
+    view-driver: Haydovchi tafsilotlarini ko'rish...
+    edit-driver: Haydovchini tahrirlash...
+    locate-driver: Haydovchini topish...
+    delete-driver: Haydovchini o'chirish...
+    warning-message: Haydovchini topib bo'lmadi.
+    message: Haydovchilarni kalit so'z bo'yicha filtrlash...
+  place-listing:
+    location: Joylashuv
+    place: Joy
+    view-place: Joy tafsilotlarini ko'rish...
+    edit-place: Joyni tahrirlash...
+    locate-place: Joyni topish...
+    delete-place: Joyni o'chirish...
+    warning-message: Joyni topib bo'lmadi.
+    message: Joylarni kalit so'z bo'yicha filtrlash...
+  vehicle-listing:
+    location: Joylashuv
+    last-seen: Oxirgi ko'rilgan
+    view-vehicle: Transport vositasi tafsilotlarini ko'rish...
+    edit-vehicle: Transport vositasini tahrirlash...
+    locate-vehicle: Transport vositasini topish...
+    delete-vehicle: Transport vositasini o'chirish...
+    warning-message: Transport vositasini topib bo'lmadi.
+    message: Transport vositalarini kalit so'z bo'yicha filtrlash...
+scheduler:
+  success-message: '{orderId} buyurtmasi {orderAt} ga rejalashtirildi.'
+  info-message: '{orderId} buyurtmasi rejadan chiqarildi.'
+  title: Rejalashtiruvchi
+  unscheduled-orders: Rejalashtirilmagan buyurtmalar
+  scheduled-orders: Rejalashtirilgan buyurtmalar
+  unauthorized-to-schedule: Sizda buyurtmalarni rejalashtirish huquqi yo'q.
+  scheduling-for: '{orderId} uchun rejalashtirish'
+  add-shift: Smena qo'shish
+  create-shift: Smena yaratish
+  edit-shift: Smenani tahrirlash
+  delete-shift: Smenani o'chirish
+  delete-shift-confirm: Haqiqatan ham ushbu smenani o'chirmoqchimisiz? Bu amalni bekor qilib bo'lmaydi.
+  shift-created: Smena muvaffaqiyatli yaratildi.
+  shift-updated: Smena muvaffaqiyatli yangilandi.
+  shift-title: Smena nomi
+  shift-title-placeholder: masalan, Ertalabki yetkazib berish
+  shift-start: Smena boshlanishi
+  shift-end: Smena tugashi
+  shift-notes-placeholder: Ushbu smena haqida ixtiyoriy izohlar
+  select-start-datetime: Boshlanish sanasi va vaqtini tanlang
+  select-end-datetime: Tugash sanasi va vaqtini tanlang
+  select-driver: Haydovchini tanlang
+  upcoming-shifts: Kelgusi smenalar
+  no-upcoming-shifts: Kelgusi smenalar rejalashtirilmagan.
+  hours-of-service: Ish vaqti
+  daily-driving-hours: Kunlik haydash soatlari
+  weekly-hours: Haftalik soatlar
+  compliance-status: Muvofiqlik holati
+  set-availability: Mavjudlikni belgilash
+  availability-set: Mavjudlik muvaffaqiyatli saqlandi.
+  availability-time-off: Mavjudlik va dam olish
+  no-availability-restrictions: Mavjudlik cheklovlari belgilanmagan.
+  available: Mavjud
+  unavailable: Mavjud emas
+  unavailable-time-off: Mavjud emas / Dam olish
+  availability-type: Mavjudlik turi
+  request-time-off: Dam olish so'rovi
+  submit-request: So'rovni yuborish
+  time-off-requested: Dam olish so'rovi yuborildi.
+  delete-availability: Mavjudlikni o'chirish
+  delete-availability-confirm: Haqiqatan ham ushbu mavjudlik yozuvini o'chirmoqchimisiz?
+  availability-deleted: Mavjudlik yozuvi o'chirildi.
+  start-date: Boshlanish sanasi
+  end-date: Tugash sanasi
+  select-start-date: Boshlanish sanasini tanlang
+  select-end-date: Tugash sanasini tanlang
+  reason: Sabab
+  reason-placeholder: masalan, Shaxsiy uchrashuv
+  notes-placeholder: Ixtiyoriy qo'shimcha izohlar
+  shift: Smena
+  add-shift-hint: Yangi smenani rejalashtirish uchun "Smena qo'shish" tugmasini bosing.
+  time-off-exceptions: Dam olish va istisnolar
+  no-exceptions: Dam olish yoki istisnolar qayd etilmagan.
+  exception-approved: Istisno tasdiqlandi.
+  exception-rejected: Istisno rad etildi.
+  exception-deleted: Istisno o'chirildi.
+  delete-exception: Istisnoni o'chirish
+  delete-exception-confirm: Haqiqatan ham ushbu istisnoni o'chirmoqchimisiz?
+  approve: Tasdiqlash
+  reject: Rad etish
+  recurring-schedule-created: Takroriy jadval yaratildi va smenalar shakllantirildi.
+  recurring-schedule: Takroriy jadval
+  is-recurring: Takroriy
+  recurrence-pattern: Takrorlanish tartibi
+  recurrence-start-date: Boshlanish sanasi
+  recurrence-end-date: Tugash sanasi (ixtiyoriy)
+  template-name: Shablon nomi
+  template-name-placeholder: masalan, Standart hafta
+  schedule-name: Jadval nomi
+  schedule-name-placeholder: masalan, Standart hafta
+  one-off-shift: Bir martalik smena
+  one-off-shift-help: Takroriy jadval o'rniga ma'lum sana va vaqtga bitta smena qo'shish uchun yoqing.
+  template-color: Rang
+  shift-start-time: Smena boshlanish vaqti
+  shift-end-time: Smena tugash vaqti
+  break-start-time: Tanaffus boshlanish vaqti
+  break-end-time: Tanaffus tugash vaqti
+  day-monday: Dushanba
+  day-tuesday: Seshanba
+  day-wednesday: Chorshanba
+  day-thursday: Payshanba
+  day-friday: Juma
+  day-saturday: Shanba
+  day-sunday: Yakshanba
+  frequency-daily: Har kuni
+  frequency-weekly: Har hafta
+  frequency-monthly: Har oy
+  today: Bugun
+  orders-tab: Buyurtmalar jadvali
+  fleet-schedule-tab: Avtopark jadvali
+  break-start: Tanaffus boshlanishi
+  break-end: Tanaffus tugashi
+  select-break-start: Tanaffus boshlanish vaqtini tanlang
+  select-break-end: Tanaffus tugash vaqtini tanlang
+  select-date: Sanani tanlang
+  working-days: Ish kunlari
+  recurrence-start: Boshlanish sanasi
+  recurrence-end: Tugash sanasi
+  recurring-schedule-help: Kunlar va vaqtlar yordamida takroriy smena tartibini belgilang. Smenalar haydovchi uchun avtomatik yaratiladi.
+  shift-deleted: Smena muvaffaqiyatli o'chirildi.
+  day-mon: Du
+  day-tue: Se
+  day-wed: Chor
+  day-thu: Pay
+  day-fri: Ju
+  day-sat: Sha
+  day-sun: Yak
+  view-day: Kun
+  view-week: Hafta
+  undo: Oxirgi amalni bekor qilish
+  redo: Oxirgi amalni qaytarish
+  search-orders: Buyurtmalarni qidirish...
+  select-all: Barchasini tanlash
+  all-scheduled: Barcha buyurtmalar rejalashtirilgan
+  not-scheduled: Rejalashtirilmagan
+  expand-sidebar: Yon panelni kengaytirish
+  collapse-sidebar: Yon panelni yig'ish
+  bulk-assign: '{count} ta buyurtmani tayinlash'
+  bulk-assign-title: '{count} ta buyurtmani ommaviy tayinlash'
+  bulk-assign-success: '{count} ta buyurtma muvaffaqiyatli tayinlandi.'
+  bulk-assign-order-count: Tayinlash uchun {count} ta buyurtma tanlandi
+  bulk-assign-spacing-hint: Buyurtmalar tanlangan sana va vaqtdan boshlab ketma-ket, taxminiy davomiylik oralig'i bilan rejalashtiriladi.
+  assign-to-driver: Haydovchiga tayinlash
+  assign-orders: Buyurtmalarni tayinlash
+  orders-to-assign: Tayinlash uchun {count} ta buyurtma
+  scheduled-date: Rejalashtirilgan sana
+  conflict-title: Rejalashtirishda ziddiyat aniqlandi
+  conflict-description: '{orderTracking} {driverName} ning mavjud buyurtmasi bilan ustma-ust tushadi.'
+  conflicting-orders: Ziddiyatli buyurtmalar
+  conflict-resolution-prompt: Ushbu ziddiyatni qanday hal qilmoqchisiz?
+  auto-adjust: Vaqtni avtomatik moslash
+  assign-anyway: Baribir tayinlash
+  clear-selection: Tanlovni tozalash
+modals:
+  new-custom-field-group:
+    modal-title: Yangi maxsus maydonlar guruhini yaratish
+    group-name: Guruh nomi
+  assign-driver:
+    select-driver: Haydovchini tanlang
+    select-assign: Tayinlash uchun haydovchini tanlang
+  clone-config-form:
+    name: Konfiguratsiya nomi
+    description: Konfiguratsiya tavsifi
+  driver-assign-order:
+    order: Buyurtmani tanlang
+    assign-order: Tayinlash uchun buyurtmani tanlang
+  driver-assign-vehicle:
+    vehicle: Transport vositasini tanlang
+    assign-vehicle: Tayinlash uchun transport vositasini tanlang
+  driver-assign-vendor:
+    vendor: Yetkazib beruvchini tanlang
+  driver-details:
+    job: Joriy ish
+    view: Xaritada ko'rish
+  driver-form:
+    select-vendor: Yetkazib beruvchini tanlang
+    select-vehicle: Transport vositasini tanlang
+  edit-meta-form:
+    add: Metamaydon qo'shish
+  entity-form:
+    name-text: Element yoki obyekt nomi.
+    id-text: Obyekt uchun ixtiyoriy maxsus yoki ichki identifikator belgilash uchun ushbu maydondan foydalaning.
+    sku: SKU
+    sku-text: Agar mavjud bo'lsa, ombor hisobi birligi (SKU) raqami.
+    description: Tavsif
+    description-text: Obyektning qo'shimcha tavsif matni.
+    price-title: Narx va qiymat
+    price: Narx
+    price-text: Obyekt narxi.
+    sale-price: Chegirma narxi
+    sale-price-text: Obyektning chegirmali narxi.
+    declare: E'lon qilingan qiymat
+    declare-text: Obyektning e'lon qilingan qiymati, sug'urta qilish mumkin bo'lsa foydali.
+    measurement-title: O'lchamlar va og'irlik
+    length: Uzunlik
+    length-text: Obyekt uzunligi.
+    width: Kenglik
+    width-text: Obyekt kengligi.
+    height: Balandlik
+    height-text: Obyekt balandligi.
+    weight: Og'irlik
+    weight-text: Obyekt og'irligi.
+  entity-meta-field-prompt:
+    name: Metamaydon kaliti
+  fleet-form:
+    title: Avtopark nomi
+    assign: Xizmat hududiga biriktirish
+    assign-text: Avtoparkni biriktirish uchun xizmat hududini tanlang
+    zone: Zonaga biriktirish
+    zone-text: Avtoparkni biriktirish uchun zonani tanlang
+    task: Vazifa / Missiya
+    task-text: Agar mavjud bo'lsa, ushbu avtoparkning asosiy vazifasi yoki missiyasini tavsiflang.
+    select-task: Vazifani tanlang
+    status-text: Avtopark holatini tanlang.
+    select-status: Holatni tanlang
+  fuel-report-details:
+    fuel: Yoqilg'i / Hajm
+  fuel-report-form:
+    select-driver: Haydovchini tanlang
+    select-vehicle: Transport vositasini tanlang
+    volume: Hajm
+    volume-text: Hisobot uchun o'lchov birligi va yoqilg'i hajmini tanlang.
+  group-details:
+    name: Guruh nomi
+    member: A'zolar
+    address: Manzil
+  group-form:
+    title: Guruh nomi
+    users-add: Guruhga qo'shish uchun foydalanuvchilarni tanlang
+    search: Ushbu guruhga qo'shish uchun foydalanuvchilarni qidiring va tanlang.
+    select-user: Guruhga qo'shish uchun foydalanuvchini tanlang
+    no-users: Guruhga foydalanuvchilar qo'shilmagan
+  install-prompt:
+    message: Siz {extensionName} kengaytmasini o'rnatmoqchisiz. Ushbu o'rnatishni davom ettirishga ishonchingiz komilmi?
+    sub-message: Ba'zi kengaytmalar resurslaringizga kirishni talab qiladi.
+  issue-details:
+    assigned: Tayinlangan
+    type: Muammo turi
+    category: Muammo toifasi
+  issue-form:
+    reported: Xabar bergan
+    select-reporter: Xabar beruvchini tanlang
+    assigned: Tayinlangan
+    select-assignee: Mas'ulni tanlang
+    select-driver: Haydovchini tanlang
+    select-vehicle: Transport vositasini tanlang
+    select-type: Turni tanlang
+    select-category: Toifani tanlang
+    type: Muammo turi
+    type-text: Muammo turini tanlang
+    category: Muammo toifasi
+    category-text: Muammo toifasini tanlang
+    report: Muammo hisoboti
+    tags: Muammo teglari
+    add-tags: Teglar qo'shish
+    select-status: Muammo holatini tanlang
+  map-layer-form:
+    layer-type: Qatlam turi
+    layer-type-text: Yaratmoqchi bo'lgan qatlam turini tanlang.
+    select-layer-type: Qatlam turini tanlang...
+    service-area: Xizmat hududi
+    service-area-text: Ushbu zona tegishli bo'ladigan xizmat hududini tanlang.
+    select-service-area: Avtoparkni biriktirish uchun xizmat hududini tanlang
+    set-name: '{options} uchun ko''rsatiladigan nomni belgilang.'
+    service-type: Xizmat hududi turi
+    service-type-text: Ushbu xizmat hududi uchun tur ta'rifini tanlang.
+    select-service-type: Xizmat hududi turini tanlang...
+    customize-border: Ushbu {options} uchun chegara rangini sozlang.
+    customize-fill-color: Ushbu {options} uchun to'ldirish rangini sozlang.
+    service-area-country: Xizmat hududi mamlakati
+    service-area-country-text: Ixtiyoriy ravishda ushbu xizmat hududi joylashgan yoki asoslangan mamlakatni belgilang.
+  new-order-config:
+    name: Konfiguratsiya nomi
+    description: Konfiguratsiya tavsifi
+    tags: Konfiguratsiya teglari
+    add-tags: Teglar qo'shish
+  order-assign-driver:
+    select-driver: Haydovchini tanlang
+    select-assign: Tayinlash uchun haydovchini tanlang
+  order-config-new-status:
+    new-status: Yangi holat
+    status-text: Oqimga qo'shish uchun yangi faoliyat holatini kiriting
+  order-event:
+    schedule: Jadval
+    unschedule: Rejadan chiqarish
+  order-form:
+    id-text: Buyurtma uchun ixtiyoriy maxsus yoki ichki identifikator belgilash uchun ushbu maydondan foydalaning.
+    schedule-text: Buyurtma jo'natiladigan sana va vaqt. Agar jo'natish vaqtida haydovchi tayinlanmagan bo'lsa, jo'natish muvaffaqiyatsiz bo'ladi. Agar buyurtma ad-hoc bo'lsa, u olib ketish joyi yaqinidagi haydovchilarga yuboriladi.
+    customer: Mijoz
+    customer-text: Ixtiyoriy ravishda ushbu buyurtmaning mijozini tayinlang. Agar bu yangi mijoz bo'lsa, yuqoridagi 'Yangi mijoz' tugmasidan foydalaning.
+    select-customer: Mijozni tanlang
+    facilitator: Vositachi
+    facilitator-text: Ixtiyoriy ravishda ushbu buyurtma uchun vositachi tayinlang. Vositachi ushbu buyurtmani tashishni ta'minlaydigan uchinchi tomon pudratchisi yoki xizmat bo'lishi mumkin.
+    select-facilitator: Vositachini tanlang
+    assign-driver: Haydovchi tayinlash
+    assign-driver-text: Ushbu buyurtma jo'natiladigan haydovchini tayinlang.
+    select-driver: Haydovchini tanlang
+    assign-vehicle: Transport vositasini tayinlash
+    assign-vehicle-text: Ushbu buyurtma bajariladigan transport vositasini tayinlang.
+    select-vehicle: Transport vositasini tanlang
+  order-import:
+    loading-message: Import qayta ishlanmoqda...
+    drop-upload: Yuklash uchun tashlang
+    invalid: Noto'g'ri
+    ready-upload: yuklashga tayyor.
+    upload-spreadsheets: Jadvallarni yuklash
+    drag-drop: Jadval fayllarini bu yerga tortib tashlang
+    button-text: yoki yuklash uchun jadvallarni tanlang
+    spreadsheets: jadvallar
+    upload-queue: Yuklash navbati
+  order-label:
+    loading: Yorliq yuklanmoqda...
+  order-new-activity:
+    select-message: Buyurtma kuzatuv faoliyatini yangilash uchun faoliyat holatini tanlang yoki maxsus faoliyatni kiriting.
+    order-currently-message: Ushbu buyurtma hozirda {options} holatida, qo'shimcha faoliyat bu holatni almashtiradi.
+    not-recommend-message: Nima qilayotganingizni aniq bilmasangiz, Fleetbase buni tavsiya etmaydi.
+    activity-options: Faoliyat parametrlari
+    activity: faoliyat
+    dispatch: Bu buyurtmani jo'natishni ishga tushiradi.
+    status: Maxsus faoliyat holati
+    details: Maxsus faoliyat tafsilotlari
+    code: Maxsus faoliyat kodi
+    fleetbase-message: Nima qilayotganingizni aniq bilmasangiz, Fleetbase buni tavsiya etmaydi.
+  order-route-form:
+    toggle: Bir nechta topshirish joylarini yoqish/o'chirish
+    optimize: Marshrutni optimallashtirish
+    optimize-text: Fleetbase marshrutni avtomatik optimallashtiradi.
+    add: Oraliq nuqta qo'shish
+    add-text: Ushbu buyurtma uchun ko'proq to'xtash joylari qo'shish uchun `Oraliq nuqta qo'shish` tugmasidan foydalaning. Har bir to'xtash joyi qo'shilganda yoki olib tashlanganda Fleetbase marshrutlash mexanizmi marshrutni avtomatik optimallashtiradi.
+    select-waypoint: Oraliq nuqtani tanlang
+    pickup: Olib ketish joyi
+    edit-address: Manzilni tahrirlash
+    select-pickup: Olib ketish joyini tanlang
+    invalid: Noto'g'ri koordinatalar!
+    dropoff: Topshirish joyi
+    select-dropoff: Topshirish joyini tanlang
+    return: Qaytish
+    select-return: Qaytish joyini tanlang
+  place-assign-vendor:
+    select-vendor: Yetkazib beruvchini tanlang
+  place-details:
+    view: Xaritada ko'rish
+  policy-form:
+    name: Siyosat nomi
+    name-text: Siyosatingiz uchun nom kiriting
+    description: Siyosat tavsifi
+    description-text: Siyosatingiz uchun tavsif kiriting
+    permissions: Ruxsatlarni tanlang
+  role-form:
+    name: Rol nomi
+    name-text: Ushbu rol uchun nom kiriting
+    permissions: Ruxsatlarni tanlang
+  select-payment-method:
+    card-ending: '{method} bilan tugaydigan karta'
+  service-area-form:
+    name: Xizmat hududi nomi
+    name-text: Xizmat hududi uchun ko'rsatiladigan nomni belgilang.
+    type: Xizmat hududi turi
+    type-text: Ushbu xizmat hududi uchun tur ta'rifini tanlang.
+    select-type: Xizmat hududi turini tanlang...
+    border-color: Xizmat hududi chegara rangi
+    customize-border-color: Ushbu xizmat hududi uchun chegara rangini sozlang.
+    area-color: Xizmat hududi rangi
+    customize-area-color: Ushbu xizmat hududi uchun to'ldirish rangini sozlang.
+    country: Xizmat hududi mamlakati
+    country-text: Ixtiyoriy ravishda ushbu xizmat hududi joylashgan yoki asoslangan mamlakatni belgilang.
+  uninstall-prompt:
+    message: Siz "{options}" kengaytmasini o'chirmoqchisiz. Ushbu o'chirishni davom ettirishga ishonchingiz komilmi?
+    sub-message: Barcha konfiguratsiya va moslashtirilgan sozlamalar yo'qoladi.
+  vehicle-details:
+    make: Ishlab chiqaruvchi
+    model: Model
+    year: Yil
+    driver-assigned: Tayinlangan haydovchi
+    no-driver-assigned: Haydovchi tayinlanmagan
+    vehicle-assigned: Tayinlangan transport vositasi
+    no-vehicle-assigned: Transport vositasi tayinlanmagan
+    avatar: Avatar
+    model-information: Model haqida ma'lumot
+    acceleration: 0 dan 100 km/soatgacha
+    body: Kuzov
+    doors: Eshiklar
+    length: Uzunlik (mm)
+    seats: O'rindiqlar
+    top-speed: Maksimal tezlik (km/soat)
+    transmission: Uzatmalar qutisi turi
+    weight: Og'irlik (kg)
+    wheelbase: G'ildirak bazasi (mm)
+    width: Kenglik (mm)
+    engine-information: Dvigatel haqida ma'lumot
+    engine-bore: Silindr diametri (mm)
+    cc: Hajm (sm³)
+    compression: Siqish darajasi
+    cylinder: Silindrlar
+    position: Joylashuv
+    power-ps: Quvvat (o.k.)
+    power-rpm: Quvvat (ayl/daq)
+    stroke: Porshen yo'li (mm)
+    torque-nm: Burovchi moment (N·m)
+    torque-rpm: Burovchi moment (ayl/daq)
+    valves: Silindrdagi klapanlar soni
+    fuel-information: Yoqilg'i haqida ma'lumot
+    fuel: Yoqilg'i
+    fuel-cap: Yoqilg'i baki (l)
+    liters-city: Shaharda litr/km
+    liters-highway: Trassada litr/km
+    liters-mixed: Aralash rejimda litr/km
+  vehicle-form:
+    map-avatar: Xarita avatarini tanlang
+    map-avatar-text: Geolokatsiya kuzatuv funksiyalaridan foydalanilganda xaritada ko'rsatish uchun ishlatiladigan avatarni tanlang.
+    select-avatar: Avatarni tanlang
+    make: Transport vositasi markasi
+    model: Transport vositasi modeli
+    year: Transport vositasi ishlab chiqarilgan yili
+    select-driver: Haydovchini tanlang
+    body: Transport vositasi kuzov turi
+    doors: Eshiklar soni
+    type: Transport vositasi yuritma turi
+    length: Transport vositasi uzunligi (mm)
+    seats: O'rindiqlar soni
+    top-speed: Transport vositasi maksimal tezligi (km/soat)
+    transmission: Transport vositasi uzatmalar qutisi turi
+    weight: Transport vositasi og'irligi (kg)
+    wheelbase: Transport vositasi g'ildirak bazasi (mm)
+    width: Transport vositasi kengligi (mm)
+    engine-bore: Silindr diametri (mm)
+    cc: Hajm (sm³)
+    compression: Dvigatel siqish darajasi
+    cylinder: Dvigatel silindrlari
+    position: Dvigatel joylashuvi
+    power-ps: Dvigatel quvvati (o.k.)
+    power-rpm: Dvigatel quvvati (ayl/daq)
+    stroke: Porshen yo'li uzunligi (mm)
+    torque-nm: Dvigatel burovchi momenti (N·m)
+    torque-rpm: Dvigatel burovchi momenti (ayl/daq)
+    fuel-type: Yoqilg'i turi
+    fuel-cap: Yoqilg'i baki hajmi (L)
+  vendor-details:
+    sandbox: Sandbox
+    host: Xost
+    namespace: Nomlar maydoni
+  vendor-form:
+    choose-vendor: Integratsiyalangan yetkazib beruvchini tanlang
+    create-vendor: Maxsus yetkazib beruvchi yaratish
+    credentials: Kirish ma'lumotlari
+    options: Parametrlar
+    hide-advanced: Kengaytirilganni yashirish
+    show-advanced: Kengaytirilganni ko'rsatish
+    custom-host: Maxsus xost
+    host-text: Ixtiyoriy ravishda ushbu integratsiya uchun ishlatiladigan maxsus xostni kiriting.
+    custom-namespace: Maxsus nomlar maydoni
+    namespace-text: Ixtiyoriy ravishda integratsiya uchun ishlatiladigan maxsus nomlar maydoni yoki API versiyasini kiriting.
+    webhook: Vebhuk URL manzili
+    webhook-text: Integratsiyalangan yetkazib beruvchilar odatda buni talab qiladi, shunda Fleetbase buyurtma bo'yicha faoliyat yangilanishlarini qabul qiladi. Nima qilayotganingizni bilmasangiz, o'zgartirmang! Buni o'zgartirish buyurtma yangilanishlarini buzishi mumkin!
+    cancel-credentials: Kirish ma'lumotlarini tiklashni bekor qilish
+    reset-message: Maxfiy kirish ma'lumotlarini faqat tiklash mumkin; ularni yangilash uchun qayta kiritishingiz kerak.
+    optionally: Ixtiyoriy ravishda o'zingizning
+    configure-vendor: ni kiriting va ushbu yetkazib beruvchini sozlang.
+    select: Tanlash
+    sandbox: Sandbox
+    name-text: Yetkazib beruvchining nomi, odatda korxona nomi.
+    email-text: Yetkazib beruvchining elektron pochtasi, undan yetkazib beruvchiga xat yuborish uchun foydalanish mumkin.
+    phone-text: Yetkazib beruvchining telefon raqami \#, undan yetkazib beruvchiga SMS yoki xabar yuborish uchun foydalanish mumkin.
+    website-text: Yetkazib beruvchining veb-sayti, ma'lumot uchun ixtiyoriy ravishda qo'shing.
+    select-address: Manzilni tanlang
+  zone-form:
+    name: Zona nomi
+    name-text: Zona uchun ko'rsatiladigan nomni belgilang.
+    border-color: Zona chegara rangi
+    customize-border: Ushbu zona uchun chegara rangini sozlang.
+    zone-color: Zona rangi
+    customize-fill-color: Ushbu zona uchun to'ldirish rangini sozlang.
+    optionally: Ixtiyoriy ravishda zonaga tavsif bering.
+    description-zone: Zona tavsifi
+radar:
+  title: Radar
+  eyebrow: Resurslar
+  subtitle: Resurslar, texnik xizmat, ko'riklar va xodimlar bo'yicha qaror talab qiladigan hamma narsa, har bir yozuv uchun bitta qator.
+  summary: '{open} ochiq · {snoozed} kechiktirilgan · oxirgi sinxronlash {time}'
+  search-placeholder: Elementlarni filtrlash
+  reload: Qayta yuklash
+  new-notice: Yangi xabarnoma
+  showing: '{total} tadan {count} tasi ko''rsatilmoqda · muddat bo''yicha guruhlangan'
+  sources-warning: 'Ba''zi manbalarni yuklab bo''lmadi: {sources}'
+  briefing:
+    title: Ertalabki brifing
+    score: Avtopark holati balli
+    of-100: / 100
+    vs-yesterday: kechagiga nisbatan {delta}
+    no-history: birinchi o'lchov
+    generated: '{time} da yaratilgan · manbalar bog''langan'
+    yesterday: 'Kecha: {closed} ta bo''shliq yopildi, {rolled} tasi keyinga o''tkazildi'
+    decisions: Sizni kutayotgan qarorlar
+    decisions-count: '{total} tadan {shown} tasi'
+    nothing-to-decide: Qaror qabul qilish kerak bo'lgan narsa yo'q.
+    confirm: Tasdiqlash
+    not-now: Hozir emas
+    undo: Bekor qilish
+    wake-now: Hozir qaytarish
+    confirmed: '{time} da tasdiqlandi'
+    snoozed-until: '{time} gacha kechiktirildi'
+    filter: Filtr
+    collapse: Brifingni yig'ish
+    expand: Brifingni ko'rsatish
+    open-record: Yozuvni ochish
+    working: Ishlanmoqda…
+  views:
+    list: Ro'yxat
+    agenda: Kun tartibi
+  agenda:
+    window-24h: Keyingi 24 soat
+    window-7d: 7 kun
+    overdue: Muddati o'tgan
+    later: Keyinroq
+    anytime: Istalgan vaqt
+    anytime-count: '{count} ta sanasiz'
+    no-events: Ushbu oraliqda hodisalar yo'q.
+    drag-hint: Elementga vaqt belgilash uchun uni yo'lakka torting.
+    print: Topshirish varag'ini chop etish
+    see-all: Barcha {count} tasini ko'rish →
+    planned: Rejalashtirilgan
+    now: hozir
+    lanes:
+      shifts: Smenalar
+      maintenance: Texnik xizmat
+      expiries: Muddati tugayotganlar
+      notices: Xabarnomalar
+    shift-states:
+      on_shift: smenada
+      not_online: onlayn emas
+      upcoming: kelgusi
+      ended: tugagan
+    summary: Oraliqda {shifts} ta smena · {overdue} ta muddati o'tgan · {anytime} ta sanasiz
+  handover:
+    title: Smena tugaydi
+    ends-in: '{minutes} dan keyin'
+    orders-on-driver: '{name} da hali {count} ta faol buyurtma bor'
+    finishes-after: smenadan keyin tugaydi
+    suggested: Tavsiya etilgan topshirish
+    on-shift-till: '{time} gacha smenada'
+    away: '{distance} km uzoqlikda'
+    reassign: '{count} ta buyurtmani {name} ga qayta tayinlash'
+    extend: Smenani 1 soatga uzaytirish
+    snooze: 1 soatga kechiktirish
+    no-cover: Qamrab olish uchun yetarlicha uzoq smenada hech kim yo'q; smenani uzaytiring yoki qo'lda qayta tayinlang.
+    reassigned: Buyurtmalar {name} ga o'tkazildi.
+    extended: Smena bir soatga uzaytirildi.
+    loading: O'rinbosar qidirilmoqda…
+  tabs:
+    open: Ochish
+    snoozed: Kechiktirilgan
+    resolved: Hal qilingan
+  pills:
+    overdue: Muddati o'tgan
+    due_week: Shu hafta muddati
+    unassigned: Tayinlanmagan
+    issues: Ochiq muammolar
+    inspections: Ko'riklar
+    shifts: Smena o'zgarishlari
+    expiring: 30 kunda tugaydi
+    low_stock: Kam zaxira
+    fuel: Mos kelmagan yoqilg'i
+    notices: Xabarnomalar
+  groups:
+    overdue: Muddati o'tgan
+    today: Bugun
+    week: Shu hafta
+    later: Keyinroq
+    none: Sana yo'q
+  rules:
+    maintenance_overdue: Tex. xizmat
+    maintenance_due_soon: Tex. xizmat
+    inspection_due: Ko'rik
+    inspection_failed: Ko'rik
+    inspection_unresolved: Ko'rik
+    inspection_draft: Ko'rik
+    inspection_link_pending: Ko'rik
+    vehicle_inspection_failed: Ko'rik
+    work_order_overdue: Ish buyurtmasi
+    work_order_blocked: Ish buyurtmasi
+    issue_open: Muammo
+    shift_late_start: Smena
+    shift_no_vehicle: Smena
+    shift_handover: Smena topshirish
+    driver_without_vehicle: Tayinlanmagan
+    vehicle_without_driver: Bo'sh turibdi
+    vehicle_without_device: Qurilma
+    device_unattached: Qurilma
+    license_expiring: Guvohnoma
+    lease_expiring: Lizing
+    fuel_unmatched: Yoqilg'i
+    part_low_stock: Ehtiyot qismlar
+    notice: Xabarnoma
+  actions:
+    acknowledge: Qabul qilish
+    snooze: Kechiktirish
+    wake: Hozir qaytarish
+    assign: Tayinlash
+    unassign: Egani olib tashlash
+    plan: Vaqt belgilash
+    unplan: Vaqtni tozalash
+    resolve: Hal qilish
+    open-record: Yozuvni ochish
+    assign-vehicle: Transport vositasini tayinlash
+    assign-driver: Haydovchini tayinlash
+    create-work-order: Ish buyurtmasini yaratish
+    create-issue: Muammo yaratish
+    mark-resolved: Hal qilingan deb belgilash
+    send-pin: PIN yuborish
+    revoke-link: Havolani bekor qilish
+    revoke-links: '{count, plural, one {# havolani} other {# havolani}} bekor qilish'
+    match-vehicle: Transport vositasiga moslash
+    ignore: E'tiborsiz qoldirish
+    attach: Transport vositasiga ulash
+    call: Qo'ng'iroq qilish
+    cover-shift: Smenani qamrab olish
+    reassign: Buyurtmalarni qayta tayinlash
+    extend-shift: Smenani 1 soatga uzaytirish
+    select: Tanlash
+    deselect: Tanlovni bekor qilish
+    more: Yana
+  snooze:
+    1h: 1 soat
+    4h: 4 soat
+    tomorrow: Ertaga ertalab
+    next-week: Keyingi hafta
+    pick: Sanani tanlang…
+    pick-title: Qachongacha kechiktirish
+    pick-label: Qaytish sanasi
+  state:
+    acknowledged-by: '{name} tomonidan {time} da qabul qilindi'
+    acknowledged: Qabul qilindi
+    snoozed-until: '{time} gacha kechiktirilgan'
+    assigned-to: '{name} ga tayinlangan'
+    unassigned: Tayinlanmagan
+    planned-for: '{time} ga rejalashtirilgan'
+    resolved-by: '{name} tomonidan {time} da hal qilindi'
+    resolved-auto: Yozuvda yopilgan
+  bulk:
+    selected: '{count} ta tanlandi'
+    clear: Tozalash
+    summary: '{count} ta element'
+  keys:
+    move: ko'chirish
+    select: tanlash
+    acknowledge: qabul qilish
+    snooze: kechiktirish
+    assign: tayinlash
+    open: yozuvni ochish
+    close: yopish
+  empty:
+    title: Hech narsa qaror talab qilmaydi.
+    snoozed-hint: Shu hafta {count} ta kechiktirilgan element qaytadi.
+    nothing-snoozed: Hech narsa kechiktirilmagan.
+    wakes: '{time} da qaytadi'
+    filtered-title: Ushbu filtrlarga hech narsa mos kelmaydi.
+    filtered-hint: Ko'proq ko'rish uchun filtr yoki qidiruvni tozalang.
+    snoozed-title: Hech narsa kechiktirilmagan.
+    snoozed-tab-hint: Kechiktirilgan elementlar qaytish vaqti kelganda ro'yxatga qaytadi.
+    resolved-title: So'nggi 7 kunda hech narsa hal qilinmagan.
+    resolved-hint: Elementlar ular tavsiflagan yozuv o'zgarganda yoki xabarnoma hal qilinganda shu yerda yopiladi.
+  saved-views:
+    title: Ko'rinishlar
+    save-current: Joriysini saqlash
+    name-prompt: Ushbu ko'rinishga nom bering
+    name-placeholder: masalan, Shu hafta muddati
+    saved: Ko'rinish saqlandi.
+    delete: Ko'rinishni o'chirish
+    deleted: Ko'rinish o'chirildi.
+    defaults:
+      my-assignments: Mening topshiriqlarim
+      shift-changes: Smena o'zgarishlari
+      due-this-week: Shu hafta muddati
+      unmatched-fuel: Mos kelmagan yoqilg'i
+  notice:
+    title: Yangi xabarnoma
+    message: Xabar
+    message-placeholder: Shanba kuni hovli asfaltlash uchun yopiq — tirkamalarni juma soat 18:00 gacha ko'chiring
+    severity: Jiddiylik
+    due: Muddat
+    scope: Kimga tegishli
+    scope-placeholder: 3-hovli · butun avtopark
+    create: Xabarnomani joylash
+    created: Xabarnoma joylandi.
+    delete: Xabarnomani o'chirish
+    deleted: Xabarnoma o'chirildi.
+    severities:
+      info: Ma'lumot
+      warning: Ogohlantirish
+      critical: Kritik
+  drawer:
+    failed-items: Muvaffaqiyatsiz bandlar
+    state: Viloyat
+    subject: Yozuv
+    due: Muddat
+    window: Smena
+    details: Tafsilotlar
+  prompts:
+    select-vehicle: Transport vositasini tanlang
+    select-user: Shaxsni tanlang
+    assign-vehicle-title: '{name} ga transport vositasini tayinlash'
+    assign-driver-title: '{name} ga haydovchi tayinlash'
+    match-vehicle-title: Ushbu tranzaksiyani transport vositasiga moslang
+    create-work-order-title: Ushbu jadvaldan ish buyurtmasi yaratilsinmi?
+    create-work-order-body: Ish buyurtmasi jadvalning standart qiymatlari va muddati bilan ochiladi.
+    ignore-title: Ushbu tranzaksiya e'tiborsiz qoldirilsinmi?
+    ignore-body: U mos kelmaganlar navbatidan chiqadi va transport vositasiga bog'lanmaydi.
+    attach-device-title: Ushbu qurilmani transport vositasiga ulang
+    revoke-link-title: Ushbu ko'rik havolasi bekor qilinsinmi?
+    send-pin-title: Ko'rik PIN kodini yuborish
+    send-pin-to: '{name} havola va PIN ni qanday olishi kerak?'
+    send-pin-body: Havola va PIN qanday yuborilishi kerak?
+    send-pin-unavailable: Havola qabul qiluvchisida PIN yuborish uchun elektron pochta manzili yoki telefon raqami yo'q.
+    revoke-link-body: Havola darhol ishlashni to'xtatadi.
+    bulk-revoke-link-title: '{count, plural, one {# ko''rik havolasi} other {# ko''rik havolasi}} bekor qilinsinmi?'
+    bulk-revoke-link-body: Havolalar darhol ishlashni to'xtatadi. Boshqa tanlangan elementlar o'zgarishsiz qoladi.
+    assign-user-title: Buning egasi kim?
+    assign-user-help: Ega qatorda va Mening topshiriqlarim ko'rinishida ko'rsatiladi.
+    no-selection: Avval birini tanlang.
+  toasts:
+    acknowledged: Qabul qilindi.
+    snoozed: '{time} gacha kechiktirildi.'
+    woken: Ro'yxatga qaytdi.
+    assigned: '{name} ga tayinlandi.'
+    unassigned: Ega olib tashlandi.
+    planned: Vaqt belgilandi.
+    resolved: Hal qilindi.
+    work-order-created: Ish buyurtmasi yaratildi.
+    vehicle-assigned: Transport vositasi tayinlandi.
+    driver-assigned: Haydovchi tayinlandi.
+    matched: Tranzaksiya moslandi.
+    ignored: Tranzaksiya e'tiborsiz qoldirildi.
+    device-attached: Qurilma ulandi.
+    pin-sent: PIN yuborildi.
+    link-revoked: Havola bekor qilindi.
+    links-revoked: '{count, plural, one {# havola bekor qilindi} other {# havola bekor qilindi}}.'
+    links-revoke-failed: '{count, plural, one {# havolani bekor qilib bo''lmadi} other {# havolani bekor qilib bo''lmadi}}.'
+    bulk-done: '{count} ta element yangilandi.'
+widget:
+  refresh: Yangilash
+  radar:
+    title: Radar
+    description: Hozirda butun avtopark bo'yicha qaror talab qiladigan narsalar.
+    open: ochiq
+    overdue: muddati o'tgan
+    snoozed: kechiktirilgan
+    open-radar: Radarni ochish
+  kpi-earnings:
+    title: Daromad
+  kpi-distance:
+    title: Bosib o'tilgan masofa
+  kpi-aov:
+    title: O'rtacha buyurtma qiymati
+  kpi-active-orders:
+    title: Faol buyurtmalar
+  kpi-drivers-online:
+    title: Onlayn haydovchilar
+  kpi-open-issues:
+    title: Ochiq muammolar
+  operations-pulse:
+    title: Operatsiyalar pulsi
+  revenue-trend:
+    title: Daromad dinamikasi
+  orders-by-status:
+    title: Holat bo'yicha buyurtmalar hajmi
+  on-time-delivery:
+    title: O'z vaqtida yetkazib berish
+  top-drivers:
+    title: Eng yaxshi haydovchilar
+  fuel-efficiency:
+    title: Yoqilg'i xarajati va samaradorlik
+  issues-insights:
+    title: Muammolar tahlili
+  maintenance-overview:
+    title: Texnik xizmat sharhi
+  geofence-violations:
+    title: Geozona buzilishlari
+  live-fleet:
+    title: Jonli avtopark xaritasi
+  get-started:
+    title: Fleet-Ops bilan ishlashni boshlang
+    subtitle: Asosiy narsalarni sozlang va birinchi jo'natish jarayoningizni yakunlang.
+    completed: yakunlangan
+    preview-title: Birinchi buyurtma jarayoni
+  recommended-features:
+    title: Siz uchun tavsiya etilgan imkoniyatlar
+    subtitle: Yangi operatsion jamoalarga tezroq samarali ishlashga yordam beradigan vositalarni o'rganing.
+    learn-more: Batafsil
+  fleet-ops-quickstart:
+    message: Keling, operatsiyalarni tez boshlash uchun nima qilishingiz mumkinligini ko'rib chiqamiz...
+    start-task: Vazifani boshlash
+  key-metrics:
+    title: Fleet-Ops ko'rsatkichlari
+    earnings: Daromad
+    fuel-expenses: Yoqilg'i xarajatlari
+    traveled: Bosib o'tilgan masofa
+    total-time: Umumiy vaqt
+    order-scheduled: Rejalashtirilgan buyurtmalar
+    order-completed: Yakunlangan buyurtmalar
+    order-progress: Bajarilayotgan buyurtmalar
+    order-canceled: Bekor qilingan buyurtmalar
+    driver-online: Onlayn haydovchilar
+    customers: Mijozlar
+    open-issue: Ochiq muammo
+    closed-issues: Yopilgan muammolar
+  live-order-map:
+    loading: Bajarilayotgan buyurtmalar yuklanmoqda...
+    assigned: Tayinlangan haydovchi
+    no-order: Bajarilayotgan buyurtmalar yo'q
+    message: Buyurtmalar bajarilayotganda ular ushbu vidjetda ko'rinadi va real vaqtdagi faoliyatni ko'rsatadi.
+  recent-orders:
+    title: So'nggi buyurtmalar
+    loading: So'nggi buyurtmalar yuklanmoqda...
+    no-orders: Bu hafta buyurtmalar yo'q
+    message-part-1: 'Bu hafta hech qanday buyurtma bo''lmadi, harakatni boshlang:'
+    message-part-2: yangi buyurtma yarating
+    message-part-3: yoki mijozlaringizga API orqali buyurtma berishga ruxsat bering.
+  transactions:
+    title: So'nggi tranzaksiyalar
+    loading: So'nggi tranzaksiyalar yuklanmoqda...
+    no-transactions: Bu hafta tranzaksiyalar yo'q
+    message: Buyurtmalar xizmat tariflari bilan o'tganda Fleetbase tranzaksiyalarni avtomatik kuzatadi.
+display-panel:
+  no-address: '{type} manzili yo''q!'
+  no-address-message: Manzil yo'q!
+driver-card:
+  no-fleets: Avtoparklar yo'q
+global-search:
+  search: Kalit so'z bo'yicha qidirish...
+integrated-order-details:
+  order-id: Buyurtma ID
+  quotation-id: Taklif ID
+  driver-id: Haydovchi ID
+  link: Ulashiladigan havola
+  price-breakdown: Narx tafsiloti
+  metadata: Metama'lumotlar
+geofence:
+  prompts:
+    use-draw-controls-create-service-area: Xizmat hududini chizish uchun o'ngdagi chizish boshqaruvlaridan foydalaning, xizmat hududini saqlash uchun nuqtalar ulanishini yakunlang.
+    use-draw-controls-create-zone: Xizmat hududi ichida zona chizish uchun o'ngdagi chizish boshqaruvlaridan foydalaning, zonani saqlash uchun nuqtalar ulanishini yakunlang.
+    no-layer-found-for-resource: Ushbu {resource} uchun qatlam topilmadi.
+    editing-enabled: Tahrirlash yoqildi — cho'qqilarni moslang, so'ng qo'llash uchun tahrirlash belgisini bosing.
+    resource-boundaries-updated: '{resource} chegaralari muvaffaqiyatli yangilandi.'
+    edit-canceled: Tahrirlash bekor qilindi.
+    failed-to-update-resource: '{resource} ni yangilab bo''lmadi.'
+live-map:
+  show-coordinates: Koordinatalarni ko'rsatish
+  center-map: Xaritani shu yerga markazlash
+  zoom-in: Kattalashtirish
+  zoom-out: Kichraytirish
+  toggle-draw-controls: Chizish boshqaruvlarini yoqish/o'chirish
+  hide-draw: Chizish boshqaruvlarini yashirish
+  enable-draw: Chizish boshqaruvlarini yoqish
+  create-new-service: Yangi xizmat hududini yaratish
+  focus-service: 'Xizmat hududiga fokus: {serviceName}'
+  view-driver: 'Haydovchini ko''rish: {driverName}'
+  edit-driver: 'Haydovchini tahrirlash: {driverName}'
+  delete-driver: 'Haydovchini o''chirish: {driverName}'
+  view-vehicle-for: 'Transport vositasini ko''rish: {driverName}'
+  view-vehicle: 'Transport vositasini ko''rish: {vehicleName}'
+  edit-vehicle: 'Transport vositasini tahrirlash: {vehicleName}'
+  delete-vehicle: 'Transport vositasini o''chirish: {vehicleName}'
+  edit-zone: 'Zonani tahrirlash: {zoneName}'
+  delete-zone: 'Zonani o''chirish: {zoneName}'
+  assign-zone: 'Avtoparkni zonaga biriktirish: {zoneName}'
+  blur-service: 'Xizmat hududini yashirish: {serviceName}'
+  create-zone: 'Ichida zona yaratish: {serviceName}'
+  assign-fleet: 'Avtoparkni xizmat hududiga biriktirish: {serviceName}'
+  edit-service: 'Xizmat hududini tahrirlash: {serviceName}'
+  delete-service: 'Xizmat hududini o''chirish: {serviceName}'
+  service-area: Xizmat hududi
+  edit-boundaries: 'Chegaralarni tahrirlash: {resource}'
+  zone: Zona
+order-config:
+  create-new-title: Yangi buyurtma konfiguratsiyasini yaratish
+  warning-message: Buyurtma konfiguratsiyasi uchun nom talab qilinadi
+  success-message: Yangi buyurtma konfiguratsiyasi muvaffaqiyatli yaratildi.
+  no-order-warning: Buyurtma konfiguratsiyasi tanlanmagan.
+  saved-success: '{orderName} buyurtma konfiguratsiyasi saqlandi.'
+  enter-name-title: Nusxalangan konfiguratsiya nomini kiriting
+  no-config-warning: Konfiguratsiya nomi kiritilmagan.
+  cloned-success: Buyurtma konfiguratsiyasi muvaffaqiyatli nusxalandi.
+  body: Ushbu buyurtma konfiguratsiyasi o'chirilgach, u bilan buyurtma yarata olmaysiz. Ishonchingiz komilmi?
+  uninstall-title: Konfiguratsiyani o'chirish
+  uninstall-success: '{extensionName} kengaytmasi o''chirildi.'
+  activity-flow-editor:
+    add-status: Oqimga yangi holat qo'shish
+    no-status: Holat kiritilmagan.
+    overwrite: Bu mavjud holatni almashtiradi!
+    overwrite-text: Ushbu oqimda allaqachon {statusName} holati mavjud; davom etsangiz, u almashtiriladi. Oldingi {statusName} holatini almashtirmoqchimisiz?
+    overwrite-button: Ha, almashtirish!
+    remove: Holatni olib tashlash
+    remove-text: Haqiqatan ham ushbu holatni o'chirmoqchimisiz? Barcha bog'liq faoliyatlar va mantiq holat bilan birga o'chiriladi.
+    delete-button: Ha, o'chirish
+    unable-warning: '{status} ushbu ketma-ketlik tartibida bo''lishi kerak, siljitib bo''lmaydi.'
+    order-warning: Yaratilgan holat har doim buyurtma oqimining birinchi qadami bo'lishi kerak.
+    title: Faoliyat oqimi
+    message: Faoliyat oqimi konfiguratsiyasi ushbu buyurtma turiga tegishli kuzatuv holati faoliyatlarining turli turlarini belgilash imkonini beradi. Faoliyat oqimi mantiqini ham sozlash mumkin.
+    order-flow: Buyurtma oqimi
+    waypoint-flow: Oraliq nuqta oqimi
+    new-activity: Yangi faoliyat
+    activity-details: Faoliyat tafsilotlari
+    logic-stack: Mantiq to'plami
+    add-logic: Mantiqiy shart qo'shish
+    select-field: Maydonni tanlang
+    select-operator: Operatorni tanlang
+    enter-value: Solishtirish uchun qiymat kiriting
+    no-logic: Mantiqiy shartlar qo'llanilmagan
+  details-editor:
+    success: O'rnatilgan
+    key-text: Buyurtmani ushbu konfiguratsiya bilan sozlash uchun bu kalitni buyurtma turiga uzating.
+    namespace-text: Ushbu kengaytma uchun noyob nomlar maydoni.
+    id: Kengaytma ID
+    id-text: Ushbu kengaytma uchun noyob ID.
+    version: Kengaytma versiyasi
+    version-text: Ushbu kengaytma versiyasi.
+    clone: Konfiguratsiyani nusxalash
+    uninstall: Konfiguratsiyani o'chirish
+    delete: Konfiguratsiyani o'chirish
+  entities-editor:
+    warning-message: Metamaydon kalit nomi kiritilmagan.
+    title: Obyektlar
+    message: Obyektlar konfiguratsiyasi ushbu buyurtma turi uchun tanlanishi mumkin bo'lgan obyekt turlarini belgilash imkonini beradi. Ular qo'lda buyurtma yaratishni tezlashtirish uchun shablon sifatida ishlatilishi kerak.
+    type: Obyekt turi
+    add-meta: Metamaydon qo'shish
+  fields-editor:
+    text-field: Matn maydoni
+    boolean: Mantiqiy
+    boolean-text: Foydalanuvchiga belgilash katagi orqali rost yoki yolg'on qiymatni almashtirish imkonini beradi
+    dropdown: Ochiladigan ro'yxat
+    dropdown-text: Foydalanuvchiga ochiladigan ro'yxatdan variant tanlash imkonini beradi
+    datetime: Sana va vaqt tanlagich
+    datetime-text: Foydalanuvchiga sana va vaqtni tanlash imkonini beradi
+    port: Port tanlagich
+    port-text: Foydalanuvchiga portni tanlash imkonini beradi
+    vessel: Kema tanlagich
+    vessel-text: Foydalanuvchiga kemani tanlash imkonini beradi
+    warning-message: Guruh nomi kiritilmagan.
+    field-title: Metamaydonlar
+    new-field: Yangi maxsus maydon
+    new-custom-field: Yangi maxsus maydonlar guruhi
+    field-text: Metamaydonlar konfiguratsiyasi buyurtmalarga qo'llaniladigan maxsus kiritish maydonlarini belgilash imkonini beradi.
+    custom-field-group: Maxsus maydonlar guruhi
+    default-field: Standart maydonlar
+    custom-field: Maxsus maydon
+    type: Maydon turi
+    select-type: Maydon turini tanlang
+    add-option: Variant qo'shish
+  select-message: O'zgartirish uchun buyurtma konfiguratsiyasini tanlang yoki yangisini yaratish uchun "Yangi konfiguratsiya" tugmasini bosing.
+  new-config: Yangi konfiguratsiya
+  loading-configuration: Buyurtma konfiguratsiyalaringiz yuklanmoqda...
+  select-order: Buyurtma konfiguratsiyasini tanlang
+  save-changes: O'zgarishlarni saqlash
+  details: Tafsilotlar
+  fields: Maxsus maydonlar
+  flow: Faoliyat oqimi
+  entities: Obyektlar
+order-list-overlay:
+  search: Buyurtmalarni qidirish...
+  selected: Tanlangan
+  assign: Haydovchiga tayinlash...
+  cancel: Buyurtmalarni bekor qilish...
+  delete: Buyurtmalarni o'chirish...
+  dispatch: Buyurtmalarni jo'natish...
+  actions: Amallar
+  create-order: Yangi buyurtma yaratish...
+  create-fleet: Yangi avtopark yaratish...
+  active-orders: Faol buyurtmalar
+  unassigned-orders: Tayinlanmagan buyurtmalar
+route-list:
+  expand: Kengaytirish uchun bosing
+  collapse: Yig'ish uchun bosing
+  more-waypoints: ta ko'proq oraliq nuqta
+settings:
+  avatar-management: Avatarlarni boshqarish
+  custom-fields: Maxsus maydonlar
+  notifications:
+    fleet-ops-notification-settings: Fleet-Ops bildirishnoma sozlamalari
+    fleet-ops-notifications: Fleet-Ops bildirishnomalari
+    configure-notifications: Bildirishnomalarni sozlash
+    select-notifiables: Qabul qiluvchilarni tanlang
+  routing:
+    fleet-ops-routing-settings: Fleet-Ops marshrutlash sozlamalari
+    fleet-ops-routing: Fleet-Ops marshrutlash
+    configure-routing: Marshrutlashni sozlash
+    select-routing-service: Marshrutlash xizmatini tanlang
+    routing-service: Marshrutlash xizmati
+    routing-service-help-text: Xaritada marshrutlarni hisoblash va chizish uchun mas'ul xizmatni tanlang.
+    select-routing-distance-unit: Marshrutlash masofa birligini tanlang
+    routing-distance-unit: Marshrutlash masofa birligi
+    routing-distance-unit-help-text: Masofa va marshrutlarni hisoblash uchun ishlatiladigan birlik.
+  map:
+    fleet-ops-map-settings: Fleet-Ops xarita sozlamalari
+    fleet-ops-map: Fleet-Ops xaritasi
+    configure-map: Xaritani sozlash
+    map-provider: Xarita provayderi
+    map-provider-help-text: Jonli operatsiyalar xaritasini ko'rsatish uchun ishlatiladigan xarita mexanizmini tanlang. Leaflet OpenStreetMap plitalaridan foydalanadi va API kalitini talab qilmaydi. Google Maps haqiqiy Google Maps JavaScript API kalitini talab qiladi.
+    select-map-provider: Xarita provayderini tanlang
+    leaflet-tile-url: Leaflet plitalar provayderi URL manzili
+    leaflet-tile-url-help-text: Leaflet xaritasi ishlatadigan ixtiyoriy maxsus XYZ plitalar provayderi URL shabloni. API kalitini talab qilmaydigan standart OpenStreetMap plitalaridan foydalanish uchun bo'sh qoldiring. Leaflet ni o'z plitalar provayderingizga, jumladan CARTO kabi kalitli provayderlarga yo'naltirish uchun foydalaning.
+    leaflet-dark-tile-url: Leaflet qorong'i rejim plitalar provayderi URL manzili
+    leaflet-dark-tile-url-help-text: Konsol qorong'i rejimda bo'lganda ishlatiladigan ixtiyoriy plitalar provayderi URL manzili. Yuqoridagi plitalar provayderi URL manziliga yoki standart OpenStreetMap plitalariga qaytish uchun bo'sh qoldiring.
+    google-maps-map-type: Xarita turi
+    google-maps-map-type-help-text: Google Maps faol bo'lganda ko'rsatiladigan standart xarita uslubi.
+    select-map-type: Xarita turini tanlang
+    show-traffic-layer: Tirbandlik qatlamini ko'rsatish
+    show-traffic-layer-help-text: Google Maps ko'rinishida real vaqtdagi tirbandlik holatini ko'rsatish.
+    show-transit-layer: Jamoat transporti qatlamini ko'rsatish
+    show-transit-layer-help-text: Google Maps ko'rinishida jamoat transporti marshrutlarini ko'rsatish.
+    settings-saved: Xarita sozlamalari muvaffaqiyatli saqlandi.
+    settings-save-failed: Xarita sozlamalarini saqlab bo'lmadi. Qayta urinib ko'ring.
+  navigator-app:
+    navigator-app-settings: Navigator ilovasi sozlamalari
+  payments:
+    payments: To'lovlar
+    payment-settings: To'lov sozlamalari
+    account-not-setup-for-payments: Hisobingiz hali to'lovlarni qabul qilishga sozlanmagan.
+    to-accept-payments: To'lovlarni qabul qilish va qayta ishlash uchun Stripe orqali ro'yxatdan o'tish jarayonini yakunlashingiz kerak.
+    system-stripe-not-setup: Ushbu tizim hozirda to'lovlarni qabul qila yoki qayta ishlay olmaydi, to'lovlarni sozlash uchun tizim administratoriga murojaat qiling.
+    loading-settings: To'lov sozlamalari yuklanmoqda...
+    onboard:
+      header-title: To'lovlarga ulanish
+      title-completed: Ro'yxatdan o'tish muvaffaqiyatli yakunlandi!
+      title-incomplete: To'lovlarni qabul qilish uchun ushbu ro'yxatdan o'tish jarayonini yakunlang.
+      subtitle-completed: Ro'yxatdan o'tish muvaffaqiyatli bo'ldi va endi mijozlar va uchinchi tomonlardan to'lovlarni qabul qila olasiz.
+      subtitle-incomplete: Buyurtmalar uchun to'lovlar qabul qilinishi uchun ushbu ro'yxatdan o'tish jarayoni yakunlanishi kerak.
+      button-continue: Davom etish
+      button-start: Ro'yxatdan o'tishni hozir boshlash
+      button-in-progress: Ro'yxatdan o'tish davom etmoqda
+  scheduling:
+    scheduling-settings: Rejalashtirish sozlamalari
+    materialisation: Shakllantirish
+    horizon-days: Jadval ufqi (kun)
+    horizon-days-help: Jadval shabloni qo'llanilganda necha kun oldinga smena elementlarini yaratish kerak.
+    default-shift-duration: Standart smena davomiyligi (soat)
+    default-shift-duration-help: Tugash vaqti ko'rsatilmaganda smena uchun standart soatlar soni.
+    hours-of-service: Ish vaqti chegaralari
+    hos-daily-limit: Kunlik haydash chegarasi (soat)
+    hos-daily-limit-help: Haydovchiga bir kunda haydashga ruxsat etilgan maksimal soatlar.
+    hos-weekly-limit: Haftalik haydash chegarasi (soat)
+    hos-weekly-limit-help: Haydovchiga har qanday ketma-ket 7 kunlik davrda haydashga ruxsat etilgan maksimal soatlar.
+    behaviour: Xatti-harakat
+    auto-activate-schedule: Jadvalni avtomatik faollashtirish
+    auto-activate-schedule-help: Birinchi smena yaratilganda jadvalni Qoralamadan Faol holatiga avtomatik o'tkazish.
+    notify-drivers: Smena o'zgarishlari haqida haydovchilarni xabardor qilish
+    notify-drivers-help: Haydovchilarning smenalari yaratilganda, yangilanganda yoki o'chirilganda ularga push-bildirishnoma yuborish.
+    schedule-templates: Qayta ishlatiladigan jadval shablonlari
+    no-templates: Hali qayta ishlatiladigan shablonlar yaratilmagan.
+    new-template: Yangi shablon
+    edit-template: Shablonni tahrirlash
+    delete-template: Shablonni o'chirish
+    delete-template-confirm: Haqiqatan ham "{name}" shablonini o'chirmoqchimisiz? Bu mavjud jadvallarga ta'sir qilmaydi.
+    template-deleted: Shablon muvaffaqiyatli o'chirildi.
+    settings-saved: Rejalashtirish sozlamalari saqlandi.
+maintenance-schedule:
+  actions:
+    trigger-now: Ish buyurtmasini hozir ishga tushirish
+    pause: Jadvalni to'xtatib turish
+    resume: Jadvalni davom ettirish
+work-order:
+  actions:
+    view: Ish buyurtmasini ko'rish
+    edit: Ish buyurtmasini tahrirlash
+    delete: Ish buyurtmasini o'chirish
+maintenance:
+  actions:
+    view: Texnik xizmat yozuvini ko'rish
+    edit: Texnik xizmat yozuvini tahrirlash
+    delete: Texnik xizmat yozuvini o'chirish
+equipment:
+  actions:
+    view: Uskunani ko'rish
+    edit: Uskunani tahrirlash
+    delete: Uskunani o'chirish
+part:
+  actions:
+    view: Ehtiyot qismni ko'rish
+    edit: Ehtiyot qismni tahrirlash
+    delete: Ehtiyot qismni o'chirish
+orchestrator:
+  settings-title: Orkestrator sozlamalari
+  engine-settings: Taqsimlash mexanizmi
+  active-engine: Faol taqsimlash mexanizmi
+  active-engine-help: Buyurtmalarni haydovchilar va transport vositalariga tayinlash uchun qaysi taqsimlash mexanizmi ishlatilishini tanlang.
+  auto-allocate-on-create: Buyurtma yaratilganda avtomatik taqsimlash
+  auto-allocate-on-create-label: Yangi buyurtma yaratilganda taqsimlashni avtomatik ishga tushirish.
+  auto-reallocate-on-complete: Yetkazib berish yakunlanganda avtomatik qayta taqsimlash
+  auto-reallocate-on-complete-label: Bo'shagan sig'imni to'ldirish uchun yetkazib berish yakunlanganda taqsimlashni qayta ishga tushirish.
+  constraint-settings: Taqsimlash cheklovlari
+  max-travel-time: Maksimal yo'l vaqti (soniya)
+  max-travel-time-help: Haydovchiga tayinlanishi mumkin bo'lgan soniyalardagi maksimal yo'l vaqti. Cheklovsiz uchun 0 qoldiring.
+  balance-workload: Ish yukini muvozanatlash
+  balance-workload-label: Buyurtmalarni mavjud haydovchilar va transport vositalari o'rtasida teng taqsimlash.
+  settings-saved: Orkestrator sozlamalari saqlandi.
+  workbench-title: Orkestrator ish joyi
+  unassigned-orders: Tayinlanmagan buyurtmalar
+  no-unassigned-orders: Tayinlanmagan buyurtmalar yo'q — hammasi bajarilgan!
+  run-allocation: Orkestratorni ishga tushirish
+  running: Ishlamoqda…
+  plan-ready: Reja tayyor — ko'rib chiqing va tasdiqlang.
+  commit-plan: Rejani tasdiqlash
+  discard-plan: Bekor qilish
+  committed: Orkestratsiya tasdiqlandi — {count} ta buyurtma tayinlandi.
+  committed-badge: Reja tasdiqlandi
+  overridden: Qo'lda o'zgartirilgan
+  on-shift: Smenada
+  empty-state-title: Hali orkestratsiya rejasi yo'q
+  empty-state-body: Tayinlanmagan buyurtmalar uchun optimallashtirilgan tayinlash rejasini yaratish uchun "Orkestratorni ishga tushirish" tugmasini bosing.
+  unassigned-warning: Ba'zi buyurtmalarni tayinlab bo'lmadi — transport vositalari sig'imi yetarli emas yoki smenada haydovchilar yo'q.
+  run-orchestration: Orkestratorni ishga tushirish
+  options: Parametrlar
+  mode: Rejim
+  mode-allocate: Buyurtmalarni taqsimlash
+  mode-optimize: Marshrutlarni optimallashtirish
+  engine: Mexanizm
+  allocation-strategy: Taqsimlash strategiyasi
+  allocation-strategy-route-aware: Marshrut + sig'im
+  allocation-strategy-capacity-only: Faqat sig'im
+  vehicle-packing: Transport vositasini to'ldirish
+  vehicle-packing-minimize-vehicles: Transport vositalarini minimallashtirish
+  vehicle-packing-balanced: Muvozanatli
+  respect-skills: Ko'nikmalarni hisobga olish
+  respect-capacity: Sig'imni hisobga olish
+  return-to-depot: Depoga qaytish
+  unassigned-count: 'Tayinlanmagan:'
+  clear: Tozalash
+  search-orders: Buyurtmalarni qidirish…
+  filter-all: Hammasi
+  filter-scheduled: Rejalashtirilgan
+  filter-urgent: Shoshilinch
+  filter-today: Bugun
+  filter-unassigned: Tayinlanmagan
+  filter-imported: Import qilingan
+  advanced-filters: Kengaytirilgan filtrlar
+  filter-country: Mamlakat
+  filter-type: Buyurtma turi
+  filter-status: Holat
+  filter-date: Rejalashtirilgan sana
+  filter-country-placeholder: Barcha mamlakatlar
+  filter-type-placeholder: Barcha turlar
+  filter-status-placeholder: Barcha holatlar
+  filter-date-placeholder: Istalgan sana
+  clear-filters: Filtrlarni tozalash
+  no-address: Manzil yo'q
+  selected: tanlangan
+  clear-selection: Tozalash
+  show-orders: Buyurtmalar hovuzini ko'rsatish
+  hide-orders: Buyurtmalar hovuzini yashirish
+  show-drivers: Resurslarni ko'rsatish
+  hide-drivers: Resurslarni yashirish
+  available-drivers: Mavjud haydovchilar
+  available-vehicles: Mavjud transport vositalari
+  no-available-drivers: Hozir mavjud haydovchilar yo'q.
+  no-available-vehicles: Hozir mavjud transport vositalari yo'q.
+  no-search-results: Qidiruvingizga mos natijalar yo'q.
+  search-drivers: Haydovchilarni qidirish...
+  search-vehicles: Transport vositalarini qidirish...
+  no-position: Joylashuv yo'q
+  filter-online: Onlayn
+  filter-offline: Oflayn
+  filter-on-shift: Ishda
+  filter-on-job: Ishda
+  filter-active: Faol
+  filter-no-driver: Haydovchi yo'q
+  proposed-routes: Taklif etilgan marshrutlar
+  stops: to'xtash joylari
+  route: Marshrut
+  drivers-selected: haydovchi tanlangan
+  vehicles-selected: transport vositasi tanlangan
+  drop-orders-here: Buyurtmalarni shu yerga tashlang
+  import-orders: Buyurtmalarni import qilish
+  import-step-upload: Yuklash
+  import-step-map: Ustunlarni moslash
+  import-step-preview: Oldindan ko'rish va import
+  drop-file-here: CSV yoki Excel faylingizni shu yerga tashlang
+  or: yoki
+  browse-file: Faylni tanlash
+  accepted-formats: 'Qabul qilinadi: .csv, .xlsx, .xls'
+  remove-file: Faylni olib tashlash
+  download-template: Import shablonini yuklab olish
+  download-template-desc: Ma'lumotlaringiz to'g'ri import qilinishi uchun shablonimizdan foydalaning.
+  download: Yuklab olish
+  next: Keyingisi
+  back: Orqaga
+  map-columns-title: Ustunlarni moslash
+  map-columns-desc: 'Ustunlarni moslang:'
+  col-target-field: Maqsad maydon
+  col-your-spreadsheet: Sizning jadvalingiz
+  mapped: moslangan
+  mapping-required-hint: Davom etishdan oldin Topshirish ko'chasi 1 majburiy.
+  select-column: — o'tkazib yuborish —
+  data-preview: 'Dastlabki 3 ta buyurtmani oldindan ko''rish:'
+  preview-import: Importni oldindan ko'rish
+  preview-desc: '{count} ta buyurtma importga tayyor'
+  errors: xatolar
+  all-rows-valid: Barcha qatorlar to'g'ri
+  validation-warning: '{count} ta buyurtmada xatolar bor va ular o''tkazib yuboriladi.'
+  import-confirm: Importni tasdiqlash
+  importing: Import qilinmoqda…
+  col-pickup: Olib ketish joyi
+  col-dropoff: Topshirish joyi
+  col-scheduled: Rejalashtirilgan
+  col-weight: Og'irlik
+  col-customer: Mijoz
+  col-status: Holat
+  col-preview-ref: Belgi / ID
+  col-preview-type: Tur
+  col-preview-facilitator: Vositachi
+  col-preview-vehicle: Transport vositasi
+  col-preview-driver: Haydovchi
+  col-preview-entities: Elementlar
+  col-preview-multi-stop: '{count} ta to''xtash joyi'
+  col-preview-pickup-dropoff: Olib ketish va topshirish
+  col-preview-pickup-dropoff-stops: O va T + {count} ta to'xtash joyi
+  error: Xato
+  valid: To'g'ri
+  import-success: '{count} ta buyurtma muvaffaqiyatli import qilindi.'
+  no-valid-rows: Import uchun to'g'ri buyurtmalar yo'q.
+  invalid-file-type: .csv, .xlsx yoki .xls faylini yuklang.
+  parse-error: Faylni tahlil qilib bo'lmadi. Formatni tekshiring.
+  read-error: Faylni o'qib bo'lmadi.
+  empty-file: Fayl bo'sh ko'rinadi.
+  missing-dropoff: Topshirish ko'chasi 1 majburiy.
+  stops-count: '{count} ta to''xtash joyi'
+  pickup: Olib ketish joyi
+  dropoff: Topshirish joyi
+  scheduled: Rejalashtirilgan
+  customer: Mijoz
+  driver-assigned: Tayinlangan haydovchi
+  vehicle-assigned: Tayinlangan transport vositasi
+  no-vehicle-assigned: Transport vositasi tayinlanmagan
+  no-driver-assigned: Haydovchi tayinlanmagan
+  created: Yaratilgan
+  phases: Bosqichlar
+  phases-description: Ko'p bosqichli orkestratsiya ishga tushirishini tuzing. Har bir bosqich ma'lum rejimni ketma-ket bajaradi.
+  add-phase: Bosqich qo'shish
+  no-phases: Bosqichlar sozlanmagan. Boshlash uchun bosqich qo'shing.
+  phase-n: '{n}-bosqich'
+  phase-label: Bosqich yorlig'i
+  save-phase: Bosqichni saqlash
+  select-phase-to-edit: Sozlamalarini tahrirlash uchun bosqichni tanlang.
+  run-phases: '{count} ta bosqichni ishga tushirish'
+  include-order-statuses: Buyurtma holatlarini qo'shish
+  constraints: Cheklovlar
+  auto-commit: Bosqichdan keyin avtomatik tasdiqlash
+  mode-assign-vehicles: Transport vositalarini tayinlash
+  mode-assign-drivers: Haydovchilarni tayinlash
+  mode-optimize-routes: Marshrutlarni optimallashtirish
+  status-created: Yaratilgan
+  status-dispatched: Jo'natilgan
+  status-started: Boshlangan
+  card-fields: Karta maydonlari
+  card-fields-description: Ish joyidagi buyurtma kartalarida qaysi maydonlar ko'rsatilishini sozlang. Maydonlar buyurtma konfiguratsiyasi bo'yicha guruhlangan, shuning uchun har bir buyurtma turi uchun ko'rinishni moslashingiz mumkin.
+  card-fields-saved: Buyurtma kartasi maydonlari saqlandi.
+  save-card-fields: Karta maydonlarini saqlash
+  standard-fields: Standart maydonlar
+  standard-fields-description: Bu maydonlar buyurtma turidan qat'i nazar har bir buyurtma kartasida ko'rinadi.
+  config-fields-description: '{name} buyurtmalari uchun maxsus maydonlar.'
+  meta-fields: Metamaydonlar
+  meta-fields-description: Integratsiyalar yuboradigan erkin metama'lumot kalitlari.
+  no-custom-fields: Ushbu buyurtma konfiguratsiyasi uchun maxsus maydonlar belgilanmagan.
+  field-tracking: Kuzatuv raqami
+  field-status: Holat
+  field-scheduled-at: Rejalashtirilgan vaqt
+  field-customer: Mijoz
+  field-type: Tur
+  field-notes: Eslatmalar
+  field-priority: Muhimlik
+  field-dropoff: Topshirish manzili
+  field-pickup: Olib ketish manzili
+  filter-available: Mavjud
+  vehicle: Transport vositasi
+  expand-all: Barchasini kengaytirish
+  tab-routes: Marshrutlar
+  tab-timeline: Vaqt chizig'i
+  collapse-all: Barchasini yig'ish
+  collapse-route: Marshrutni yig'ish
+  expand-route: Marshrutni kengaytirish
+  no-plan: Taklif etilgan rejani ko'rish uchun orkestratorni ishga tushiring.
+  unassigned-description: Bu buyurtmalarni tayinlab bo'lmadi. Ular qayta taqsimlash uchun navbatda qoladi.
+  unassigned: tayinlanmagan
+  vehicles: Transport vositalari
+  drivers: Haydovchilar
+  orders: Buyurtmalar
+  cancel: Bekor qilish
+  no-vehicles: Transport vositalari topilmadi.
+  no-drivers: Haydovchilar topilmadi.
+  no-orders: Buyurtmalar topilmadi.
+  expand-panel: Panelni kengaytirish
+  collapse-panel: Panelni yig'ish
+  run-failed-title: Tayinlovlar qaytarilmadi
+  try-again: Qayta urinib ko'ring
+  change-resources: Resurslarni o'zgartirish
+  no-assignments-returned: Orkestrator hech qanday buyurtmani tayinlay olmadi. Transport vositalarida yetarli sig'im borligini va haydovchilar smenada ekanligini tekshiring.
+  stop-type-pickup: Olib ketish joyi
+  stop-type-dropoff: Topshirish joyi
+  pod-required: YBT
+  no-pod: YBT yo'q
+inspection:
+  form:
+    overview: Umumiy koʻrinish
+    submissions: Topshirilganlar
+    no-vehicle: Transport vositasi yo'q
+    no-submissions: Hali hech narsa topshirilmagan
+    no-submissions-description: Ushbu shakl bo'yicha topshirilgan ko'riklar shu yerda ko'rinadi.
+    details: Shakl tafsilotlari
+    name: Ism
+    name-placeholder: Kunlik transport vositasi ko'rigi
+    type: Tur
+    status: Holat
+    description: Tavsif
+    description-placeholder: Ushbu ko'rik nimalarni qamrab oladi
+    builder: Shakl konstruktori
+    fields: Maydonlar
+    published: E'lon qilingan
+    structure: Shakl tuzilmasi
+    loading-structure: Shakl tuzilmasi yuklanmoqda...
+    no-structure: Ushbu shaklda hali maydonlar guruhi yo'q.
+    settings: Sozlamalar
+    type-placeholder: Ushbu shakl qaysi turdagi ko'rik ekanligini tanlang
+    status-placeholder: Holatni tanlang
+    setting-create-issue: Band muvaffaqiyatsiz bo'lganda nuqson yozuvini ochish
+    setting-create-issue-help: Muvaffaqiyatsiz ko'rik transport vositasi bo'yicha muammo qayd etadi, shunda nosozlik qayerdadir saqlanadi.
+    setting-create-work-order: Band muvaffaqiyatsiz bo'lganda ish buyurtmasini ochish
+    setting-create-work-order-help: Muvaffaqiyatsiz bandlar ustaxona uchun ish buyurtmasi ro'yxatiga aylanadi. Ustaxonalar yoqilgan bo'lishi kerak.
+    setting-require-signature: Haydovchidan imzo talab qilish
+    setting-require-signature-help: Haydovchi ilovasi imzosiz yubormaydi. Agar imzo ma'lum joyda bo'lishini istasangiz, shaklga imzo maydonini qo'shing.
+    legacy-checklist: Eski tekshiruv ro'yxati
+    legacy-checklist-help: Birinchi versiyadagi tekshiruv ro'yxati, faqat o'qish uchun saqlangan. U o'tdi/o'tmadi maydonlaridan iborat "Tekshiruv ro'yxati" guruhiga ko'chiriladi.
+    create: Ko'rik shaklini yaratish
+    created: Ko'rik shakli yaratildi.
+    updated: Ko'rik shakli yangilandi.
+  builder:
+    help: Haydovchi tekshiradigan narsalarni guruhlang, so'ng har biri uchun maydon qo'shing.
+    loading: Shakl konstruktori yuklanmoqda...
+    new-group: Yangi maydonlar guruhi
+    new-field: Yangi maydon
+    edit-field: 'Maydonni tahrirlash: {label}'
+    save-field: Maydonni saqlash
+    untitled-group: Nomsiz guruh
+    untitled-field: Nomsiz maydon
+    group-name: Guruh nomi
+    group-name-placeholder: Tashqi qism
+    group-description: Guruh tavsifi
+    group-description-placeholder: Ushbu guruh nimalarni qamrab oladi
+    grid-size: Ustunlar
+    move-up: Yuqoriga
+    move-down: Pastga
+    no-fields: Ushbu guruhda hali maydonlar yo'q.
+    empty-title: Maydonlar guruhlari yo'q
+    empty-description: Ushbu shaklni tuzishni boshlash uchun birinchi maydonlar guruhini qo'shing.
+    delete: O'chirish
+    delete-group-title: Ushbu maydonlar guruhi o'chirilsinmi?
+    delete-group-body: Ushbu guruhni o'chirish undagi barcha maydonlarni o'chiradi. Shakl saqlangach, buni bekor qilib bo'lmaydi.
+    delete-field-title: Ushbu maydon o'chirilsinmi?
+    delete-field-body: Ushbu maydonni o'chirish unga berilgan barcha javoblarni ham o'chiradi. Shakl saqlangach, buni bekor qilib bo'lmaydi.
+  field:
+    label: Maydon yorlig'i
+    label-placeholder: Tormoz chiroqlari
+    name: Maydon nomi
+    name-help: Topshirilgan javob ushbu maydonga murojaat qiladigan mashina nomi. Uni o'zingiz belgilamaguningizcha, u yorliqqa mos keladi.
+    name-placeholder: brake-lights
+    type: Maydon turi
+    description: Maydon tavsifi
+    description-placeholder: Nimani tekshirish kerak va o'tish qanday ko'rinadi
+    help-text: Maydon yordam matni
+    help-text-placeholder: Javob berilayotganda maydon yonida ko'rsatiladi
+    required: Maydon majburiy
+    editable: Maydonni tahrirlash mumkin
+    options: Maydon variantlari
+    no-options: Hali variantlar yo'q.
+    option-placeholder: Variant qo'shish
+    add-option: Qo'shish
+    unit: Birlik
+    unit-help: Raqam yonida ko'rsatiladi, masalan, km yoki soat.
+    unit-placeholder: km
+    odometer-role: Bu odometr ko'rsatkichi
+    odometer-role-help: Javob ko'rikning o'z odometr ustuniga nusxalanadi.
+    on-fail: Muvaffaqiyatsiz bo'lganda
+    on-fail-help: Muvaffaqiyatsiz javob nimani anglatadi va u qabul qilinishidan oldin tekshiruvchi nimani taqdim etishi kerak.
+    default-severity: Standart jiddiylik
+    require-photo-on-fail: Muvaffaqiyatsiz bo'lganda rasm talab qilish
+    require-comment-on-fail: Muvaffaqiyatsiz bo'lganda izoh talab qilish
+    unsafe-on-fail: Muvaffaqiyatsiz bo'lganda transport vositasini xavfli deb belgilash
+    unsafe-on-fail-help: Muvaffaqiyatsiz javob standart bo'yicha xavfli hisoblanadi — bu ishdan chiqaruvchi nuqson demakdir.
+    instructions: Ko'rsatmalar
+    instructions-placeholder: Buni qanday tekshirish kerak, haydovchiga ko'rsatiladi
+    column-span: Ustunlar kengligi
+  field-type:
+    pass-fail: O'tdi / O'tmadi
+    input: Matn
+    textarea: Uzun matn
+    number: Raqam
+    select: Tanlash
+    radio-button: Radio tugmalar
+    boolean: Ha / Yo'q
+    date-picker: Sana
+    date-time-input: Sana va vaqt
+    file-upload: Rasm yoki fayl
+    signature: Imzo
+  severity:
+    low: Past
+    medium: O'rta
+    high: Yuqori
+    critical: Kritik
+  answer:
+    pass: O'tdi
+    fail: O'tmadi
+    not-applicable: Qo'llanilmaydi
+    unanswered: Javob berilmagan
+    severity: Jiddiylik
+    unsafe: Foydalanish xavfli
+    comments: Izohlar
+    comments-placeholder: Nima noto'g'ri va nima kerak
+    photos: Rasmlar
+    add-photo: Rasm qo'shish
+    upload-photo: Rasm yuklash
+    no-photo: Rasm biriktirilmagan.
+    upload-signature: Imzoni yuklash
+    no-signature: Imzo olinmagan.
+    select-placeholder: Javobni tanlang
+    note-placeholder: Izoh qo'shish
+    text-placeholder: Javobni kiriting
+    no-options: Ushbu maydonda tanlash uchun javoblar yo'q.
+    uploads-unavailable: Konsol yoki haydovchi ilovasidan qo'shish mumkin.
+    comments-required: Nima noto'g'ri va nima kerakligini ayting
+    comment-required: Muvaffaqiyatsiz bo'lganda izoh majburiy
+    photo-required: Muvaffaqiyatsiz bo'lganda rasm majburiy
+    comment-and-photo-required: Muvaffaqiyatsiz bo'lganda izoh va rasm majburiy
+  record:
+    overview: Umumiy koʻrinish
+    inspection: Ko'rik
+    details: Ko'rik tafsilotlari
+    form: Shakl
+    select-form: Ko'rik shaklini tanlang
+    status: Holat
+    result: Natija
+    vehicle: Transport vositasi
+    select-vehicle: Transport vositasini tanlang
+    driver: Haydovchi
+    select-driver: Haydovchini tanlang
+    odometer: Odometr
+    odometer-placeholder: Joriy odometr
+    engine-hours: Dvigatel soatlari
+    engine-hours-placeholder: Joriy dvigatel soatlari
+    answers: Javoblar
+    loading-form: Ko'rik shakli yuklanmoqda...
+    loading-answers: Javoblar yuklanmoqda...
+    form-has-no-fields: Ushbu shaklda hali maydonlar yo'q. Uni to'ldirishdan oldin ko'rik shakli ekranida tuzing.
+    summary: Xulosa
+    failed-of: '{total} ta o''tdi/o''tmadi tekshiruvidan {failed} tasi o''tmadi'
+    metadata: Metama'lumotlar
+    submitted: Topshirilgan
+    submitted-by: Topshirgan
+    submission-title: '{form} topshirig''i'
+    due: Muddat
+    create-issue: Muammo yaratish
+    create-work-order: Ish buyurtmasini yaratish
+    resolve: Hal qilish
+    via-link: Ommaviy havola orqali
+    via-link-pin: Ommaviy havola orqali, PIN tasdiqlangan
+    signed-as: '"{name}" sifatida imzolangan'
+    name-unverified: Kiritilgan ism, tizimga kirgan hisob emas
+    resolved: Hal qilingan
+    item-results: Bandlar natijalari
+    no-item-results: Bandlar natijalari qayd etilmagan.
+    follow-up: Keyingi choralar
+    open-form: Ushbu ko'rik shaklini ochish
+    failed: Muvaffaqiyatsiz
+    failed-count: '{count, plural, one {# ta o''tmadi} other {# ta o''tmadi}}'
+    linked-inspections: '{count, plural, one {Bog''langan ko''rik} other {Bog''langan ko''riklar}}'
+    linked-issue: Bog'langan muammo
+    linked-work-order: Bog'langan ish buyurtmasi
+    photos: Rasmlar
+    loading-photos: Rasmlar yuklanmoqda...
+    audit: Audit
+    create: Ko'rik yaratish
+    saved: Ko'rik saqlandi.
+    updated: Ko'rik yangilandi.
+    form-help: Ushbu ko'rik to'ldiriladigan e'lon qilingan shakl.
+    choose-a-form: Boshlash uchun ko'rik shaklini tanlang.
+    group-has-no-fields: Ushbu bo'limda tekshiruvlar yo'q.
+    outstanding: hali javob berilmagan
+    section-outstanding: '{count, plural, one {# ta qolgan} other {# ta qolgan}}'
+    outstanding-field: Yuborishdan oldin {label} majburiy
+    review: Ko'rib chiqish →
+    jump-to: O'tish →
+  follow-up:
+    create-issue-title: Ushbu ko'rikdan muammo yaratilsinmi?
+    create-issue-summary: Transport vositasi va haydovchi bo'yicha muammo qayd etiladi, unda o'tmagan tekshiruvlar ko'rsatiladi va ular orasidagi eng yuqori jiddiylik olinadi. Ko'rik unga bog'lanadi.
+    create-issue-accept: Muammo yaratish
+    create-work-order-title: Ushbu ko'rikdan ish buyurtmasi ochilsinmi?
+    create-work-order-summary: Transport vositasi bo'yicha o'tmagan tekshiruvlar ro'yxati bilan ish buyurtmasi ochiladi. Agar ushbu ko'rikda muammo bo'lmasa, avval muammo qayd etiladi.
+    create-work-order-accept: Ish buyurtmasini yaratish
+    resolve-title: Ushbu ko'rik hal qilinsinmi?
+    resolve-summary: Ko'rik hal qilingan deb belgilanadi va vaqt qayd etiladi. U yaratgan har qanday muammo yoki ish buyurtmasi ochiq qoladi.
+    resolve-accept: Ko'rikni hal qilish
+    from-these: '{count, plural, one {Ushbu o''tmagan tekshiruvdan} other {Ushbu # ta o''tmagan tekshiruvdan}}'
+    unsafe-note: '{count, plural, one {# ta tekshiruv foydalanish uchun xavfli deb belgilangan} other {# ta tekshiruv foydalanish uchun xavfli deb belgilangan}}'
+    due-note: Muddat {due}, ular orasidagi eng yuqori jiddiylik bo'yicha.
+    nothing-failed: Ushbu ko'rikda hech narsa o'tmay qolmadi, shuning uchun qayd etiladigan narsa yo'q.
+    submit-title: Ushbu ko'rik yuborilsinmi?
+    submit-summary: Bu ko'rikni topshiradi, yuborilgan vaqtni qayd etadi va o'tdi/o'tmadi jami sonlarini qayta hisoblaydi. Yuborishni bekor qilib bo'lmaydi.
+    submit-accept: Ko'rikni yuborish
+    cancel: Bekor qilish
+  link:
+    public-links: Ommaviy havolalar
+    existing: Yaratilgan havolalar
+    modal-help: '{form} uchun bir martalik havola yarating. Uni ochgan kishi PIN kodini kiritadi va tizimga kirmasdan ushbu e''lon qilingan shaklni to''ldiradi.'
+    loading: Havolalar yuklanmoqda...
+    none: Ushbu shakl uchun hali havolalar yaratilmagan.
+    load-failed: Bu havolalarni yuklab bo'lmadi.
+    copy: Nusxa olish
+    copied: Ko'rik havolasi nusxalandi.
+    revoke: Bekor qilish
+    revoked: Ko'rik havolasi bekor qilindi.
+    generated: Yaratilgan
+    generated-toast: Ko'rik havolasi yaratildi.
+    publish-first: Ommaviy havola yaratishdan oldin ushbu ko'rik shaklini e'lon qiling.
+    expires: Muddati tugaydi
+    no-expiry: Muddatsiz
+    used: Ishlatilgan
+    viewed: Oxirgi ochilgan
+    never-opened: Hech qachon ochilmagan
+    unassigned: Havola va uning PIN kodiga ega har kim
+    url-not-kept: Bu havola havolalar saqlanishidan oldin yaratilgan, shuning uchun uning URL manzilini qayta ko'rsatib bo'lmaydi.
+    state-active: Faol
+    state-expired: Muddati tugagan
+    state-used: Ishlatilgan
+    state-revoked: Bekor qilingan
+    state-locked: Bloklangan
+    expires-at: Muddati tugash vaqti
+    expires-help: Boshqa vaqt tanlamasangiz, havolalar yaratilgandan 72 soat o'tib muddati tugaydi.
+    assign-to: Kimga tayinlash
+    assign-to-help: Ixtiyoriy. Tashkilotingizdagi har kim ko'rikni bajarishi mumkin; topshiriq unga hisoblanadi.
+    select-assignee: Foydalanuvchini tanlang
+    pin: PIN
+    pin-delivery: Havola va PIN ni yuborish
+    pin-delivery-none: Yubormang, o'zim ulashaman
+    pin-delivery-email: Elektron pochta orqali
+    pin-delivery-sms: SMS orqali
+    pin-delivery-help: '{name} ga ochish uchun havola va kiritish uchun PIN bilan yuborildi.'
+    pin-delivery-no-recipient: Havolani kimgadir tayinlang yoki haydovchini tanlang, shunda u ularga yuboriladi. Aks holda havola va PIN ni o'zingiz ulashing; ikkalasi ham yaratilgandan so'ng ko'rsatiladi.
+    generated-title: Havola yaratildi
+    generated-help: Havola vaqtinchalik xotiraga nusxalandi. Uni ochgan kishiga PIN ham kerak.
+    copied-pin: PIN nusxalandi.
+    email-pin: Havolani elektron pochta orqali yuborish
+    text-pin: Havolani SMS orqali yuborish
+    pin-sent-email: Havola va PIN {to} ga elektron pochta orqali yuborildi.
+    pin-sent-sms: Havola va PIN {to} ga SMS orqali yuborildi.
+    pin-not-sent: 'Havola va PIN yuborilmadi: {reason}'
+    pin-sent-by: '{via, select, email {Elektron pochta orqali yuborildi} sms {SMS orqali yuborildi} other {Yuborildi}}'
+    wrong-pins: '{count, plural, one {# ta noto''g''ri PIN} other {# ta noto''g''ri PIN}}'
+    no-pin: PIN yo'q. Bu havola havolalarda PIN bo'lishidan oldin yaratilgan.
+  public:
+    submitted-title: Ko'rik yuborildi
+    submitted-body: Rahmat. Ushbu ko'rik topshirildi va havola endi yopiq.
+    unavailable-title: Ushbu ko'rik mavjud emas
+    sign-off: Imzolash
+    your-name: Ismingiz
+    your-name-help: Ushbu ko'rikni kim to'ldirgani sifatida qayd etiladi.
+    your-name-placeholder: To'liq ism
+    for: Kim uchun
+    pin-title: PIN kodingizni kiriting
+    pin-help: Ushbu ko'rik uchun sizga berilgan 6 xonali PIN kodni kiriting.
+    pin-label: PIN
+    pin-continue: Davom etish
+    pin-wrong: PIN noto'g'ri. Ushbu havola bloklanishidan oldin {count, plural, one {# ta urinish} other {# ta urinish}} qoldi.
+    submit: Ko'rikni yuborish
+    blocked-required: '{count, plural, one {# ta majburiy javob yetishmayapti} other {# ta majburiy javob yetishmayapti}}'
+    blocked-defects: '{count, plural, one {# ta nosozlik hali izoh yoki rasmni talab qiladi} other {# ta nosozlik hali izoh yoki rasmni talab qiladi}}'
+  flyout:
+    title: 'Nuqson: {label}'
+    done: Bajarildi
+    close: Yopish
+  defect:
+    edit: Nuqsonni tahrirlash
+    photos: '{count, plural, one {# ta rasm} other {# ta rasm}}'
+    comment: Izoh
+    needs-comment: Izoh kerak
+    needs-photo: Rasm kerak
+    needs-both: Izoh va rasm kerak
+    no-evidence: Hali izoh yoki rasm yo'q
+  tray:
+    title: Nuqsonlar
+    review: Ko'rib chiqish
+select-option:
+  vehicle:
+    vin: VIN
+    serial_number: S/R
+    call_sign: Chaqiruv belgisi
+resource-summary:
+  facts:
+    address: Manzil
+    altitude: Balandlik
+    amount: Miqdor
+    arrived: Yetib kelgan
+    assignee: Mas'ul
+    attached-to: Ulangan
+    attachment: Ulanish
+    axles: O'qlar
+    base-fee: Asosiy to'lov
+    body-coupling: Kuzov / ulagich
+    calculation: Hisoblash
+    category: Kategoriya
+    cod: Naqd to'lov
+    code: Kod
+    comments: Izohlar
+    completion: Yakunlanish
+    connected: Ulangan
+    coordinates: Koordinatalar
+    core-service: Asosiy xizmat
+    countries: Mamlakatlar
+    country: Mamlakat
+    coverage: Qamrov
+    created: Yaratilgan
+    customer: Mijoz
+    declared-value: E'lon qilingan qiymat
+    description: Tavsif
+    destination: Manzil
+    details: Tafsilotlar
+    device: Qurilma
+    dimensions: O'lchamlar
+    disconnected: Ulanmagan
+    distance: Masofa
+    driver: Haydovchi
+    drivers: Haydovchilar
+    dropoff: Topshirish joyi
+    due: Muddat
+    dwell: Turish vaqti
+    email: Elektron pochta
+    entities: Obyektlar
+    environment: Muhit
+    equipped-to: Biriktirilgan
+    eta: Taxminiy yetib kelish vaqti
+    event-type: Hodisa turi
+    expires: Muddati tugaydi
+    failed-items: Muvaffaqiyatsiz bandlar
+    fallback: Zaxira
+    fee: To'lov
+    fees: To'lovlar
+    firmware: Proshivka
+    fitted-to: O'rnatilgan
+    fleet: Avtopark
+    form: Shakl
+    fuel-report: Yoqilg'i hisoboti
+    heading: Yo'nalish
+    host: Xost
+    imei: IMEI
+    installed: O'rnatilgan
+    interval: Interval
+    items: Elementlar
+    key: Kalit
+    last-error: Oxirgi xato
+    last-online: Oxirgi marta onlayn
+    last-reading: Oxirgi ko'rsatkich
+    last-seen: Oxirgi ko'rilgan
+    last-status: Oxirgi holat
+    last-synced: Oxirgi sinxronlangan
+    last-value: Oxirgi qiymat
+    licence: Guvohnoma
+    location: Joylashuv
+    maintainable: Xizmat ko'rsatiladigan
+    make-model: Marka / model
+    model: Model
+    namespace: Nomlar maydoni
+    next-due: Keyingi muddat
+    next-occurrence: Keyingi sodir bo'lish
+    occurred: Sodir bo'lgan
+    odometer: Odometr
+    order: Buyurtma
+    order-config: Buyurtma konfiguratsiyasi
+    performed-by: Bajargan
+    period: Davr
+    phone: Telefon
+    pickup: Olib ketish joyi
+    place: Joy
+    plate: Davlat raqami / VIN
+    policy: Siyosat
+    priority: Muhimlik
+    progress: Jarayon
+    provider: Provayder
+    published: E'lon qilingan
+    purchase-price: Sotib olish narxi
+    quantity: Miqdori
+    reason: Sabab
+    recorded: Qayd etilgan
+    region: Hudud
+    relationship: Munosabat
+    reporter: Xabar beruvchi
+    request: So'rov
+    route: Marshrut
+    sandbox: Sandbox
+    schedule: Jadval
+    scheduled: Rejalashtirilgan
+    sequence: Ketma-ketlik
+    serial: Seriya raqami
+    service-area: Xizmat hududi
+    service-quote: Xizmat taklifi
+    service-rate: Xizmat tarifi
+    service-types: Xizmat turlari
+    severity: Jiddiylik
+    sku: SKU
+    speed: Tezlik
+    speed-limit: Tezlik chegarasi
+    station: Stansiya
+    status: Holat
+    subject: Mavzu
+    submitted: Topshirilgan
+    submitted-by: Topshirgan
+    target: Maqsad
+    task: Vazifa
+    telematic: Telematika
+    threshold: Chegara
+    timezone: Vaqt mintaqasi
+    title: Sarlavha
+    total-cost: Umumiy xarajat
+    tracking: Kuzatuv
+    trailer: Tirkama
+    transaction-at: Tranzaksiya vaqti
+    triggers: Ishga tushiruvchilar
+    type: Tur
+    unit-cost: Birlik narxi
+    user: Foydalanuvchi
+    vehicle: Transport vositasi
+    vehicles: Transport vositalari
+    vendor: Yetkazib beruvchi
+    version: Versiya
+    volume: Hajm
+    warranty: Kafolat
+    waypoints: Oraliq nuqtalar
+    website: Veb-sayt
+    weight: Og'irlik
+    window: Oraliq
+    work-order: Ish buyurtmasi
+    zone: Zona
+    zones: Zonalar

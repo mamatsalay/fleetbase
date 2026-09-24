@@ -31,6 +31,19 @@ module('Unit | Service | intl', function (hooks) {
         assert.deepEqual(intl.locale, ['uz-uz', 'en-us']);
     });
 
+    test('extension strings missing upstream are translated by the console', function (assert) {
+        const intl = this.owner.lookup('service:intl');
+
+        // Fleet-Ops ships no Uzbek and lacks this key in its Russian; the console fills both.
+        assert.strictEqual(intl.t('common.unassign-driver', { locale: 'uz-uz' }), 'Haydovchini olib tashlash');
+        assert.strictEqual(intl.t('common.unassign-driver', { locale: 'ru-ru' }), 'Снять водителя');
+        // Ledger ships English only.
+        assert.strictEqual(intl.t('resource.invoice', { locale: 'uz-uz' }), 'Hisob-faktura');
+        assert.strictEqual(intl.t('resource.invoice', { locale: 'ru-ru' }), 'Счёт-фактура');
+        // Russian the extension already translates is left as it is.
+        assert.strictEqual(intl.t('resource.trailers', { locale: 'ru-ru' }), 'Прицепы');
+    });
+
     test('the console ships English, Russian and Uzbek only', function (assert) {
         const intl = this.owner.lookup('service:intl');
 

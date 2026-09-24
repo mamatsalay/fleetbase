@@ -28,7 +28,6 @@ on:
         default: |
           Fleetbase API
           Fleetbase Core API
-          Fleetbase Storefront API
           Fleetbase Ledger API
       build-from-source:
         description: Build the API image from this repo (central) instead of pulling :latest.

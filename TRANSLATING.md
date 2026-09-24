@@ -4,7 +4,7 @@ First off, thank you for considering contributing to Fleetbase translations! You
 
 ## Understanding the Structure
 
-Fleetbase is a modular system. The main application, known as Fleetbase Console, has its own set of translations. Additionally, each extension (like FleetOps or Storefront) also contains its own translation files. This means that to provide a complete translation for a specific language, you may need to contribute to multiple repositories.
+Fleetbase is a modular system. The main application, known as Fleetbase Console, has its own set of translations. Additionally, each extension (like FleetOps or IAM) also contains its own translation files. This means that to provide a complete translation for a specific language, you may need to contribute to multiple repositories.
 
 - **Main Application (`fleetbase/fleetbase`)**: Contains the core translation files for the Fleetbase Console.
 - **Extensions/Modules**: Each extension has its own repository and its own set of translation files.
@@ -23,6 +23,12 @@ Translation files are named using the language and region code. The console ship
 - `uz-uz.yaml` (Uzbek, Latin script)
 
 Only these locales are built into the console. The allow-list is `includeLocales` in `./console/config/ember-intl.js`, and it also applies to extension translation files, so an extension's other languages are left out of the build. Any key missing from a supported language falls back to English.
+
+### Extension strings translated in the console
+
+Extensions ship their own translation files, and most have no Uzbek and incomplete Russian. The console fills the gaps in `./console/translations/extensions/<extension>/ru-ru.yaml` and `uz-uz.yaml`. Each file holds only the keys its extension leaves untranslated, under the same key paths as the extension's `en-us.yaml`.
+
+ember-intl merges every translation file of a locale into one, and the console's files are merged after the extensions', so a key here wins over the extension's own. Keys the console's own `en-us.yaml` defines are left out: the console already owns those. When an extension update adds new keys, they show in English until they are added here.
 
 ## How to Contribute Translations
 
@@ -85,20 +91,18 @@ Here is a list of the primary repositories that accept translation contributions
 | ---------------------------------------- | ----------------------------- |
 | [fleetbase/fleetbase][1]                 | `./console/translations/`     |
 | [fleetbase/fleetops][2]                  | `./translations/`             |
-| [fleetbase/storefront][3]                | `./translations/`             |
-| [fleetbase/dev-engine][4]                | `./translations/`             |
-| [fleetbase/iam-engine][5]                | `./translations/`             |
-| [fleetbase/pallet][6]                    | `./translations/`             |
-| [fleetbase/ledger][7]                    | `./translations/`             |
-| [fleetbase/registry-bridge][8]           | `./translations/`             |
+| [fleetbase/dev-engine][3]                | `./translations/`             |
+| [fleetbase/iam-engine][4]                | `./translations/`             |
+| [fleetbase/pallet][5]                    | `./translations/`             |
+| [fleetbase/ledger][6]                    | `./translations/`             |
+| [fleetbase/registry-bridge][7]           | `./translations/`             |
 
 [1]: https://github.com/fleetbase/fleetbase
 [2]: https://github.com/fleetbase/fleetops
-[3]: https://github.com/fleetbase/storefront
-[4]: https://github.com/fleetbase/dev-engine
-[5]: https://github.com/fleetbase/iam-engine
-[6]: https://github.com/fleetbase/pallet
-[7]: https://github.com/fleetbase/ledger
-[8]: https://github.com/fleetbase/registry-bridge
+[3]: https://github.com/fleetbase/dev-engine
+[4]: https://github.com/fleetbase/iam-engine
+[5]: https://github.com/fleetbase/pallet
+[6]: https://github.com/fleetbase/ledger
+[7]: https://github.com/fleetbase/registry-bridge
 
 Thank you again for your contribution to the Fleetbase community!
