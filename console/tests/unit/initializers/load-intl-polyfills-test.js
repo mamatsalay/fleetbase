@@ -59,12 +59,12 @@ module('Unit | Initializer | load-intl-polyfills | default locale', function () 
         await didAdvance;
 
         const language = (tag) => String(tag).toLowerCase().split('-')[0];
-        const browser = preferredLanguage(['ar', 'bg', 'de', 'en', 'es', 'fa', 'fr', 'it', 'mn', 'pt', 'ru', 'uz', 'vi', 'zh'], navigator.languages);
+        const browser = preferredLanguage(['en', 'ru', 'uz'], navigator.languages);
 
         assert.strictEqual(language(new Intl.NumberFormat().resolvedOptions().locale), browser);
         assert.strictEqual(language(new Intl.DateTimeFormat().resolvedOptions().locale), browser);
         // Every console language still has data, which ember-intl needs to start.
-        assert.strictEqual(Intl.NumberFormat.supportedLocalesOf(['mn']).length, 1);
+        assert.strictEqual(Intl.NumberFormat.supportedLocalesOf(['uz']).length, 1);
     });
 
     test('with no browser languages it falls back to English', function (assert) {

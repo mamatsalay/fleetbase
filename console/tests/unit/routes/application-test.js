@@ -187,11 +187,11 @@ module('Unit | Route | application', function (hooks) {
         let locales;
 
         patch(route.intl, 'setLocale', (value) => (locales = value));
-        patch(route.currentUser, 'getOption', (key, fallback) => (key === 'locale' ? 'fr-fr' : fallback));
+        patch(route.currentUser, 'getOption', (key, fallback) => (key === 'locale' ? 'ru-ru' : fallback));
 
         route.initializeLocale();
 
-        assert.deepEqual(locales, ['fr-fr']);
+        assert.deepEqual(locales, ['ru-ru']);
     });
 
     test('initializeLocale falls back to en-US when the user has no locale option', function (assert) {

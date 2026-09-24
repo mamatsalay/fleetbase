@@ -16,11 +16,13 @@ All translation files are in the **YAML** format (`.yaml` or `.yml`). The base l
 - In the main `fleetbase/fleetbase` repository, the translation files are located at `./console/translations/`.
 - In each extension repository, the translation files are located at `./translations/`.
 
-Translation files are named using the language and region code, for example:
+Translation files are named using the language and region code. The console ships these languages:
 
 - `en-us.yaml` (American English)
-- `fr-fr.yaml` (French, France)
-- `zh-cn.yaml` (Chinese, Simplified)
+- `ru-ru.yaml` (Russian)
+- `uz-uz.yaml` (Uzbek, Latin script)
+
+Only these locales are built into the console. The allow-list is `includeLocales` in `./console/config/ember-intl.js`, and it also applies to extension translation files, so an extension's other languages are left out of the build. Any key missing from a supported language falls back to English.
 
 ## How to Contribute Translations
 
@@ -34,7 +36,7 @@ First, you need to fork the repository you want to contribute to. This could be 
 
 Navigate to the appropriate translations directory (`./console/translations/` or `./translations/`).
 
-- **To add a new language**: Copy the `en-us.yaml` file and rename it to your target language code (e.g., `es-es.yaml`).
+- **To add a new language**: Copy the `en-us.yaml` file and rename it to your target language code (e.g., `kk-kz.yaml`), then add that code to `includeLocales` in `./console/config/ember-intl.js`. Without that, the build leaves the language out.
 - **To update an existing language**: Open the existing language file. You can compare it with `en-us.yaml` to find missing keys or phrases that need updating.
 
 ### Step 3: Translate the Content
@@ -54,15 +56,17 @@ When translating, you should:
 - **Only translate the values**, not the keys. For example, in `new: New`, you would only translate `New`.
 - **Keep placeholders intact**. Some phrases contain placeholders like `{count}` or `{resource}`. These should not be translated. They are used by the application to insert dynamic values.
 
-Here is an example of the French translation for the keys above:
+Here is an example of the Uzbek translation for the keys above:
 
 ```yaml
-# Example from fr-fr.yaml
+# Example from uz-uz.yaml
 common:
-  new: Nouveau
-  create: Créer
-  delete-selected-count: Supprimer {count} sélectionné(s)
+  new: Yangi
+  create: Yaratish
+  delete-selected-count: "{count} ta tanlanganni o'chirish"
 ```
+
+A value that starts with a placeholder must be quoted, as above, or YAML reads it as a mapping.
 
 ### Step 4: Submit a Pull Request
 
