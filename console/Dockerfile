@@ -25,7 +25,10 @@ COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY .npmr[c] ./
 
 # Install global dependencies
-RUN npm install -g ember-cli pnpm 
+# pnpm is pinned to the "packageManager" version in package.json. The latest pnpm would switch
+# to that version by downloading a native pnpm executable, which fails silently on some
+# platforms (e.g. Alpine on Apple Silicon); the npm package itself is plain JavaScript.
+RUN npm install -g ember-cli "pnpm@$(node -p "require('./package.json').packageManager.split('@')[1]")"
 
 # Install git
 RUN apk update && apk add git openssh-client
