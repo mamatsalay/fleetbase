@@ -30,8 +30,10 @@ RUN npm install -g ember-cli pnpm
 # Install git
 RUN apk update && apk add git openssh-client
 
-# Trust GitHub's RSA host key
-RUN mkdir -p -m 0600 ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
+# Trust GitHub's host keys, for any dependency fetched over git+ssh. None are today, so a
+# network that blocks SSH to GitHub (port 22) must not fail the build.
+RUN mkdir -p -m 0700 ~/.ssh && \
+    (ssh-keyscan -T 10 github.com >> ~/.ssh/known_hosts || echo "Warning: could not reach github.com over SSH; skipping its host key.")
 
 # Install app dependencies
 RUN pnpm install --frozen-lockfile
