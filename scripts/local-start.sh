@@ -8,9 +8,9 @@
 #   bash scripts/local-start.sh --stop     # stop the containers (data is kept)
 #   bash scripts/local-start.sh --reset    # delete the install and its database, start over
 #
-# The first run calls scripts/docker-install.sh --non-interactive, which generates the
-# database credentials and docker-compose.override.yml. Later runs never call it again:
-# new credentials would no longer match the existing database.
+# Until the database exists, runs call scripts/docker-install.sh --non-interactive, which
+# generates the database credentials and docker-compose.override.yml. Once it exists they
+# never call it again: new credentials would no longer match the existing database.
 # -------------------------------------------------------
 set -euo pipefail
 
@@ -156,15 +156,26 @@ fi
 ###############################################################################
 # Install or start
 ###############################################################################
-if [[ ! -f "$OVERRIDE_FILE" ]]; then
-  if [[ -d "$DB_DATA_DIR" && -n "$(ls -A "$DB_DATA_DIR" 2>/dev/null)" ]]; then
-    error "Found a database in ${DB_DATA_DIR} but no ${OVERRIDE_FILE} with its credentials."
-    error "Run bash scripts/local-start.sh --reset to start over."
-    exit 1
+# The database directory appears once MySQL first starts. Until then nothing depends on the
+# credentials in the override, so an install that stopped early (a failed image build, say)
+# is simply run again. A directory we can't read belongs to MySQL, so it counts as data.
+has_database() {
+  [[ -d "$DB_DATA_DIR" ]] && { [[ ! -r "$DB_DATA_DIR" ]] || [[ -n "$(ls -A "$DB_DATA_DIR" 2>/dev/null)" ]]; }
+}
+
+if ! has_database; then
+  if [[ -f "$OVERRIDE_FILE" ]]; then
+    section "Resuming the Install"
+    info "A previous install stopped before the database was created; running it again."
+  else
+    section "First Run: Installing Fleetbase"
   fi
-  section "First Run: Installing Fleetbase"
   info "Downloading images and building the console takes 15-30 minutes the first time."
   FLEETBASE_HOST=localhost bash scripts/docker-install.sh --non-interactive
+elif [[ ! -f "$OVERRIDE_FILE" ]]; then
+  error "Found a database in ${DB_DATA_DIR} but no ${OVERRIDE_FILE} with its credentials."
+  error "Run bash scripts/local-start.sh --reset to start over."
+  exit 1
 elif [[ "$ACTION" == "rebuild" ]]; then
   section "Rebuilding"
   info "Pulling the latest API image and rebuilding the console. This takes several minutes."
