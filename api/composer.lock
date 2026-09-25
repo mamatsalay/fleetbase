@@ -2314,12 +2314,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mamatsalay/core-api.git",
-                "reference": "3e1e14a5a1fb84629caf2bbdf0fdb44f7dcb2e9d"
+                "reference": "bb7cc0e75c464e3bc75d43691d623e137a170550"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mamatsalay/core-api/zipball/3e1e14a5a1fb84629caf2bbdf0fdb44f7dcb2e9d",
-                "reference": "3e1e14a5a1fb84629caf2bbdf0fdb44f7dcb2e9d",
+                "url": "https://api.github.com/repos/mamatsalay/core-api/zipball/bb7cc0e75c464e3bc75d43691d623e137a170550",
+                "reference": "bb7cc0e75c464e3bc75d43691d623e137a170550",
                 "shasum": ""
             },
             "require": {
@@ -2455,7 +2455,7 @@
             "support": {
                 "source": "https://github.com/mamatsalay/core-api/tree/main"
             },
-            "time": "2026-09-22T16:10:31+00:00"
+            "time": "2026-09-25T07:09:34+00:00"
         },
         {
             "name": "fleetbase/countries",
