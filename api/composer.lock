@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1be05d8ed4e13e2d1f7e9ebaff0e3c92",
+    "content-hash": "800b12fb1de751d1a6366f1f8b63466f",
     "packages": [
         {
             "name": "appstract/laravel-opcache",
@@ -2310,15 +2310,15 @@
         },
         {
             "name": "fleetbase/core-api",
-            "version": "1.6.63",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fleetbase/core-api.git",
+                "url": "https://github.com/mamatsalay/core-api.git",
                 "reference": "3e1e14a5a1fb84629caf2bbdf0fdb44f7dcb2e9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fleetbase/core-api/zipball/3e1e14a5a1fb84629caf2bbdf0fdb44f7dcb2e9d",
+                "url": "https://api.github.com/repos/mamatsalay/core-api/zipball/3e1e14a5a1fb84629caf2bbdf0fdb44f7dcb2e9d",
                 "reference": "3e1e14a5a1fb84629caf2bbdf0fdb44f7dcb2e9d",
                 "shasum": ""
             },
@@ -2376,6 +2376,7 @@
                 "phpstan/phpstan": "^1.10.38",
                 "symfony/var-dumper": "^5.4.29"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2392,7 +2393,47 @@
                     "Fleetbase\\Seeders\\": "seeders/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Fleetbase\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "coverage:baseline": [
+                    "@test:coverage:clover",
+                    "@coverage:summary"
+                ],
+                "coverage:summary": [
+                    "php scripts/coverage-summary.php coverage/clover.xml"
+                ],
+                "lint": [
+                    "php-cs-fixer fix -v"
+                ],
+                "test:coverage": [
+                    "php scripts/coverage-runner.php --coverage --coverage-text --colors=always"
+                ],
+                "test:coverage:clover": [
+                    "mkdir -p coverage && php scripts/coverage-runner.php --coverage-clover=coverage/clover.xml --colors=always"
+                ],
+                "test:date-drift": [
+                    "php scripts/check-test-date-drift.php"
+                ],
+                "test:lint": [
+                    "php-cs-fixer fix -v --dry-run"
+                ],
+                "test:types": [
+                    "phpstan analyse --ansi --memory-limit=-1"
+                ],
+                "test:unit": [
+                    "php -d memory_limit=512M vendor/bin/pest --colors=always"
+                ],
+                "test": [
+                    "@test:lint",
+                    "@test:date-drift",
+                    "@test:types",
+                    "@test:unit"
+                ]
+            },
             "license": [
                 "AGPL-3.0-or-later"
             ],
@@ -2412,8 +2453,7 @@
                 "logistics platform"
             ],
             "support": {
-                "issues": "https://github.com/fleetbase/core-api/issues",
-                "source": "https://github.com/fleetbase/core-api/tree/v1.6.63"
+                "source": "https://github.com/mamatsalay/core-api/tree/main"
             },
             "time": "2026-09-22T16:10:31+00:00"
         },
@@ -2553,15 +2593,15 @@
         },
         {
             "name": "fleetbase/fleetops-api",
-            "version": "0.6.69",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fleetbase/fleetops.git",
+                "url": "https://github.com/mamatsalay/fleetops.git",
                 "reference": "a80f78d791d79df7af0825959610f9ff75e00875"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fleetbase/fleetops/zipball/a80f78d791d79df7af0825959610f9ff75e00875",
+                "url": "https://api.github.com/repos/mamatsalay/fleetops/zipball/a80f78d791d79df7af0825959610f9ff75e00875",
                 "reference": "a80f78d791d79df7af0825959610f9ff75e00875",
                 "shasum": ""
             },
@@ -2591,6 +2631,7 @@
                 "phpstan/phpstan": "^1.10.38",
                 "symfony/var-dumper": "^5.4.29"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2616,7 +2657,47 @@
                     "Fleetbase\\FleetOps\\Seeders\\": "server/seeders/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Fleetbase\\Tests\\": "server/tests/"
+                }
+            },
+            "scripts": {
+                "coverage:baseline": [
+                    "@test:coverage:clover",
+                    "@coverage:summary"
+                ],
+                "coverage:check": [
+                    "@test:coverage:clover",
+                    "php scripts/coverage-summary.php coverage/clover.xml --fail-under=100"
+                ],
+                "coverage:summary": [
+                    "php scripts/coverage-summary.php coverage/clover.xml"
+                ],
+                "lint": [
+                    "php-cs-fixer fix -v"
+                ],
+                "test:lint": [
+                    "php-cs-fixer fix -v --dry-run"
+                ],
+                "test:coverage": [
+                    "php scripts/coverage-runner.php --coverage --coverage-text --colors=always"
+                ],
+                "test:coverage:clover": [
+                    "mkdir -p coverage && php scripts/coverage-file-runner.php --coverage-clover=coverage/clover.xml --colors=always"
+                ],
+                "test:types": [
+                    "phpstan analyse --ansi --memory-limit=4G"
+                ],
+                "test:unit": [
+                    "php scripts/pest-file-runner.php --colors=always"
+                ],
+                "test": [
+                    "@test:lint",
+                    "@test:types",
+                    "@test:unit"
+                ]
+            },
             "license": [
                 "AGPL-3.0-or-later"
             ],
@@ -2639,8 +2720,7 @@
                 "tms"
             ],
             "support": {
-                "issues": "https://github.com/fleetbase/fleetops/issues",
-                "source": "https://github.com/fleetbase/fleetops/tree/v0.6.69"
+                "source": "https://github.com/mamatsalay/fleetops/tree/main"
             },
             "time": "2026-09-22T16:34:04+00:00"
         },
@@ -19588,9 +19668,25 @@
             "time": "2025-11-17T20:03:58+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "fleetbase/core-api",
+            "version": "dev-main",
+            "alias": "1.6.63",
+            "alias_normalized": "1.6.63.0"
+        },
+        {
+            "package": "fleetbase/fleetops-api",
+            "version": "dev-main",
+            "alias": "0.6.69",
+            "alias_normalized": "0.6.69.0"
+        }
+    ],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "fleetbase/core-api": 20,
+        "fleetbase/fleetops-api": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

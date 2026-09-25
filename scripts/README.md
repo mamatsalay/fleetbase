@@ -198,6 +198,29 @@ The API image (`fleetbase/fleetbase-api:latest`) is built from this repository i
 
 On Apple Silicon the websocket image only exists for x86 and runs under emulation; turning on "Use Rosetta for x86/amd64 emulation" in Docker Desktop makes it faster.
 
+### Forked modules
+
+Four modules are built from our forks on GitHub instead of the published packages, so changes made there reach the app:
+
+| Fork                                                              | Used as                                                                                                  |
+| ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [mamatsalay/fleetops](https://github.com/mamatsalay/fleetops)     | `@fleetbase/fleetops-engine` (console) and `fleetbase/fleetops-api` (API)                                |
+| [mamatsalay/core-api](https://github.com/mamatsalay/core-api)     | `fleetbase/core-api` (API)                                                                               |
+| [mamatsalay/ember-core](https://github.com/mamatsalay/ember-core) | `@fleetbase/ember-core` (console, and every engine through `overrides` in `console/pnpm-workspace.yaml`) |
+| [mamatsalay/ember-ui](https://github.com/mamatsalay/ember-ui)     | `@fleetbase/ember-ui` (console, and every engine likewise)                                               |
+
+Both lock files pin a commit of each fork's `main`, so a push to a fork changes nothing until the locks move to it. After pushing, update the locks, commit them, and rebuild:
+
+```sh
+# console: move the engines to the forks' latest main
+cd console && pnpm update @fleetbase/fleetops-engine @fleetbase/ember-core @fleetbase/ember-ui && cd ..
+# API: the same for Composer, run in Docker so no local PHP is needed
+docker run --rm -v "$PWD/api:/app" -w /app composer:2 update fleetbase/core-api fleetbase/fleetops-api --no-install --no-scripts --ignore-platform-reqs
+bash scripts/local-start.sh --rebuild
+```
+
+The API requires the forks as `dev-main as <version>`, so the other extensions still see the version they depend on. The `packages/` submodules point at the forks too, for reading and editing the code; the builds don't use them.
+
 ## `azure-create-vm.sh`
 
 `azure-create-vm.sh` creates an Azure VM that runs Fleetbase with Docker Compose. It needs the [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli), logged in with `az login`:

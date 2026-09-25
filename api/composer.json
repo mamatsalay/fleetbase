@@ -20,9 +20,9 @@
     "require": {
         "php": ">=8.0 <8.3",
         "appstract/laravel-opcache": "^4.0",
-        "fleetbase/core-api": "^1.6.63",
+        "fleetbase/core-api": "dev-main as 1.6.63",
         "fleetbase/ai": "^0.0.5",
-        "fleetbase/fleetops-api": "^0.6.69",
+        "fleetbase/fleetops-api": "dev-main as 0.6.69",
         "fleetbase/registry-bridge": "^0.1.9",
         "fleetbase/customer-portal-api": "^0.0.14",
         "fleetbase/ledger-api": "^0.0.10",
@@ -53,6 +53,14 @@
         "phpunit/phpunit": "^10.0"
     },
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mamatsalay/core-api"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/mamatsalay/fleetops"
+        },
         {
             "type": "composer",
             "url": "https://registry.fleetbase.io",
