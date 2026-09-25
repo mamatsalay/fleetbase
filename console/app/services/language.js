@@ -3,12 +3,9 @@ import LanguageService from '@fleetbase/ember-core/services/language';
 // A locale's language named in that language, e.g. uz-uz is "O‘zbek".
 const nativeLanguageName = (locale) => {
     const [code] = locale.split('-');
-    try {
-        const name = new Intl.DisplayNames([code], { type: 'language' }).of(code);
-        return name.charAt(0).toLocaleUpperCase(code) + name.slice(1);
-    } catch {
-        return locale;
-    }
+    const name = new Intl.DisplayNames([code], { type: 'language' }).of(code);
+
+    return name.charAt(0).toLocaleUpperCase(code) + name.slice(1);
 };
 
 export default class ConsoleLanguageService extends LanguageService {

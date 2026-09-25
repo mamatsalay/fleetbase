@@ -14,11 +14,13 @@ module('Unit | Service | language', function (hooks) {
     setupTest(hooks);
 
     hooks.beforeEach(function () {
+        const context = this;
+        this.countries = COUNTRIES;
         this.owner.register(
             'service:fetch',
             class extends Service {
                 get() {
-                    return Promise.resolve(COUNTRIES.map((country) => ({ ...country })));
+                    return Promise.resolve(context.countries.map((country) => ({ ...country })));
                 }
             }
         );
@@ -34,5 +36,13 @@ module('Unit | Service | language', function (hooks) {
         assert.strictEqual(availableLocales['ru-ru'].language, 'Русский');
         assert.strictEqual(availableLocales['uz-uz'].language, 'O‘zbek');
         assert.strictEqual(availableLocales['uz-uz'].emoji, '🇺🇿', 'the country’s flag is kept');
+    });
+
+    test('a locale whose country the lookup lacks is still named', async function (assert) {
+        this.countries = COUNTRIES.filter((country) => country.cca2 !== 'UZ');
+        const language = this.owner.lookup('service:language');
+        await settled();
+
+        assert.deepEqual(language.availableLocales['uz-uz'], { language: 'O‘zbek' });
     });
 });
