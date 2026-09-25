@@ -1,20 +1,20 @@
 [submodule "packages/fleetops"]
 	path = packages/fleetops
-	url = git@github.com:fleetbase/fleetops.git
+	url = git@github.com:mamatsalay/fleetops.git
 [submodule "packages/pallet"]
 	path = packages/pallet
 	url = git@github.com:fleetbase/pallet.git
 [submodule "packages/core-api"]
 	path = packages/core-api
-	url = git@github.com:fleetbase/core-api.git
+	url = git@github.com:mamatsalay/core-api.git
 	branch = main
 [submodule "packages/ember-core"]
 	path = packages/ember-core
-	url = git@github.com:fleetbase/ember-core.git
+	url = git@github.com:mamatsalay/ember-core.git
 	branch = main
 [submodule "packages/ember-ui"]
 	path = packages/ember-ui
-	url = git@github.com:fleetbase/ember-ui.git
+	url = git@github.com:mamatsalay/ember-ui.git
 	branch = main
 [submodule "packages/iam-engine"]
 	path = packages/iam-engine
