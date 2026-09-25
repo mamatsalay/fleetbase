@@ -49,9 +49,6 @@ importers:
       '@fleetbase/registry-bridge-engine':
         specifier: ^0.1.9
         version: 0.1.9(bffd95f1ee8fa5c6dc085f568b2e0221)
-      '@fleetbase/storefront-engine':
-        specifier: ^0.4.21
-        version: 0.4.21(bffd95f1ee8fa5c6dc085f568b2e0221)
       '@fleetbase/valhalla-engine':
         specifier: ^0.0.4
         version: 0.0.4(bffd95f1ee8fa5c6dc085f568b2e0221)
@@ -1613,12 +1610,6 @@ packages:
 
   '@fleetbase/registry-bridge-engine@0.1.9':
     resolution: {integrity: sha512-ueHo0xFiX0qs0C9t6X9tc+vyTaNUCD/Tzyz5Tn640qRyxaMsDSvz96hFeXbVnhdJ9lpKtTWaNYGduU9xcCFm4Q==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      ember-engines: ^0.9.0
-
-  '@fleetbase/storefront-engine@0.4.21':
-    resolution: {integrity: sha512-V6ccJFxWNF3eEvUSA1dDrijqJS1aaUX7l403OfbQyV8IAPOGB/Z+qGy51SP53jQkZC3mAVjkErYf/se937345Q==}
     engines: {node: '>= 18'}
     peerDependencies:
       ember-engines: ^0.9.0
@@ -11478,49 +11469,6 @@ snapshots:
       - tsx
       - typescript
       - uglify-js
-      - utf-8-validate
-      - webpack
-      - webpack-cli
-      - webpack-command
-      - yaml
-
-  '@fleetbase/storefront-engine@0.4.21(bffd95f1ee8fa5c6dc085f568b2e0221)':
-    dependencies:
-      '@babel/core': 7.29.7
-      '@fleetbase/ember-core': 0.3.24(@ember/string@3.1.1)(@ember/test-helpers@3.3.1(@babel/core@7.29.7)(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26)))(webpack@5.109.2(postcss@8.5.26)))(ember-resolver@11.0.1(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26))))(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26)))(eslint@8.57.1)(webpack@5.109.2(postcss@8.5.26))
-      '@fleetbase/ember-ui': 0.4.3(@ember/test-helpers@3.3.1(@babel/core@7.29.7)(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26)))(webpack@5.109.2(postcss@8.5.26)))(@glimmer/component@1.1.2(@babel/core@7.29.7))(@glimmer/tracking@1.1.2)(ember-resolver@11.0.1(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26))))(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26)))(postcss@8.5.26)(rollup@2.80.0)(tracked-built-ins@3.4.0(@babel/core@7.29.7))(webpack@5.109.2(postcss@8.5.26))(yaml@2.9.0)
-      '@fleetbase/fleetops-data': 0.2.2(@ember/string@3.1.1)(@ember/test-helpers@3.3.1(@babel/core@7.29.7)(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26)))(webpack@5.109.2(postcss@8.5.26)))(ember-resolver@11.0.1(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26))))(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26)))(eslint@8.57.1)(webpack@5.109.2(postcss@8.5.26))
-      '@fortawesome/ember-fontawesome': 2.0.0(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26)))(rollup@2.80.0)(webpack@5.109.2(postcss@8.5.26))
-      '@fortawesome/fontawesome-svg-core': 6.4.0
-      '@fortawesome/free-brands-svg-icons': 6.4.0
-      '@fortawesome/free-solid-svg-icons': 6.4.0
-      ember-auto-import: 2.13.1(webpack@5.109.2(postcss@8.5.26))
-      ember-cli-babel: 8.3.1(@babel/core@7.29.7)
-      ember-cli-htmlbars: 6.3.0
-      ember-engines: 0.9.0(@ember/legacy-built-in-components@0.4.2(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26))))(ember-source@5.4.1(@babel/core@7.29.7)(@glimmer/component@1.1.2(@babel/core@7.29.7))(rsvp@4.8.5)(webpack@5.109.2(postcss@8.5.26)))
-      ember-intl: 6.3.2(@babel/core@7.29.7)(webpack@5.109.2(postcss@8.5.26))
-      ember-tag-input: 3.1.0
-      ember-wormhole: 0.6.1
-    transitivePeerDependencies:
-      - '@ember/string'
-      - '@ember/test-helpers'
-      - '@glimmer/component'
-      - '@glimmer/tracking'
-      - '@glint/environment-ember-loose'
-      - '@glint/template'
-      - '@typescript-eslint/types'
-      - bufferutil
-      - ember-cli-mirage
-      - ember-resolver
-      - ember-source
-      - eslint
-      - miragejs
-      - postcss
-      - rollup
-      - supports-color
-      - tracked-built-ins
-      - tsx
-      - typescript
       - utf-8-validate
       - webpack
       - webpack-cli

@@ -46,7 +46,6 @@
         "@fleetbase/leaflet-routing-machine": "^3.2.17",
         "@fleetbase/ledger-engine": "^0.0.10",
         "@fleetbase/registry-bridge-engine": "^0.1.9",
-        "@fleetbase/storefront-engine": "^0.4.21",
         "@fleetbase/valhalla-engine": "^0.0.4",
         "@fleetbase/vroom-engine": "^0.0.4",
         "@formatjs/intl-datetimeformat": "^6.18.2",

@@ -1,0 +1,4 @@
+# Russian strings for @fleetbase/ai-engine, which ships no ru-ru translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+ai:
+  extension-name: ИИ

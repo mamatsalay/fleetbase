@@ -1,0 +1,4 @@
+# Uzbek strings for @fleetbase/valhalla-engine, which ships no uz-uz translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+starter:
+  extension-name: Boshlang'ich

@@ -190,9 +190,11 @@ Later runs don't install again (new credentials would no longer match the existi
 ```sh
 bash scripts/local-start.sh            # start
 bash scripts/local-start.sh --stop     # stop, keeping the data
-git pull && bash scripts/local-start.sh --rebuild   # update: pull the API image, rebuild the console, migrate
+git pull && bash scripts/local-start.sh --rebuild   # update: rebuild the API and console, migrate
 bash scripts/local-start.sh --reset    # delete the install and its database, then start over
 ```
+
+The API image (`fleetbase/fleetbase-api:latest`) is built from this repository instead of pulled from Docker Hub, so the backend carries exactly the extensions `api/composer.json` lists; the published image also includes Storefront. An install made with the published image prints a warning on start until `--rebuild` replaces it. Set `GITHUB_AUTH_KEY` to a GitHub token if Composer hits GitHub's download rate limit.
 
 On Apple Silicon the websocket image only exists for x86 and runs under emulation; turning on "Use Rosetta for x86/amd64 emulation" in Docker Desktop makes it faster.
 

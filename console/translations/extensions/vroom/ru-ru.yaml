@@ -1,0 +1,7 @@
+# Russian strings for @fleetbase/vroom-engine, which ships no ru-ru translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+vroom:
+  extension-name: VROOM
+  settings:
+    title: Настроить VROOM
+    api-key: API-ключ VROOM

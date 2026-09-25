@@ -1,0 +1,101 @@
+# Russian strings for @fleetbase/ledger-engine, which ships no ru-ru translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+ledger:
+  extension-name: Бухгалтерия
+common:
+  ledger: Бухгалтерия
+  transactions: Транзакции
+resource:
+  account: Аккаунт
+  accounts: Счета
+  invoice: Счёт-фактура
+  invoices: Счета-фактуры
+  invoice-template: Шаблон счёта-фактуры
+  invoice-templates: Шаблоны счетов-фактур
+  journal: Проводка
+  journal-entries: Проводки
+  wallet: Кошелёк
+  wallets: Кошельки
+  gateway: Платёжный шлюз
+  gateways: Платёжные шлюзы
+  wallet-transaction: Транзакция кошелька
+  wallet-transactions: Транзакции кошелька
+column:
+  id: ID
+  number: Число
+  name: Имя
+  code: Код
+  type: Тип
+  status: Статус
+  direction: Направление
+  description: Описание
+  date: Дата
+  created-at: Создано
+  updated-at: Обновлено
+  amount: Количество
+  balance: Баланс
+  balance-after: Баланс после
+  total: Всего
+  net-amount: Чистая сумма
+  fee: Плата
+  tax: Налог
+  currency: Валюта
+  gateway: Платёжный шлюз
+  payment-method: Способ оплаты
+  reference: Ссылка
+  memo: Примечание
+  period: Период
+  settled-at: Дата расчёта
+  failure-reason: Причина сбоя
+  due-date: Срок оплаты
+  issued-at: Дата выставления
+  invoice-date: Дата счёта
+  customer: Клиент
+  debit-account: Счёт дебета
+  credit-account: Счёт кредита
+  source: Источник
+  driver: Водитель
+  environment: Окружение
+  default: По умолчанию
+  owner: Владелец
+  payer: Плательщик
+  payee: Получатель
+  frozen: Заморожен
+  orientation: Ориентация
+menu:
+  dashboard: Панель управления
+  billing: Выставление счетов
+  invoices: Счета-фактуры
+  payments: Платежи
+  wallets: Кошельки
+  gateways: Платёжные шлюзы
+  accounting: Бухгалтерский учёт
+  chart-of-accounts: План счетов
+  journal-entries: Проводки
+  general-ledger: Главная книга
+  reports: Отчёты
+  income-statement: Отчёт о прибылях и убытках
+  balance-sheet: Бухгалтерский баланс
+  trial-balance: Оборотно-сальдовая ведомость
+  cash-flow: Движение денежных средств
+  ar-aging: Старение дебиторской задолженности
+  wallet-summary: Сводка по кошелькам
+  settings: Настройки
+  invoice-settings: Настройки счетов-фактур
+  payment-settings: Настройки платежей
+  accounting-settings: Настройки бухгалтерии
+invoice:
+  no-transactions: По этому счёту нет транзакций.
+  actions:
+    preview-invoice: Предпросмотр счёта №{number}
+    preview-invoice-fallback: Предпросмотр счёта
+    download-pdf: Скачать PDF
+    record-payment: Записать платёж
+    record-payment-title: Записать платёж — {number}
+    copy-payment-link: Скопировать ссылку на оплату
+    copy-invoice-url: Скопировать URL счёта
+    payment-link-copied: URL счёта скопирован в буфер обмена.
+    payment-link-copy-failed: Не удалось скопировать URL счёта. Скопируйте его вручную.
+    send: Отправить счёт
+    void: Аннулировать счёт
+    edit: Редактировать счёт

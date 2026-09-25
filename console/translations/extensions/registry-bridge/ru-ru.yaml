@@ -1,0 +1,148 @@
+# Russian strings for @fleetbase/registry-bridge-engine, which ships no ru-ru translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+registry-bridge:
+  extension-name: Мост реестра
+  common:
+    install: Установить
+    uninstall: Удалить
+    approve: Одобрить
+    reject: Отклонить
+    details: Детали
+    publish: Опубликовать
+    about: О расширении
+    about-extension: О расширении {extensionName}
+  component:
+    extension-details-modal:
+      extension: Расширение
+      author: Автор
+      description: Описание
+      overview: Обзор
+      details: Детали
+      version: Версия
+      updated: Обновлено
+      website: Сайт
+      self-managed: Самостоятельное управление
+      self-managed-help-text: Расширение с самостоятельным управлением предназначено для тех, кто размещает Fleetbase на собственных серверах, вне облака/SaaS. Такие расширения требуют ручной установки и настройки. Если вы используете Fleetbase на своём сервере, с их помощью можно добавить дополнительные возможности. Пользователям облака/SaaS они недоступны.
+      self-hosted-install: Установка на свой сервер
+      self-hosted-install-help-text: Посмотреть инструкцию по установке на свой сервер.
+    extension-pending-publish-viewer:
+      content-panel-title: Расширения, ожидающие публикации
+      focused-extension-title: 'Сведения о {extensionName}
+
+        '
+      download-bundle: Скачать пакет
+      view-details: Подробнее
+      publish: Опубликовать
+      no-extensions-awaiting-publish: Нет расширений, ожидающих публикации
+    extension-reviewer-control:
+      content-panel-title: Расширения, ожидающие проверки
+      focused-extension-title: 'Сведения о {extensionName}
+
+        '
+      approve-confirm-title: Вы уверены, что хотите одобрить это расширение?
+      approve-confirm-body: Это расширение нужно тщательно протестировать в средах разработки и тестирования, а также проверить на соответствие требованиям и проблемы безопасности. После одобрения его нужно будет вручную опубликовать в реестре.
+      decline-confirm-title: Вы уверены, что хотите отклонить это расширение?
+      decline-confirm-body: Расширение будет отклонено, но автор сможет внести исправления и снова отправить его на проверку.
+      download-bundle: Скачать пакет
+      view-details: Подробнее
+      approve: Одобрить
+      reject: Отклонить
+      no-extensions-awaiting-review: Нет расширений, ожидающих проверки
+  installed:
+    title: Установленные расширения
+  purchased:
+    title: Купленные расширения
+  developers:
+    payments:
+      manage-account: Управление счётом для выплат
+      no-account-warning: Прежде чем открыть настройки счёта, завершите подключение к Stripe.
+      settings:
+        title: Управление счётом для выплат
+        description: Управляйте данными аккаунта Stripe, включая сведения о компании и банковские счета для получения выплат.
+        loading: Загрузка управления счётом...
+    extensions:
+      extensions: Расширения
+      create-new-extension: Создать расширение
+      new-extension: Новое расширение
+      extension: Расширение
+      submission: Отправка
+      details: Детали
+      bundles: Пакеты
+      monetize: Монетизация
+      explore:
+        explore-extensions: Обзор расширений
+        explore-category-extensions: 'Расширения: {categoryName}
+
+          '
+      extension-form:
+        package-name: Имя пакета
+        package-json-name: Имя в package.json
+        composer-json-name: Имя в composer.json
+        submission-success-message: Расширение отправлено и ожидает проверки.
+        extension-category: Категория
+        extension-category-help-text: Выберите категорию, в которой пользователи найдут ваше расширение.
+        extension-select-category: Выберите категорию
+        extension-name: Название расширения
+        extension-icon: Значок расширения
+        upload-extension-icon: Загрузить значок
+        extension-description: Описание
+        extension-tags: Теги
+        extension-add-tags: Добавьте ключевые слова и теги
+        extension-promotional-text: Рекламный текст
+        details-content-block: Сведения о расширении
+        extension-listing-details: Сведения о листинге
+        extension-subtitle: Подзаголовок
+        extension-website-url: URL сайта
+        extension-repo-url: URL репозитория
+        extension-support-url: URL поддержки
+        extension-privacy-policy-url: URL политики конфиденциальности
+        extension-tos-url: URL условий использования
+        extension-primary-language: Основной язык
+        extension-version: Версия
+        extension-copyright: Авторские права
+        extension-copyright-help-text: Укажите уведомление об авторских правах для расширения. Обычно это год и имя правообладателя или компании.
+        extension-payment-required: Требуется оплата
+        extension-payment-required-help-text: Определяет, нужна ли пользователям оплата или подписка для установки этого расширения.
+        extension-price: Цена
+        extension-price-help-text: Укажите обычную цену расширения — стандартную стоимость покупки или доступа к нему.
+        extension-sale-price: Цена продажи
+        extension-sale-price-help-text: Если расширение сейчас продаётся со скидкой, укажите здесь цену со скидкой. Она должна быть меньше обычной.
+        extension-subscription-required: Требуется подписка
+        extension-subscription-required-help-text: Определяет, нужна ли пользователю подписка для установки и использования расширения.
+        extension-subscription-billing-period: Период оплаты подписки
+        extension-subscription-billing-period-placeholder: Выберите период оплаты
+        extension-subscription-billing-period-help-text: Укажите период оплаты подписки, например ежемесячно, ежеквартально, ежегодно или другой интервал.
+        extension-subscription-amount: Сумма подписки
+        extension-subscription-amount-help-text: Укажите стандартную сумму подписки — обычную цену без скидок и ступенчатых корректировок.
+        extension-subscription-model: Модель подписки
+        extension-subscription-model-help-text: 'Определяет модель ценообразования подписки: фиксированная ставка, ступенчатая или по использованию.'
+        extension-subscription-tiers: Уровни подписки
+        extension-subscription-tiers-help-text: 'При необходимости задайте уровни цен подписки: уровни, цену каждого и особые возможности или ограничения каждого уровня.'
+        extension-name-help-text: Введите официальное название расширения. Оно будет основным идентификатором для пользователей.
+        extension-icon-help-text: Загрузите значок расширения. Он будет использоваться в каталогах и результатах поиска.
+        extension-description-help-text: Подробно опишите, что делает расширение и его ключевые возможности. Это поможет пользователям понять его функции.
+        extension-tags-help-text: Добавьте подходящие ключевые слова и теги, описывающие расширение, чтобы его было проще найти поиском.
+        extension-promotional-text-help-text: Напишите рекламный текст о главных преимуществах расширения. Он будет использоваться в маркетинге и разделах с подборками.
+        extension-subtitle-help-text: Добавьте короткий подзаголовок с дополнительной информацией о расширении.
+        extension-website-url-help-text: Укажите URL официального сайта расширения или страницы продукта.
+        extension-repo-url-help-text: Укажите URL репозитория кода расширения (например, GitHub, GitLab), если он есть.
+        extension-support-url-help-text: Укажите URL, где пользователи могут получить поддержку, задать вопросы или сообщить о проблемах с расширением.
+        extension-privacy-policy-url-help-text: Ссылка на политику конфиденциальности, описывающую обработку и защиту данных пользователей.
+        extension-tos-url-help-text: Ссылка на условия использования, которые пользователи должны принять перед использованием расширения.
+        extension-primary-language-help-text: Укажите основной язык, на котором разработано или доступно расширение.
+        extension-version-help-text: Укажите текущую версию расширения. Это важно для отслеживания обновлений и совместимости.
+        extension-payment-details: Сведения об оплате
+        extension-screenshots: Скриншоты
+        upload-screenshots: Загрузить скриншоты
+        submit-for-review: Отправить на проверку
+        extension-bundle: Пакет расширения
+        extension-upload-bundle: Загрузить пакет расширения
+        details: Детали
+        bundle-id: ID пакета
+        bundle-id-help-text: Идентификатор опубликованного сейчас пакета.
+        extension-id: ID расширения
+        extension-id-help-text: Уникальный идентификатор этого расширения.
+        bundles: Пакеты
+        upload-new-bundle: Загрузить новый пакет
+        self-managed: Самостоятельное управление
+        self-managed-help-text: Включите, если модуль предназначен только для экземпляров на собственных серверах. Тогда модуль нельзя будет установить в облачной/SaaS-версии Fleetbase, и пользователь должен будет вручную установить его на своём сервере.

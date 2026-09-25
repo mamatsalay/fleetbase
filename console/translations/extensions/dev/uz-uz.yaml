@@ -1,0 +1,286 @@
+# Uzbek strings for @fleetbase/dev-engine, which ships no uz-uz translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+developers:
+  extension-name: Dasturchilar
+  common:
+    all: Hammasi
+    attempt: Urinish
+    back: Orqaga
+    bulk-action: Ommaviy amal
+    clear: Tozalash
+    code: Kod
+    created: Yaratilgan
+    date: Sana
+    description: Tavsif
+    email: Elektron pochta
+    event-id: Hodisa ID
+    event-type: Hodisa turi
+    event: Hodisa
+    export: Eksport qilish
+    failed: Muvaffaqiyatsiz
+    id: ID
+    key: Kalit
+    mode: Rejim
+    name: Ism
+    new: Yangi
+    password: Parol
+    result: Natija
+    source: Manba
+    status: Holat
+    succeeded: Muvaffaqiyatli
+    time: Vaqt
+    url: URL
+    version: Versiya
+    reload: Qayta yuklash
+    reload-data: Ma'lumotlarni qayta yuklash
+  component:
+    api-event:
+      data:
+        title: Hodisa ma'lumotlari
+        no-data: Hodisa ma'lumotlari yo'q
+      details:
+        prefixTitle: Hodisa
+    api-request-log:
+      details:
+        prefixTitle: So'rov
+        duration: Davomiylik
+        ip-address: IP manzil
+      query-params:
+        title: So'rov parametrlari
+        no-parameters: So'rov parametrlari yo'q
+      request-headers:
+        title: So'rov sarlavhalari
+        no-headers: So'rov sarlavhalari yo'q
+      request-body:
+        title: So'rov
+        title-second-part: tanasi
+        no-request-body: '{method} so''rovi tanasi yo''q'
+      response-body:
+        title: Javob tanasi
+        no-response-body: Javob tanasi yo'q
+    modals:
+      api-key-form:
+        api-name-aria-label: API kaliti nomi
+        api-expiration-aria-label: API kaliti amal qilish muddati
+        name-placeholder: API kaliti uchun taxallus yoki muhit nomini kiriting
+        expiration-label: Amal qilish muddati
+        expiration-help-text: Ixtiyoriy ravishda ushbu API kaliti uchun amal qilish muddatini belgilang.
+        select-expiration-date: Amal qilish muddatini tanlang...
+        key-expires: Ushbu kalitning muddati tugagach, u bilan hech qanday amal bajara olmaysiz.
+        enter-domain-placeholder: Domenni kiriting
+        allowed-browser-label: Ruxsat etilgan brauzer manbalari
+        allowed-browser-help-text: Ushbu API kalitidan brauzer so'rovlari uchun CORS siyosatini belgilaydigan domenlarni kiriting.
+        test-key: Test kaliti
+        testing-environments: Siz test muhiti kalitini yaratmoqdasiz, undan test muhitlari uchun foydalaning.
+        live-key: Jonli kalit
+        production-environments: Siz jonli muhit kalitini yaratmoqdasiz, undan ishlab chiqarish muhitlari uchun foydalaning.
+      listen-custom-channel:
+        name: Hodisalar kanali ID
+        name-help-text: Tinglamoqchi bo'lgan soket kanali identifikatorini kiriting
+      rename-api-key-form:
+        api-key-label: API kaliti nomi
+        api-key-placeholder: API kaliti uchun taxallus yoki muhit nomini kiriting
+      roll-api-key-form:
+        view-button-text: Jurnallarni ko'rish
+        last-used: Oxirgi foydalanilgan
+        expiration: Amal qilish muddati
+        api-key-expiration-label: API kaliti muddati
+        select-date: Amal qilish muddatini tanlang...
+        key-expires: Ushbu kalitning muddati tugagach, u bilan hech qanday amal bajara olmaysiz.
+        additional-required: Qo'shimcha autentifikatsiya talab qilinadi
+        enter-password: Davom etish uchun parolingizni kiriting.
+        user-email: Foydalanuvchi elektron pochtasi
+        user-password: Foydalanuvchi paroli
+        user-password-placeholder: So'rovni parolingiz bilan tasdiqlang
+      webhook-form:
+        endpoint-url: Endpoint URL manzili
+        endpoint-url-help-text: Fleetbase hodisa qayta chaqiruvlarini yuborishi kerak bo'lgan URL.
+        endpoint-url-placeholder: https://
+        description-label: Tavsif
+        description-help-text: Ixtiyoriy ravishda vebhuk endpointi uchun tavsif qo'shing.
+        description-aria-label: Vebhuk tavsifi
+        description-placeholder: Ushbu vebhuk endpointi nima uchun ishlatilishining ixtiyoriy tavsifi.
+        api-credential-label: API hisob ma'lumoti
+        api-credential-help-text: Vebhuk endpointi faqat ma'lum bir API kalitidan qayta chaqiruvlar qabul qilishini cheklang.
+        api-credential-message: Barcha API hisob ma'lumotlaridan qabul qilish...
+        api-credential-infoblock: Ushbu vebhuk endpointiga qayta chaqiruvlarni ishga tushiradigan aniq API hisob ma'lumotini tanlashingiz mumkin yoki "Barcha API hisob ma'lumotlari"ni tanlashingiz mumkin — shunda endpoint qaysi API hisob ma'lumoti ishlatilishidan qat'i nazar qayta chaqiruvlarni qabul qiladi.
+        version-help-text: Qayta chaqiruvlarni qabul qilish uchun aniq API versiyasini tanlang.
+        version-message: API versiyasini tanlang...
+        events-send-label: Yuboriladigan hodisalar
+        events-send-help-text: Qaysi hodisalar uchun qayta chaqiruvlar qabul qilinishini aniq belgilang.
+        select-events: Hodisalarni tanlang...
+        event-search-label: Hodisalarni qidirish
+        event-search-placeholder: Qidirish...
+        no-selected: Hech qanday hodisa tanlanmagan
+        dropdown: Yuqoridagi ro'yxatdan hodisalarni qidiring yoki
+        all-events: barcha hodisalarni qabul qiling
+    webhook:
+      attempts:
+        copy-event-id: Hodisa ID sini nusxalash
+        view-event: Hodisani ko'rish
+        info-message: Hodisa ID si nusxalandi.
+        webhook-header: Vebhuk urinishlari
+        webhook-message: So'nggi 15 kun ichida endpointingizga hodisa yuborish urinishlari
+        http-code: HTTP holat kodi
+        response-time: Javob vaqti
+        request-endpoint: Endpointingizga so'rov
+        no-request-body: So'rov tanasi yo'q
+        response: Javob
+        no-response-body: Javob tanasi yo'q
+      details:
+        webhook-details: Vebhuk tafsilotlari
+        update-details: Tafsilotlarni yangilash...
+        event-types: Hodisa turlari
+        help-text: Aniq tanlashni talab qiladiganlardan tashqari, yangi hodisa turlari qo'shilishi bilan ular uchun vebhuklarni olasiz. Barcha hodisa turlarini tinglash odatda shart emas va serverlaringizga yuklamani oshirishi mumkin.
+        all-events: Barcha hodisalar
+        api-credential: API hisob ma'lumoti
+        help-text-event: Hodisani qaysi API hisob ma'lumoti ishga tushirishidan qat'i nazar vebhuk qayta chaqiruvlarini olasiz.
+        api-credentials: Barcha API hisob ma'lumotlaridan qabul qilinmoqda
+      metrics:
+        date-created: Yaratilgan sana
+    widget:
+      dashboard:
+        name: Dasturchilar paneli
+        period: 30 kun
+        empty: Ma'lumot mavjud emas
+        kpi:
+          api-requests: API so'rovlari
+          api-error-rate: API xatolari ulushi
+          api-latency: API o'rtacha kechikishi
+          webhook-success: Vebhuk muvaffaqiyati
+          active-api-keys: Faol API kalitlari
+          active-webhooks: Faol vebhuklar
+          webhook-failures: Vebhuk xatolari
+          events-emitted: Yuborilgan hodisalar
+        api-traffic:
+          title: API trafigi
+          subtitle: So'rovlar hajmi, muvaffaqiyatlar va xatolar
+        webhook-delivery:
+          title: Vebhuk yetkazilishi holati
+          subtitle: Yetkazish hajmi, qayta urinishlar va xatolar
+        endpoint-health:
+          title: Endpoint holati
+          subtitle: So'nggi vebhuk endpointlari ishonchliligi
+        event-stream:
+          title: Hodisalar oqimi
+          subtitle: Asosiy hodisa turlari va manbalar
+          types: Hodisa turlari
+          sources: Manbalar
+        developer-activity:
+          title: Dasturchilar faoliyati
+          subtitle: So'nggi jurnallar, vebhuklar va hodisalar
+        quick-resources:
+          title: Tezkor manbalar
+          subtitle: Dasturchi vositalariga o'tish
+      api-metrics:
+        title: Monitoring
+        api-requests: API so'rovlari
+        api-error: API xatolari taqsimoti
+        webhooks: Vebhuklar
+        webhooks-response: Vebhuklar javob vaqti
+        success-label: muvaffaqiyatli
+        error-label: xato
+        get-error: GET xatosi
+        post-error: POST xatosi
+        put-error: PUT xatosi
+        delete-error: DELETE xatosi
+        duration-ms: Davomiylik (ms)
+  api-keys:
+    index:
+      public-key: Ochiq kalit
+      secret-key: Maxfiy kalit
+      enviroment: Muhit
+      expiry: Amal qilish muddati
+      last-used: Oxirgi foydalanilgan
+      edit-key: Kalitni tahrirlash...
+      roll-key: Kalitni almashtirish...
+      view-logs: So'rov jurnallarini ko'rish...
+      delete-key: Kalitni o'chirish...
+      new-api-key-title: Yangi API kaliti
+      new-api-key-message: Yangi API hisob ma'lumotlari yaratildi.
+      edit-api-key-title: API kalitini tahrirlash
+      edit-api-key-message: API hisob ma'lumotlaridagi o'zgarishlar saqlandi.
+      rename-api-key-title: '{apiKeyName} API kalitini qayta nomlash'
+      untitled: Nomsiz
+      rename-api-key-success-message: API hisob ma'lumoti {apiKeyName} deb qayta nomlandi
+      delete-api-key-title: '{apiKeyName} API kalitini o''chirish'
+      delete-api-key-body: Haqiqatan ham ushbu API kalitini o'chirmoqchimisiz? Ushbu API kaliti bilan bog'liq barcha ma'lumotlaringiz mavjud bo'lmay qoladi. Bu amalni bekor qilib bo'lmaydi.
+      delete-api-key-success-message: '{apiKeyName} API hisob ma''lumoti o''chirildi.'
+      delete-accept-button-text: API hisob ma'lumotlarini o'chirish
+      roll-api-key: '{apiKeyName} API kalitini almashtirish'
+      roll-api-key-button-text: API kalitini almashtirish
+      roll-api-key-success-message: '{apiKeyName} API hisob ma''lumoti almashtirildi.'
+      roll-api-key-error-message: API hisob ma'lumotlarini almashtirib bo'lmadi.
+      export-api: API hisob ma'lumotlarini eksport qilish
+      export-api-accept-button-text: Yuklab olish
+      export-api-error-message: API hisob ma'lumotlari eksportini yuklab bo'lmadi.
+      title: API kalitlari
+      label: Test ma'lumotlarini ko'rish
+      help-text: Test ma'lumotlarini ko'rishni yoqsangiz, konsol sandbox muhitingizdagi barcha test ma'lumotlarini ko'rsatadi
+      select-api-key-aria-label: API kalitini tanlang
+      select-key: Aniq kalitni tanlang
+      test-data: Barcha test ma'lumotlari...
+      delete-api: API hisob ma'lumotlarini o'chirish
+  events:
+    index:
+      title: Hodisalar
+  logs:
+    index:
+      api-credential: API hisob ma'lumoti
+      http-method: HTTP usuli
+      title: Jurnallar
+  sockets:
+    index:
+      link-text: Kanalni kuzatish
+      channel: Kanal
+      listen-channel-title: Maxsus kanalda tinglash
+      listen-channel-button-text: Tinglash
+      title: Hisobingizdan hodisalarni qabul qilayotgan kanallar
+      button-text: Maxsus kanalda tinglash
+    view:
+      socket-connection-error: Soket ulanishida xato!
+      socket-connected: Soket ulangan
+      socket-subscribed: Soket {modelName} kanaliga obuna bo'ldi
+      output: Chiqish
+      awaiting-events: Hodisalar kutilmoqda...
+  webhooks:
+    index:
+      view-logs: Jurnallarni ko'rish
+      edit-webhook: Vebhukni tahrirlash
+      delete-webhook: Vebhukni o'chirish
+      add-webhook: Vebhuk endpointini qo'shish
+      add-webhook-button-text: Tasdiqlash va yaratish
+      edit-webhook-endpoint: Vebhuk endpointini tahrirlash
+      edit-webhook-endpoint-button-text: O'zgarishlarni saqlash
+      new-webhook-success-message: Yangi vebhuk yaratildi.
+      delete-webhook-endpoint: Ushbu vebhuk endpointini o'chirish
+      delete-webhook-endpoint-body: Haqiqatan ham ushbu vebhukni o'chirmoqchimisiz? Ushbu vebhuk bilan bog'liq barcha ma'lumotlaringiz mavjud bo'lmay qoladi. Endpoint kelgusi hodisalarni ham qabul qilmaydi. Bu amalni bekor qilib bo'lmaydi.
+      delete-webhook-success-message: Vebhuk endpointi o'chirildi.
+      title: Vebhuklar
+      button-text: Yangi endpoint qo'shish
+    view:
+      webhook-deleted-success-message: Vebhuk endpointi o'chirildi.
+      disable-webhook-title: Vebhuk endpointini o'chirib qo'yish
+      disable-webhook-body: Ushbu vebhuk endpointi vaqtincha o'chirib qo'yilishi mumkin, shunda u qayta yoqilgunicha bildirishnomalarni olmaydi. Endpoint o'chirilgan paytda yaratilgan bildirishnomalarni Fleetbase qayta yubormaydi.
+      disable-webhook-button-text: Vebhuk endpointini o'chirib qo'yish
+      disable-webhook-success-message: Vebhuk o'chirib qo'yildi.
+      enable-webhook-title: Vebhuk endpointini yoqish
+      enable-webhook-body: Ushbu vebhuk o'chirib qo'yilgan va endi bildirishnomalarni olmaydi. Bu uzoq vaqt davomida xatolar aniqlangani sababli avtomatik ravishda amalga oshirilgan bo'lishi mumkin. Agar muammoni tuzatgan bo'lsangiz, vebhuk endpointini shu yerda qayta yoqishingiz mumkin. Oraliq davrda yaratilgan bildirishnomalarni Fleetbase qayta yubormaydi va agar ushbu endpointda xatolar davom etsa, u yana o'chirib qo'yiladi.
+      enable-webhook-button-text: Vebhuk endpointini yoqish
+      enable-webhook-success-message: Vebhuk yoqildi.
+      update-endpoint-button-text: Endpointni yangilash
+      update-endpoint-success-message: Vebhuk tafsilotlari yangilandi.
+      send-button-text: Test vebhukini yuborish...
+      disable-button-text: O'chirib qo'yish...
+      enable-button-text: Yoqish...
+      delete-button-text: O'chirish...
+  application:
+    sidebar:
+      title: Dasturchilar konsoli
+      items:
+        home: Boshqaruv paneli
+        api-keys: API kalitlari
+        webhooks: Vebhuklar
+        websockets: WebSockets
+        logs: Jurnallar
+        events: Hodisalar

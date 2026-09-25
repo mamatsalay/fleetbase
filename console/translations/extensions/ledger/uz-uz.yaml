@@ -1,0 +1,101 @@
+# Uzbek strings for @fleetbase/ledger-engine, which ships no uz-uz translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+ledger:
+  extension-name: Hisob kitobi
+common:
+  ledger: Hisob kitobi
+  transactions: Tranzaksiyalar
+resource:
+  account: Hisob
+  accounts: Hisoblar
+  invoice: Hisob-faktura
+  invoices: Hisob-fakturalar
+  invoice-template: Hisob-faktura shabloni
+  invoice-templates: Hisob-faktura shablonlari
+  journal: Jurnal yozuvi
+  journal-entries: Jurnal yozuvlari
+  wallet: Hamyon
+  wallets: Hamyonlar
+  gateway: To'lov shlyuzi
+  gateways: To'lov shlyuzlari
+  wallet-transaction: Hamyon tranzaksiyasi
+  wallet-transactions: Hamyon tranzaksiyalari
+column:
+  id: ID
+  number: Raqam
+  name: Ism
+  code: Kod
+  type: Tur
+  status: Holat
+  direction: Yo'nalish
+  description: Tavsif
+  date: Sana
+  created-at: Yaratilgan
+  updated-at: Yangilangan
+  amount: Miqdor
+  balance: Balans
+  balance-after: Keyingi balans
+  total: Jami
+  net-amount: Sof summa
+  fee: To'lov
+  tax: Soliq
+  currency: Valyuta
+  gateway: To'lov shlyuzi
+  payment-method: To'lov usuli
+  reference: Malumot
+  memo: Izoh
+  period: Davr
+  settled-at: Hisob-kitob qilingan vaqt
+  failure-reason: Muvaffaqiyatsizlik sababi
+  due-date: To'lov muddati
+  issued-at: Berilgan sana
+  invoice-date: Hisob-faktura sanasi
+  customer: Mijoz
+  debit-account: Debet hisobi
+  credit-account: Kredit hisobi
+  source: Manba
+  driver: Haydovchi
+  environment: Muhit
+  default: Standart
+  owner: Egasi
+  payer: To'lovchi
+  payee: Oluvchi
+  frozen: Muzlatilgan
+  orientation: Yo'nalish
+menu:
+  dashboard: Boshqaruv paneli
+  billing: Hisob-kitob
+  invoices: Hisob-fakturalar
+  payments: To'lovlar
+  wallets: Hamyonlar
+  gateways: To'lov shlyuzlari
+  accounting: Buxgalteriya
+  chart-of-accounts: Hisoblar rejasi
+  journal-entries: Jurnal yozuvlari
+  general-ledger: Bosh daftar
+  reports: Hisobotlar
+  income-statement: Foyda va zarar hisoboti
+  balance-sheet: Buxgalteriya balansi
+  trial-balance: Aylanma balans
+  cash-flow: Pul oqimi
+  ar-aging: Debitorlik qarzi muddatlari
+  wallet-summary: Hamyonlar xulosasi
+  settings: Sozlamalar
+  invoice-settings: Hisob-faktura sozlamalari
+  payment-settings: To'lov sozlamalari
+  accounting-settings: Buxgalteriya sozlamalari
+invoice:
+  no-transactions: Ushbu hisob-faktura uchun tranzaksiyalar qayd etilmagan.
+  actions:
+    preview-invoice: '#{number} hisob-fakturani oldindan ko''rish'
+    preview-invoice-fallback: Hisob-fakturani oldindan ko'rish
+    download-pdf: PDF ni yuklab olish
+    record-payment: To'lovni qayd etish
+    record-payment-title: To'lovni qayd etish — {number}
+    copy-payment-link: To'lov havolasini nusxalash
+    copy-invoice-url: Hisob-faktura URL manzilini nusxalash
+    payment-link-copied: Hisob-faktura URL manzili nusxalandi.
+    payment-link-copy-failed: Hisob-faktura URL manzilini nusxalab bo'lmadi. Uni qo'lda nusxalang.
+    send: Hisob-fakturani yuborish
+    void: Hisob-fakturani bekor qilish
+    edit: Hisob-fakturani tahrirlash

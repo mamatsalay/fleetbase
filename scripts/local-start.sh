@@ -4,13 +4,17 @@
 # -------------------------------------------------------
 # Usage (from anywhere inside the repository):
 #   bash scripts/local-start.sh            # first run installs, later runs just start it
-#   bash scripts/local-start.sh --rebuild  # after `git pull`: rebuild the console and API images
+#   bash scripts/local-start.sh --rebuild  # after `git pull`: rebuild the API and console, migrate
 #   bash scripts/local-start.sh --stop     # stop the containers (data is kept)
 #   bash scripts/local-start.sh --reset    # delete the install and its database, start over
 #
 # Until the database exists, runs call scripts/docker-install.sh --non-interactive, which
 # generates the database credentials and docker-compose.override.yml. Once it exists they
 # never call it again: new credentials would no longer match the existing database.
+#
+# The API image (fleetbase/fleetbase-api:latest) is built from this repository rather than
+# pulled from Docker Hub, so the backend has exactly the extensions api/composer.json lists.
+# Set GITHUB_AUTH_KEY to a GitHub token if Composer hits GitHub's download rate limit.
 # -------------------------------------------------------
 set -euo pipefail
 
@@ -29,6 +33,8 @@ MIN_MEMORY_GB=4
 RECOMMENDED_MEMORY_GB=6
 OVERRIDE_FILE="docker-compose.override.yml"
 DB_DATA_DIR="docker/database/mysql"
+API_IMAGE="fleetbase/fleetbase-api:latest"
+API_IMAGE_LABEL="io.fleetbase.local-build"
 
 ACTION="start"
 case "${1:-}" in
@@ -163,7 +169,23 @@ has_database() {
   [[ -d "$DB_DATA_DIR" ]] && { [[ ! -r "$DB_DATA_DIR" ]] || [[ -n "$(ls -A "$DB_DATA_DIR" 2>/dev/null)" ]]; }
 }
 
+# The published image carries every upstream extension (Storefront included) whatever
+# api/composer.json says; an image built here is labelled so it can be told apart.
+api_image_is_local() {
+  [[ "$(docker image inspect -f '{{ index .Config.Labels "io.fleetbase.local-build" }}' "$API_IMAGE" 2>/dev/null)" == "true" ]]
+}
+
+build_api_image() {
+  section "Building the API"
+  info "Building ${API_IMAGE} from this repository. Composer installs the PHP packages, so this takes several minutes."
+  local args=(--file docker/Dockerfile --target app-release --tag "$API_IMAGE" --label "${API_IMAGE_LABEL}=true")
+  [[ -n "${GITHUB_AUTH_KEY:-}" ]] && args+=(--build-arg "GITHUB_AUTH_KEY=${GITHUB_AUTH_KEY}")
+  docker build "${args[@]}" .
+  success "API image built"
+}
+
 if ! has_database; then
+  api_image_is_local || build_api_image
   if [[ -f "$OVERRIDE_FILE" ]]; then
     section "Resuming the Install"
     info "A previous install stopped before the database was created; running it again."
@@ -177,13 +199,17 @@ elif [[ ! -f "$OVERRIDE_FILE" ]]; then
   error "Run bash scripts/local-start.sh --reset to start over."
   exit 1
 elif [[ "$ACTION" == "rebuild" ]]; then
+  build_api_image
   section "Rebuilding"
-  info "Pulling the latest API image and rebuilding the console. This takes several minutes."
-  docker compose pull application scheduler queue
+  info "Rebuilding the console and restarting the stack. This takes several minutes."
   docker compose up -d --build
   docker compose exec -T application bash -c "./deploy.sh"
 else
   section "Starting Fleetbase"
+  if ! api_image_is_local; then
+    warn "The API is running the image published on Docker Hub, which includes extensions this repository removed (Storefront)."
+    warn "Build it from this repository with: bash scripts/local-start.sh --rebuild"
+  fi
   docker compose up -d
 fi
 

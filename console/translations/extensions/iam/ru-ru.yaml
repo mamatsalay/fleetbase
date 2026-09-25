@@ -1,0 +1,51 @@
+# Russian strings for @fleetbase/iam-engine, which ships an incomplete ru-ru translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+iam:
+  components:
+    modals:
+      change-user-email:
+        title: Изменить email пользователя
+        heading: Изменить email для {userName}
+        prompt: Введите новый адрес электронной почты. Пользователь должен подтвердить его, прежде чем он станет адресом для входа.
+        current-email: Текущий email
+        new-email: Новый email
+        send-verification: Отправить подтверждение
+        email-required: Требуется новый адрес электронной почты.
+        verification-sent: Подтверждение смены email отправлено. Пользователь должен подтвердить новый адрес, прежде чем изменится email для входа.
+  users:
+    index:
+      mark-verified-title: Отметить {channel} пользователя {userName} как подтверждённый
+      mark-verified-prompt: '{channel} пользователя будет отмечен как подтверждённый без его подтверждения. Вы уверены?'
+      send-verification-title: 'Отправить подтверждение: {channel}'
+      send-verification-prompt: '{userName} получит ссылку для подтверждения на {destination}. Ссылка действует 48 часов.'
+      send-verification: Отправить подтверждение
+      verification-sent: Ссылка для подтверждения отправлена на {destination}.
+      channel-email: адрес электронной почты
+      channel-phone: номер телефона
+      send-email-verification: Отправить подтверждение email...
+      send-phone-verification: Отправить подтверждение телефона...
+      mark-email-verified: Отметить email как подтверждённый...
+      mark-phone-verified: Отметить телефон как подтверждённый...
+      email-verified: Email подтверждён
+      phone-verified: Телефон подтверждён
+      verified: Подтверждён
+      unverified: Не подтверждён
+      timezone: Часовой пояс
+      date-of-birth: Дата рождения
+      ip-address: IP-адрес
+      change-user-email: Изменить email пользователя...
+      new-user-created: В организацию добавлен новый пользователь.
+      invite-user: Пригласить пользователя
+    invite:
+      title: Пригласить пользователя
+      description: Введите адрес электронной почты человека, которого хотите пригласить. Если у него уже есть учётная запись Fleetbase, он получит приглашение в вашу организацию. Если он новый, будет создана ожидающая учётная запись, и при принятии приглашения ему предложат задать пароль.
+      email-placeholder: colleague@example.com
+      name-placeholder: Полное имя (обязательно для новых пользователей)
+      name-help: Требуется, только если у человека ещё нет учётной записи Fleetbase.
+      send-invitation: Отправить приглашение
+      email-required: Введите адрес электронной почты.
+      invitation-sent-existing: Приглашение отправлено. Пользователь получит письмо для вступления в вашу организацию.
+      invitation-sent-new: Приглашение отправлено. Создана ожидающая учётная запись; пользователю предложат задать пароль.
+    role-required: Выберите роль для этого пользователя.
+    notifications:
+      promoted-existing-account: Существующая учётная запись ({type}) пользователя {name} повышена до участника команды.

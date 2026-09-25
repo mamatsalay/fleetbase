@@ -1,0 +1,4 @@
+# Russian strings for @fleetbase/customer-portal-engine, which ships no ru-ru translation.
+# Merged over the extension's own file at build time (see TRANSLATING.md).
+starter:
+  extension-name: Стартовый

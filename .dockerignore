@@ -25,3 +25,6 @@ docker-compose.yml
 $virtualenv.tar.gz
 $node_modules.tar.gz
 docker-compose.override.yml
+# Neither image built from the repository root copies these (the console has its own context).
+console/
+packages/
